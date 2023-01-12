@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : LiferayWorkspace.modules : LayoutTemplateDemo.war">
+    <output-path>$PROJECT_DIR$/modules/LayoutTemplateDemo/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <buildTaskPath>:modules:LayoutTemplateDemo:war</buildTaskPath>
+        <cleanTaskPath>:modules:LayoutTemplateDemo:cleanWar</cleanTaskPath>
+      </options>
+    </properties>
+    <root id="archive" name="LayoutTemplateDemo.war">
+      <element id="artifact" artifact-name="Gradle : LiferayWorkspace.modules : LayoutTemplateDemo.war (exploded)" />
+    </root>
+  </artifact>
+</component>

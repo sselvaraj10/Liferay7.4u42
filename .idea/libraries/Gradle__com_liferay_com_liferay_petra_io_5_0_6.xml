@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay:com.liferay.petra.io:5.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.petra.io/5.0.6/c9b8a5dfbf66807b07ffba0eb69e0fdabe1befd0/com.liferay.petra.io-5.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.petra.io/5.0.6/841d12639d571d76bd8e4e11b3a16df9c8c74da5/com.liferay.petra.io-5.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

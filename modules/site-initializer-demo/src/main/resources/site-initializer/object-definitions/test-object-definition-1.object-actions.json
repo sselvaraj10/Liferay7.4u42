@@ -1,0 +1,23 @@
+[
+	{
+		"conditionExpression": "",
+		"objectActionExecutorKey": "webhook",
+		"objectActionTriggerKey": "onAfterAdd",
+		"name": "Test Object Action 1",
+		"active": true,
+		"description": "",
+		"parameters": {
+			"secret": "admin",
+			"url": "http://localhost:8080"
+		}
+	},
+	{
+		"active": true,
+		"name": "Test Object Action 2",
+		"objectActionExecutorKey": "groovy",
+		"objectActionTriggerKey": "onAfterAdd",
+		"parameters": {
+			"script": "System.out.println(\"onAfterAdd\")"
+		}
+	}
+]

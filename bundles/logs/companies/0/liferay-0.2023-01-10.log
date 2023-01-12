@@ -1,0 +1,403 @@
+2023-01-10 05:40:31.716 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/401/lib/idea_rt.jar=36097:/snap/intellij-idea-ultimate/401/bin
+2023-01-10 05:40:36.575 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2023-01-10 05:40:41.996 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2023-01-10 05:40:43.036 INFO  [ModuleFramework-Static-Bundles-2][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2023-01-10 05:40:45.282 INFO  [ModuleFramework-Static-Bundles-7][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.document.library.web.jar
+2023-01-10 05:40:45.283 INFO  [ModuleFramework-Static-Bundles-7][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2023-01-10 05:40:45.418 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2023-01-10 05:40:45.419 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2023-01-10 05:41:09.369 INFO  [Start Level: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][MessageBusRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredParallelMessageListener@3c38917a
+2023-01-10 05:41:09.370 INFO  [Start Level: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][MessageBusRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSerialMessageListener@68266f64
+2023-01-10 05:41:09.372 INFO  [Start Level: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][MessageBusRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSynchronousMessageListener@42dec312
+2023-01-10 05:41:09.512 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2023-01-10 05:41:09.513 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2023-01-10 05:41:14.673 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2023-01-10 05:41:14.674 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2023-01-10 05:41:14.692 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2023-01-10 05:41:14.696 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 4 ms
+2023-01-10 05:41:14.697 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2023-01-10 05:41:14.754 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.add" is obsolete
+2023-01-10 05:41:14.754 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.update" is obsolete
+2023-01-10 05:41:14.754 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.translate" is obsolete
+2023-01-10 05:41:14.768 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 71 ms
+2023-01-10 05:41:14.769 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2023-01-10 05:41:14.769 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 0 ms
+2023-01-10 05:41:15.453 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-01-10 05:41:15.507 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 54 ms
+2023-01-10 05:41:19.064 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2023-01-10 05:41:36.429 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9501
+2023-01-10 05:41:40.535 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scheduled_user_ldap_import
+2023-01-10 05:41:40.543 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/default_response
+2023-01-10 05:41:40.547 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/message_status
+2023-01-10 05:41:40.551 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/live_users
+2023-01-10 05:41:40.555 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_audio_processor
+2023-01-10 05:41:40.559 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/async_service
+2023-01-10 05:41:40.563 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_local_publisher
+2023-01-10 05:41:40.568 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/convert_process
+2023-01-10 05:41:40.572 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_pdf_processor
+2023-01-10 05:41:40.575 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_clean_up
+2023-01-10 05:41:40.579 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_video_processor
+2023-01-10 05:41:40.582 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_raw_metadata_processor
+2023-01-10 05:41:40.585 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_image_processor
+2023-01-10 05:41:40.589 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_boards_mailing_list
+2023-01-10 05:41:40.593 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_sender
+2023-01-10 05:41:40.597 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/hot_deploy
+2023-01-10 05:41:40.601 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_remote_publisher
+2023-01-10 05:41:40.622 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_comet_response
+2023-01-10 05:41:40.626 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_response
+2023-01-10 05:41:40.630 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller
+2023-01-10 05:41:40.639 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_definition
+2023-01-10 05:41:40.642 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_instance
+2023-01-10 05:41:40.646 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_log
+2023-01-10 05:41:40.650 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_task
+2023-01-10 05:41:40.653 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_engine
+2023-01-10 05:41:40.657 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_comparator
+2023-01-10 05:41:40.661 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_status
+2023-01-10 05:41:40.665 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/mail
+2023-01-10 05:41:40.676 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_async
+2023-01-10 05:41:40.681 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_sync
+2023-01-10 05:41:40.687 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/adaptive_media_processor
+2023-01-10 05:41:40.697 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/audit
+2023-01-10 05:41:40.710 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/SYSTEM_ENGINE
+2023-01-10 05:41:40.715 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/SYSTEM_ENGINE
+2023-01-10 05:41:40.974 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/tensorflow_model_download
+2023-01-10 05:41:40.981 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/GENERIC_ENGINE
+2023-01-10 05:41:40.984 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/GENERIC_ENGINE
+2023-01-10 05:41:40.989 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_base_price_list
+2023-01-10 05:41:40.992 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_order_status
+2023-01-10 05:41:40.995 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_payment_status
+2023-01-10 05:41:40.998 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_shipment_status
+2023-01-10 05:41:41.001 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_subscription_status
+2023-01-10 05:41:41.005 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/analytics_messages_processor
+2023-01-10 05:41:41.010 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/ddm_structure_reindex
+2023-01-10 05:41:41.015 INFO  [main][ParellelDestinationConfig:83] Destination is creared ..liferaysavvy/parallel-destination
+2023-01-10 05:41:41.017 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/parallel-destination
+2023-01-10 05:41:41.019 INFO  [main][ParellelDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-10 05:41:41.022 INFO  [main][SerialDestinationConfig:83] Destination is creared ..liferaysavvy/serial-destination
+2023-01-10 05:41:41.023 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/serial-destination
+2023-01-10 05:41:41.025 INFO  [main][SerialDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-10 05:41:41.028 INFO  [main][SynchronousDestinationConfig:83] Destination is creared ..liferaysavvy/synchronous-destination
+2023-01-10 05:41:41.032 INFO  [main][DestinationListenerRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredParallelMessageListener@74b22125
+2023-01-10 05:41:41.033 INFO  [main][DestinationListenerRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSerialMessageListener@56befaf1
+2023-01-10 05:41:41.035 INFO  [main][DestinationListenerRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSynchronousMessageListener@13adcd6
+2023-01-10 05:41:41.035 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/synchronous-destination
+2023-01-10 05:41:41.037 INFO  [main][SynchronousDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-10 05:41:41.042 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scripting_executor
+2023-01-10 05:41:41.051 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/interest_terms
+2023-01-10 05:41:41.055 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/segments_entry_reindex
+2023-01-10 05:41:41.060 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/monitoring
+2023-01-10 05:41:41.256 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/flags
+2023-01-10 05:41:43.675 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2023-01-10 05:41:43.696 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-01-10 05:41:43.722 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 26 ms
+2023-01-10 05:41:43.730 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/lcs_status
+2023-01-10 05:41:43.759 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2023-01-10 05:41:44.600 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2023-01-10 05:41:57.059 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2023-01-10 05:41:57.214 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2023-01-10 05:41:57.397 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2023-01-10 05:41:57.621 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2023-01-10 05:41:57.824 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2023-01-10 05:41:58.000 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2023-01-10 05:41:58.244 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2023-01-10 05:41:58.460 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2023-01-10 05:41:58.671 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2023-01-10 05:41:58.863 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2023-01-10 05:41:59.213 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for cstheme2-theme is available for use
+2023-01-10 05:47:45.913 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 05:47:46.080 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 05:56:48.151 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 05:56:48.286 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:01:44.393 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:01:44.513 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:06:25.589 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:06:25.710 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:19:48.594 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:19:48.709 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:28:15.770 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:28:15.980 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:29:41.454 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:29:41.566 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:33:12.346 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:33:12.458 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:34:52.905 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:34:53.032 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:36:43.510 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:36:43.622 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:39:39.276 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:39:39.411 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:43:10.317 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:43:10.422 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:45:36.026 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:45:36.142 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:47:56.762 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:47:56.899 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:50:32.320 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:50:32.427 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:53:18.059 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:53:18.165 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:54:38.546 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:54:38.658 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:56:14.038 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:56:14.141 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:57:44.574 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:57:44.689 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:59:55.241 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 06:59:55.341 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:01:25.631 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:01:25.754 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:04:11.348 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:04:11.521 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:05:21.855 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:05:21.974 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:07:12.412 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:07:12.515 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:10:28.240 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:10:28.344 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:11:43.688 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:11:43.789 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:12:44.040 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:12:44.148 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:13:34.352 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:13:34.461 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:14:14.698 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:14:14.810 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:18:45.942 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:18:46.048 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:20:51.576 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:20:51.675 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:22:07.031 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:22:07.130 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:24:57.803 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:24:57.906 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:29:18.875 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:29:18.981 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:29:54.158 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:29:54.255 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:31:24.661 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:31:24.764 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:35:35.798 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 07:35:35.900 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:00:48.108 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:00:48.233 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:02:33.683 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:02:33.788 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:07:34.893 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:07:35.001 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:13:26.369 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:13:26.467 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:20:48.206 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:20:48.318 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:28:09.878 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED background-task_1.0.0 [1803]
+2023-01-10 09:28:09.986 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED background-task_1.0.0 [1803]
+2023-01-10 09:30:40.626 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:30:40.736 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:33:11.322 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:33:11.427 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:34:26.771 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:34:26.891 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:35:22.198 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:35:22.335 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:36:27.638 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:36:27.744 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:46:44.279 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.api_1.0.0 [1807]
+2023-01-10 09:46:44.359 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1810]
+2023-01-10 09:46:44.556 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.service_1.0.0 [1808]
+2023-01-10 09:46:44.710 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:80] STOPPED background-task_1.0.0 [1803]
+2023-01-10 09:46:44.741 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/background-task.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: background-task [1803]_  Unresolved requirement: Import-Package: com.liferay.docs.guestbook.model_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2023-01-10 09:47:09.919 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED background-task_1.0.0 [1803]
+2023-01-10 09:47:09.966 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.api_1.0.0 [1814]
+2023-01-10 09:47:15.459 ERROR [fileinstall-directory-watcher][ServiceConfigurationInitializer:107] Unable to initialize service component
+com.liferay.portal.kernel.exception.OldServiceComponentException: Build namespace GB has build number 83 which is newer than 47
+	at com.liferay.portal.service.impl.ServiceComponentLocalServiceImpl.initServiceComponent(ServiceComponentLocalServiceImpl.java:192) ~[portal-impl.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor151.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:50) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.transaction.TransactionInterceptor.invoke(TransactionInterceptor.java:69) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57) ~[portal-impl.jar:?]
+	at com.liferay.change.tracking.internal.aop.CTTransactionAdvice.invoke(CTTransactionAdvice.java:79) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopInvocationHandler.invoke(AopInvocationHandler.java:49) ~[portal-impl.jar:?]
+	at com.sun.proxy.$Proxy282.initServiceComponent(Unknown Source) ~[?:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer._initServiceComponent(ServiceConfigurationInitializer.java:102) ~[?:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer.start(ServiceConfigurationInitializer.java:64) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor150.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.felix.dm.impl.InvocationUtil.invokeMethod(InvocationUtil.java:157) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.InvocationUtil.invokeCallbackMethod(InvocationUtil.java:112) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invokeCallbackMethod(ComponentImpl.java:638) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invoke(ComponentImpl.java:1783) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invokeStart(ComponentImpl.java:1281) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.performTransition(ComponentImpl.java:1232) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.handleChange(ComponentImpl.java:1166) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.lambda$start$2(ComponentImpl.java:502) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.runTask(SerialExecutor.java:138) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.runTasks(SerialExecutor.java:120) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.execute(SerialExecutor.java:86) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.execute(SerialExecutor.java:105) [bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.start(ComponentImpl.java:500) [bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentScheduler.add(ComponentScheduler.java:69) [bundleFile:?]
+	at org.apache.felix.dm.DependencyManager.add(DependencyManager.java:141) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender$ServiceConfigurationExtension.start(ServiceConfigurationExtender.java:111) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender.addingBundle(ServiceConfigurationExtender.java:85) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender.addingBundle(ServiceConfigurationExtender.java:46) [bundleFile:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:908) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:137) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:129) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:191) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:578) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:449) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) [org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1046) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2023-01-10 09:47:15.474 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.service_1.0.0 [1815]
+2023-01-10 09:47:25.861 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 09:51:51.826 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 09:51:51.956 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:02:14.234 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:02:14.457 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:05:50.394 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:05:50.519 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:06:55.777 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:06:55.888 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:09:36.440 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:09:36.544 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:10:21.789 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:10:21.900 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:12:07.317 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:12:07.424 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:38:33.018 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:38:33.129 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:43:04.071 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:43:04.180 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:50:25.889 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:50:26.025 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:52:06.450 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 10:52:06.555 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:01:23.486 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:01:23.597 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:03:39.100 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:03:39.212 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:04:54.500 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:04:54.604 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:06:04.921 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:06:05.058 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:07:25.395 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:07:25.508 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:09:00.930 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:09:01.043 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:12:21.639 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:12:21.757 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:14:02.370 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:14:02.507 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:14:57.751 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:14:57.938 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:15:48.201 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:15:48.334 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:18:03.878 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:18:03.985 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:18:29.114 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:18:29.255 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:20:24.725 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:20:24.824 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:27:46.531 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:27:46.645 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:29:27.095 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:29:27.200 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:36:08.755 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:36:08.861 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:38:19.379 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:38:19.489 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:39:29.838 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:39:29.944 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:39:37.821 WARN  [http-nio-8000-exec-6][code_jsp:159] {code="404", msg="JSP file [/guestbookadminportlet/view.jsp] not found", uri=/guestbookadminportlet/view.jsp}
+2023-01-10 11:39:59.702 WARN  [http-nio-8000-exec-4][code_jsp:159] {code="404", msg="JSP file [/guestbookadminportlet/view.jsp] not found", uri=/guestbookadminportlet/view.jsp}
+2023-01-10 11:40:33.254 WARN  [http-nio-8000-exec-6][code_jsp:159] {code="404", msg="JSP file [/guestbookadminportlet/view.jsp] not found", uri=/guestbookadminportlet/view.jsp}
+2023-01-10 11:40:45.711 WARN  [http-nio-8000-exec-5][code_jsp:159] {code="404", msg="JSP file [/guestbookadminportlet/view.jsp] not found", uri=/guestbookadminportlet/view.jsp}
+2023-01-10 11:54:39.690 WARN  [http-nio-8000-exec-6][code_jsp:159] {code="404", msg="JSP file [/guestbookadminportlet/view.jsp] not found", uri=/guestbookadminportlet/view.jsp}
+2023-01-10 11:58:29.050 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:58:29.181 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:59:34.504 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 11:59:34.614 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:02:40.445 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:02:40.550 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:03:35.878 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:03:35.993 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:04:36.273 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:04:36.373 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:20:09.408 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:20:09.509 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:26:51.091 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:26:51.225 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:29:16.826 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:29:16.933 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:30:22.199 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:30:22.336 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:31:42.721 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:31:42.827 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:32:48.082 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:32:48.201 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:33:53.454 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:33:53.646 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:34:28.890 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:34:28.999 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:35:04.230 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:35:04.344 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:37:14.904 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:37:15.033 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:38:05.326 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:38:05.429 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:48:27.681 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:48:27.792 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:56:24.606 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:56:24.721 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:57:04.928 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:57:05.039 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:57:50.319 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:57:50.416 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:59:05.719 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 12:59:05.820 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:02:36.579 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:02:36.681 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:03:16.870 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:03:16.980 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:04:32.364 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:04:32.484 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:06:02.857 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:06:02.974 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:08:28.487 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:08:28.602 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:10:54.209 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:10:54.309 INFO  [Refresh Thread: Equinox Container: 2daeff77-cb03-4778-88dc-5c74469ef03b][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1816]
+2023-01-10 13:43:03.208 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for cstheme2-theme was unregistered
+2023-01-10 13:43:03.241 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2023-01-10 13:43:03.304 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2023-01-10 13:43:03.328 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2023-01-10 13:43:03.352 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2023-01-10 13:43:03.382 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2023-01-10 13:43:03.400 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2023-01-10 13:43:03.420 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2023-01-10 13:43:03.440 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2023-01-10 13:43:03.462 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2023-01-10 13:43:03.483 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered

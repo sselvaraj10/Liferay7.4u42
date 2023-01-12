@@ -1,0 +1,3 @@
+.portlet-navigation .nav-link .layout-logo{max-height:1rem;max-width:2rem}.portlet-navigation .navigation-menu__submenu{cursor:default}.portlet-navigation .navigation-menu__submenu.dropdown-item:hover{background-color:transparent;color:#6b6c7e}.portlet-navigation .nav-pills>li>a{margin-bottom:2px}.portlet-navigation .nav-pills>li>.dropdown-menu{margin-top:0}.split-button-dropdowns{list-style:none;margin:0;padding:0}.split-button-dropdowns>li{display:inline-block;padding-left:2px;padding-right:2px}
+
+/*# sourceMappingURL=main.css.map */

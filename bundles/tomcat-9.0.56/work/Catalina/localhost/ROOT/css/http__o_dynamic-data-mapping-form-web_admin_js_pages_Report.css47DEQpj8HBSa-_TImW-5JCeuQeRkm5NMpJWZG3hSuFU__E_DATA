@@ -1,0 +1,3 @@
+#wrapper .portlet-layout .portlet-body .lfr-ddm__form-report__header .container-fluid-max-xl,#wrapper .portlet-layout .portlet-body .lfr-ddm__form-report__tabs .container-fluid-max-xl{max-width:808px}#wrapper .portlet-layout .portlet-body .lfr-ddm__form-report__cards{max-width:808px}.lfr-ddm__form-report__header{background-color:#fff;height:124px;padding-top:24px}.lfr-ddm__form-report__subtitle{color:#6b6c7e;font-size:14px;font-weight:400}.lfr-ddm__form-report__tabs .nav-item .nav-link{cursor:pointer}.lfr-ddm__form-report__title{font-size:32px;font-weight:600}
+
+/*# sourceMappingURL=Report.css.map */

@@ -1,0 +1,49 @@
+2022-12-16 05:56:43.251 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/398/lib/idea_rt.jar=35991:/snap/intellij-idea-ultimate/398/bin
+2022-12-16 05:56:46.747 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2022-12-16 05:56:52.318 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2022-12-16 05:56:53.021 INFO  [ModuleFramework-Static-Bundles-1][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2022-12-16 05:56:54.732 INFO  [ModuleFramework-Static-Bundles-5][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.document.library.web.jar
+2022-12-16 05:56:54.733 INFO  [ModuleFramework-Static-Bundles-5][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2022-12-16 05:56:54.777 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2022-12-16 05:56:54.777 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2022-12-16 05:57:23.102 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2022-12-16 05:57:23.103 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2022-12-16 05:57:27.716 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2022-12-16 05:57:27.717 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2022-12-16 05:57:27.747 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2022-12-16 05:57:27.748 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 1 ms
+2022-12-16 05:57:27.749 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2022-12-16 05:57:27.790 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 41 ms
+2022-12-16 05:57:27.796 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2022-12-16 05:57:27.797 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 1 ms
+2022-12-16 05:57:28.411 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2022-12-16 05:57:28.459 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 49 ms
+2022-12-16 05:57:32.294 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2022-12-16 05:57:51.555 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9501
+2022-12-16 05:57:58.694 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2022-12-16 05:57:58.712 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2022-12-16 05:57:58.776 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 64 ms
+2022-12-16 05:57:58.872 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2022-12-16 05:57:59.925 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2022-12-16 05:58:38.286 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2022-12-16 05:58:38.475 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2022-12-16 05:58:38.792 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2022-12-16 05:58:38.977 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2022-12-16 05:58:39.208 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2022-12-16 05:58:39.424 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2022-12-16 05:58:39.541 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2022-12-16 05:58:39.660 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2022-12-16 05:58:39.772 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2022-12-16 05:58:39.925 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2022-12-16 05:58:40.310 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for cstheme2-theme is available for use
+2022-12-16 13:25:27.838 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for cstheme2-theme was unregistered
+2022-12-16 13:25:27.871 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2022-12-16 13:25:27.887 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2022-12-16 13:25:27.904 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2022-12-16 13:25:27.918 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2022-12-16 13:25:27.937 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2022-12-16 13:25:27.973 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2022-12-16 13:25:27.994 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2022-12-16 13:25:28.016 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2022-12-16 13:25:28.037 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2022-12-16 13:25:28.057 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered

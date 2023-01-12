@@ -1,0 +1,3 @@
+.select-category-filter{background:#fff;border-bottom:1px solid #dee2e6;margin-bottom:1.5rem;padding:.75rem}.select-category-filter--with-count-feedback{border-bottom:none;margin-bottom:0;padding:1rem}.select-category-count-feedback{align-items:center;background:#b3cdff;display:flex;min-height:40px}.select-category-clear-selected,.select-category-clear-selected:hover{color:#272833}
+
+/*# sourceMappingURL=tree.css.map */

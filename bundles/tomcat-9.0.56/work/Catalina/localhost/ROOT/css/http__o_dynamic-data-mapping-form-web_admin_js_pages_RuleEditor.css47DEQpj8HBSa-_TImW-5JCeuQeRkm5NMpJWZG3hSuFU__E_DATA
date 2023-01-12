@@ -1,0 +1,3 @@
+.form-rule-builder .form-rule-builder-header{margin-bottom:35px;padding:0 68px}.form-rule-builder .form-rule-builder-header h2{font-size:32px;margin:0;padding-top:40px}.form-rule-builder .form-rule-builder-header h2,.form-rule-builder .form-rule-builder-header h4{font-weight:normal}.form-rule-builder .form-rule-builder-footer{margin:3rem 0;padding:12px 68px}.form-rule-builder .form-rule-builder-footer .btn:not(:last-child){margin-right:5px}
+
+/*# sourceMappingURL=RuleEditor.css.map */

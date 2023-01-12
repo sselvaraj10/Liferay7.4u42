@@ -1,0 +1,3 @@
+.form-rule-list h1{font-size:32px;font-weight:300;margin:0;padding-top:40px}.form-rule-list .form-rule-list-col{display:flex;width:max-content}.form-rule-list .form-rule-list-col .form-rule-list-invalid-rule{padding-top:3px}.form-rule-list .list-group{font-size:16px}.form-rule-list .inline-item{max-width:100%}.form-rule-list .inline-item-after{margin-left:.3rem}.form-rule-list .inline-item-before{margin-right:.3rem}.form-rule-list .text-truncate-inline .text-truncate{white-space:normal;word-wrap:break-word}
+
+/*# sourceMappingURL=RuleList.css.map */

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay:com.liferay.registry.api:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.registry.api/1.0.0/617206cab307d903067982024b22365cbbbf40da/com.liferay.registry.api-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.registry.api/1.0.0/3708f9da312c5b1d93ba842c46cafb17d4f785c6/com.liferay.registry.api-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

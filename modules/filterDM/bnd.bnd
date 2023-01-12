@@ -1,0 +1,4 @@
+Bundle-Name: filterDM
+Bundle-SymbolicName: filterdm
+Bundle-Version: 1.0.0
+Export-Package: filterdm.constants

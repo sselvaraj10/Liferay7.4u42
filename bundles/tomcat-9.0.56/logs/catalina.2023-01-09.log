@@ -1,0 +1,4 @@
+09-Jan-2023 05:43:16.773 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [717] milliseconds
+09-Jan-2023 05:45:42.978 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [146198] milliseconds
+09-Jan-2023 08:03:09.385 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1807] milliseconds
+09-Jan-2023 08:05:29.764 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [140365] milliseconds

@@ -1,0 +1,331 @@
+2022-12-05 05:25:37.046 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/398/lib/idea_rt.jar=36861:/snap/intellij-idea-ultimate/398/bin
+2022-12-05 05:25:39.353 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2022-12-05 05:25:42.090 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2022-12-05 05:25:42.499 INFO  [ModuleFramework-Static-Bundles-3][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2022-12-05 05:25:44.036 INFO  [ModuleFramework-Static-Bundles-1][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2022-12-05 05:25:44.118 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2022-12-05 05:25:44.118 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2022-12-05 05:25:57.463 ERROR [Framework Event Dispatcher: Equinox Container: 6b566429-0a1a-4af0-965b-b1580c684632][Framework:56] FrameworkEvent ERROR
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1662) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+2022-12-05 05:25:57.474 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2022-12-05 05:25:57.475 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2022-12-05 05:26:00.252 ERROR [main][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.start(DirectoryWatcher.java:264) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.activator.FileInstallImplBundleActivator.start(FileInstallImplBundleActivator.java:107) [bundleFile:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:449) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:447) [org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._startDynamicBundles(ModuleFrameworkImpl.java:1669) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.startFramework(ModuleFrameworkImpl.java:275) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.startFramework(ModuleFrameworkUtil.java:45) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:287) [portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) [?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2022-12-05 05:26:00.259 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2022-12-05 05:26:00.259 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2022-12-05 05:26:00.276 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2022-12-05 05:26:00.281 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2022-12-05 05:26:00.281 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 1 ms
+2022-12-05 05:26:00.281 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2022-12-05 05:26:00.308 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 27 ms
+2022-12-05 05:26:00.309 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2022-12-05 05:26:00.309 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 1 ms
+2022-12-05 05:26:00.825 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2022-12-05 05:26:00.870 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 44 ms
+2022-12-05 05:26:03.313 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2022-12-05 05:26:14.390 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2022-12-05 05:26:19.935 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2022-12-05 05:26:19.954 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2022-12-05 05:26:19.981 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 26 ms
+2022-12-05 05:26:20.027 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2022-12-05 05:26:20.645 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2022-12-05 05:26:49.416 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2022-12-05 05:26:49.505 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2022-12-05 05:26:49.594 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2022-12-05 05:26:49.690 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2022-12-05 05:26:49.788 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2022-12-05 05:26:49.882 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2022-12-05 05:26:49.986 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2022-12-05 08:53:40.841 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:238] Processing democlassictheme-theme.war
+2022-12-05 08:53:46.242 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:43] Copying themes for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20221205085346192NCRILBZT/democlassictheme-theme.war
+2022-12-05 08:53:46.855 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:50] Themes for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20221205085346192NCRILBZT/democlassictheme-theme.war copied successfully
+2022-12-05 08:53:48.545 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2022-12-05 08:53:48.616 INFO  [fileinstall-directory-watcher][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2022-12-05 08:53:48.658 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED democlassictheme-theme_1.0.0 [1721]
+2022-12-05 08:54:22.851 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:238] Processing demotheme-theme.war
+2022-12-05 08:54:28.885 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:43] Copying themes for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20221205085428877RXGQELQJ/demotheme-theme.war
+2022-12-05 08:54:29.396 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:50] Themes for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20221205085428877RXGQELQJ/demotheme-theme.war copied successfully
+2022-12-05 08:54:30.575 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2022-12-05 08:54:30.639 INFO  [fileinstall-directory-watcher][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2022-12-05 08:54:30.669 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED demotheme-theme_1.0.0 [1722]
+2022-12-05 08:55:07.855 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:238] Processing my-liferay-theme.war
+2022-12-05 08:55:15.904 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:43] Copying themes for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20221205085515897AZDGTSMM/my-liferay-theme.war
+2022-12-05 08:55:16.399 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:50] Themes for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20221205085515897AZDGTSMM/my-liferay-theme.war copied successfully
+2022-12-05 08:55:17.638 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2022-12-05 08:55:17.693 INFO  [fileinstall-directory-watcher][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2022-12-05 08:55:17.731 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED my-liferay-theme_1.0.0 [1723]
+2022-12-05 08:56:18.028 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED themecontributor_1.0.0 [1708]
+2022-12-05 08:56:18.070 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2022-12-05 09:23:59.699 WARN  [http-nio-8080-exec-7][code_jsp:159] {code="404", msg="ProxyServlet: /o/admin-theme/images/language/gu_IN.png", uri=/o/admin-theme/images/language/gu_IN.png}
+2022-12-05 09:24:12.395 WARN  [http-nio-8080-exec-6][code_jsp:159] {code="404", msg="ProxyServlet: /o/admin-theme/images/language/gu_IN.png", uri=/o/admin-theme/images/language/gu_IN.png}
+2022-12-05 09:24:55.899 WARN  [http-nio-8080-exec-10][code_jsp:159] {code="404", msg="ProxyServlet: /o/admin-theme/images/language/gu_IN.png", uri=/o/admin-theme/images/language/gu_IN.png}
+2022-12-05 11:03:58.961 WARN  [http-nio-8080-exec-10][code_jsp:159] {code="404", msg="A class com.liferay.portal.kernel.exception.NoSuchLayoutException error occurred while processing your request", uri=/group/control_panel/manage}
+2022-12-05 12:35:58.340 WARN  [http-nio-8080-exec-2][code_jsp:159] {code="404", msg="ProxyServlet: /o/admin-theme/images/language/gu_IN.png", uri=/o/admin-theme/images/language/gu_IN.png}
+2022-12-05 12:37:34.967 WARN  [http-nio-8080-exec-7][code_jsp:159] {code="404", msg="ProxyServlet: /o/admin-theme/images/language/gu_IN.png", uri=/o/admin-theme/images/language/gu_IN.png}
+2022-12-05 12:55:16.093 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2022-12-05 12:55:16.119 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2022-12-05 12:55:16.138 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2022-12-05 12:55:16.156 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2022-12-05 12:55:16.205 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2022-12-05 12:55:16.222 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2022-12-05 12:55:16.240 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2022-12-05 12:55:16.254 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2022-12-05 12:55:16.271 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2022-12-05 12:55:16.287 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered
+2022-12-05 13:06:53.127 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/398/lib/idea_rt.jar=33769:/snap/intellij-idea-ultimate/398/bin
+2022-12-05 13:06:54.819 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2022-12-05 13:06:57.749 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2022-12-05 13:06:58.408 INFO  [ModuleFramework-Static-Bundles-6][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2022-12-05 13:06:59.270 INFO  [ModuleFramework-Static-Bundles-4][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2022-12-05 13:06:59.556 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2022-12-05 13:06:59.557 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2022-12-05 13:07:12.709 ERROR [Framework Event Dispatcher: Equinox Container: 847c20d3-a078-4229-a647-bdcb927b4dca][Framework:56] FrameworkEvent ERROR
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1662) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+2022-12-05 13:07:12.721 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2022-12-05 13:07:12.721 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2022-12-05 13:07:15.433 ERROR [main][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.start(DirectoryWatcher.java:264) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.activator.FileInstallImplBundleActivator.start(FileInstallImplBundleActivator.java:107) [bundleFile:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:449) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:447) [org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._startDynamicBundles(ModuleFrameworkImpl.java:1669) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.startFramework(ModuleFrameworkImpl.java:275) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.startFramework(ModuleFrameworkUtil.java:45) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:287) [portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) [?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2022-12-05 13:07:15.436 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2022-12-05 13:07:15.436 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2022-12-05 13:07:15.445 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2022-12-05 13:07:15.445 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 0 ms
+2022-12-05 13:07:15.446 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2022-12-05 13:07:15.451 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/modules/assetentry.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: assetentry [1718]_  Unresolved requirement: Import-Package: com.liferay.portal.search.web.internal.result.display.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2022-12-05 13:07:15.461 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 15 ms
+2022-12-05 13:07:15.462 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2022-12-05 13:07:15.462 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 1 ms
+2022-12-05 13:07:15.938 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2022-12-05 13:07:15.992 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 54 ms
+2022-12-05 13:07:18.686 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2022-12-05 13:07:29.427 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2022-12-05 13:07:35.932 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2022-12-05 13:07:35.959 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2022-12-05 13:07:35.987 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 28 ms
+2022-12-05 13:07:36.030 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2022-12-05 13:07:36.536 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2022-12-05 13:08:05.138 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2022-12-05 13:08:05.253 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2022-12-05 13:08:05.420 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2022-12-05 13:08:05.516 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2022-12-05 13:08:05.594 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2022-12-05 13:08:05.692 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2022-12-05 13:08:05.800 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2022-12-05 13:08:05.991 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2022-12-05 13:08:06.086 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2022-12-05 13:08:06.160 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2022-12-05 13:26:41.622 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2022-12-05 13:26:41.660 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2022-12-05 13:26:41.673 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2022-12-05 13:26:41.687 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2022-12-05 13:26:41.703 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2022-12-05 13:26:41.712 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2022-12-05 13:26:41.723 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2022-12-05 13:26:41.734 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2022-12-05 13:26:41.757 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2022-12-05 13:26:41.769 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered

@@ -1,0 +1,3 @@
+.collapsable-panel .collapse-icon-options{position:absolute;right:16px;z-index:auto}.collapsable-panel .collapse-icon-options .ddm-form-field-repeatable-add-button,.collapsable-panel .collapse-icon-options .ddm-form-field-repeatable-delete-button{position:relative;right:0}.collapsable-panel .collapse-icon-options .ddm-form-field-repeatable-delete-button{margin-right:4px !important}.collapsable-panel .collapse-icon-closed.actions,.collapsable-panel .collapse-icon-open.actions{right:0 !important}.collapsable-panel .panel-header{padding:0 0 4px}
+
+/*# sourceMappingURL=Panel.css.map */

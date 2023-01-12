@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.netcracker.cabinet.background.executor.MigrationBackgroundTaskExecutor" immediate="true">
+  <implementation class="com.netcracker.cabinet.background.executor.MigrationBackgroundTaskExecutor"/>
+  <service>
+    <provide interface="com.liferay.portal.kernel.backgroundtask.BackgroundTaskExecutor"/>
+  </service>
+  <property name="background.task.executor.class.name" type="String" value="com.netcracker.cabinet.background.executor.MigrationBackgroundTaskExecutor"/>
+</component>

@@ -1,0 +1,4 @@
+Bundle-Name: DMrenderOverride
+Bundle-SymbolicName: DMrenderOverride
+Bundle-Version: 1.0.0
+Export-Package: DMrenderOverride.constants

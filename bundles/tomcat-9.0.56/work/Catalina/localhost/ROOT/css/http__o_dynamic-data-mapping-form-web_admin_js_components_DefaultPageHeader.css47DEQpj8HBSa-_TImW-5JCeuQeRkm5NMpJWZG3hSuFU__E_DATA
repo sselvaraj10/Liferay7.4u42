@@ -1,0 +1,3 @@
+.lfr-ddm__default-page-header{margin-bottom:2rem}.lfr-ddm__default-page-header-back-button{padding-left:0}.lfr-ddm__default-page-header-back-button:hover{text-decoration:none}.lfr-ddm__default-page-header-description{color:#6b6c7e;font-size:1rem;font-weight:400;line-height:2rem;white-space:pre-wrap;word-wrap:break-word}.lfr-ddm__default-page-header-line{background-color:#cdced9;height:1px}.lfr-ddm__default-page-header-title{color:#272833;font-size:2.25rem;font-weight:600;line-height:4rem;margin:1rem 0;white-space:pre-wrap;word-wrap:break-word}
+
+/*# sourceMappingURL=DefaultPageHeader.css.map */

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/modules" />
+            <option value="$PROJECT_DIR$/modules/AssetEntry" />
+            <option value="$PROJECT_DIR$/modules/BlogMvcContent" />
+            <option value="$PROJECT_DIR$/modules/BlogToolbar" />
+            <option value="$PROJECT_DIR$/modules/CKEditordemo" />
+            <option value="$PROJECT_DIR$/modules/ControlMenuEntryModule" />
+            <option value="$PROJECT_DIR$/modules/CustomRestApi" />
+            <option value="$PROJECT_DIR$/modules/CustomizeLoginPage" />
+            <option value="$PROJECT_DIR$/modules/DMrenderOverride" />
+            <option value="$PROJECT_DIR$/modules/DandMBackup" />
+            <option value="$PROJECT_DIR$/modules/DemoApiModule" />
+            <option value="$PROJECT_DIR$/modules/ExternalDBService" />
+            <option value="$PROJECT_DIR$/modules/ExternalDBService/ExternalDBService-api" />
+            <option value="$PROJECT_DIR$/modules/ExternalDBService/ExternalDBService-service" />
+            <option value="$PROJECT_DIR$/modules/FriendlyUrl" />
+            <option value="$PROJECT_DIR$/modules/JSPHookDemo" />
+            <option value="$PROJECT_DIR$/modules/LangHook" />
+            <option value="$PROJECT_DIR$/modules/LanguageHookDemo" />
+            <option value="$PROJECT_DIR$/modules/LanguageModule" />
+            <option value="$PROJECT_DIR$/modules/LayoutTemplateDemo" />
+            <option value="$PROJECT_DIR$/modules/MVCTask" />
+            <option value="$PROJECT_DIR$/modules/Organization" />
+            <option value="$PROJECT_DIR$/modules/OverrideArticleJSP" />
+            <option value="$PROJECT_DIR$/modules/OverrideJSP" />
+            <option value="$PROJECT_DIR$/modules/OverrideMvcBolg" />
+            <option value="$PROJECT_DIR$/modules/PanelAppDemo" />
+            <option value="$PROJECT_DIR$/modules/PortletProviderDemo" />
+            <option value="$PROJECT_DIR$/modules/Product_Search" />
+            <option value="$PROJECT_DIR$/modules/SearchJSpDM" />
+            <option value="$PROJECT_DIR$/modules/SearchJspforDM" />
+            <option value="$PROJECT_DIR$/modules/SessionPortlet" />
+            <option value="$PROJECT_DIR$/modules/SessionReceiverPortlet" />
+            <option value="$PROJECT_DIR$/modules/ThemeContributor" />
+            <option value="$PROJECT_DIR$/modules/UserApp" />
+            <option value="$PROJECT_DIR$/modules/UserApp/UserApp-api" />
+            <option value="$PROJECT_DIR$/modules/UserApp/UserApp-service" />
+            <option value="$PROJECT_DIR$/modules/UserOneMany" />
+            <option value="$PROJECT_DIR$/modules/UserOneMany/UserOneMany-api" />
+            <option value="$PROJECT_DIR$/modules/UserOneMany/UserOneMany-service" />
+            <option value="$PROJECT_DIR$/modules/UserServiceWrapper" />
+            <option value="$PROJECT_DIR$/modules/admin-notification-master" />
+            <option value="$PROJECT_DIR$/modules/background-task" />
+            <option value="$PROJECT_DIR$/modules/demo" />
+            <option value="$PROJECT_DIR$/modules/entryexport" />
+            <option value="$PROJECT_DIR$/modules/entryexport-web" />
+            <option value="$PROJECT_DIR$/modules/entryexport/entryexport-api" />
+            <option value="$PROJECT_DIR$/modules/entryexport/entryexport-service" />
+            <option value="$PROJECT_DIR$/modules/example-dynamic-include-blogs-master" />
+            <option value="$PROJECT_DIR$/modules/example-portlet-filter-customize-jsp-master" />
+            <option value="$PROJECT_DIR$/modules/filterDM" />
+            <option value="$PROJECT_DIR$/modules/guestbook" />
+            <option value="$PROJECT_DIR$/modules/guestbook-web" />
+            <option value="$PROJECT_DIR$/modules/guestbook/guestbook-api" />
+            <option value="$PROJECT_DIR$/modules/guestbook/guestbook-service" />
+            <option value="$PROJECT_DIR$/modules/liferay-headless-apps" />
+            <option value="$PROJECT_DIR$/modules/liferay-headless-apps/liferay-headless-apps-api" />
+            <option value="$PROJECT_DIR$/modules/liferay-headless-apps/liferay-headless-apps-client" />
+            <option value="$PROJECT_DIR$/modules/liferay-headless-apps/liferay-headless-apps-impl" />
+            <option value="$PROJECT_DIR$/modules/liferay-headless-apps/liferay-headless-apps-test" />
+            <option value="$PROJECT_DIR$/modules/liferay-messagebus-example-master" />
+            <option value="$PROJECT_DIR$/modules/my-ckeditor-fragment" />
+            <option value="$PROJECT_DIR$/modules/myckeditorbutton" />
+            <option value="$PROJECT_DIR$/modules/searchBackupforDM" />
+            <option value="$PROJECT_DIR$/modules/searchProducts" />
+            <option value="$PROJECT_DIR$/modules/site-initializer-brijesh" />
+            <option value="$PROJECT_DIR$/modules/site-initializer-demo" />
+            <option value="$PROJECT_DIR$/modules/site-initializer-welcome222" />
+            <option value="$PROJECT_DIR$/modules/userdemo" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

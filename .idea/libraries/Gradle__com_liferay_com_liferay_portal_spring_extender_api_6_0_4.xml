@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay:com.liferay.portal.spring.extender.api:6.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.spring.extender.api/6.0.4/a120cfd7f2d4c78709ab117a4f088b903503570a/com.liferay.portal.spring.extender.api-6.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.spring.extender.api/6.0.4/844654e5a63c31515ae8247026ebff58dc004b3a/com.liferay.portal.spring.extender.api-6.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

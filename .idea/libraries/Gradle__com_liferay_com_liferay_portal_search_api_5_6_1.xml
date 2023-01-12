@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay:com.liferay.portal.search.api:5.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.search.api/5.6.1/2b422ef94ef801466fa6a9494885f297225768fb/com.liferay.portal.search.api-5.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.search.api/5.6.1/56ea290b1b18acc11de784ff6a89652e0cc5ee1c/com.liferay.portal.search.api-5.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

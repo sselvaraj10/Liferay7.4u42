@@ -1,0 +1,3 @@
+.side-panel-iframe__tabs{background-color:#fff;padding:.5rem 1rem 0}.side-panel-iframe__tabs .nav-link{padding:1rem}.side-panel-content{background-color:#f1f2f5;display:flex;flex-direction:column;justify-content:space-between;overflow:auto}.side-panel-content__body,.side-panel-content__footer{padding:1.5rem}.text-small{color:#a7a9bc !important;font-size:.75rem}
+
+/*# sourceMappingURL=main.css.map */

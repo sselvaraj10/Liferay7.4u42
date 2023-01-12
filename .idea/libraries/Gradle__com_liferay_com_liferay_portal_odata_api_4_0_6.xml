@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay:com.liferay.portal.odata.api:4.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.odata.api/4.0.6/c1da54c7ba39e06611d9f04cd6c737359ce9a129/com.liferay.portal.odata.api-4.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.odata.api/4.0.6/4d0e1faa33888c407226b9d1ac6d6aaa0362ca89/com.liferay.portal.odata.api-4.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

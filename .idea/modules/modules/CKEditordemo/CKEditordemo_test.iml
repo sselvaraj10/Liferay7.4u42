@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":modules:CKEditordemo:test" external.linked.project.path="$MODULE_DIR$/../../../../modules/CKEditordemo" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="LiferayWorkspace.modules" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../../modules/CKEditordemo/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../modules/CKEditordemo/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="CKEditordemo_main" />
+  </component>
+  <component name="TestModuleProperties" production-module="CKEditordemo_main" />
+</module>

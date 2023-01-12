@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/modules/ExternalDBService/ExternalDBService-service/src/main/resources/META-INF/sql/indexes.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/modules/ExternalDBService/ExternalDBService-service/src/main/resources/META-INF/sql/tables.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/modules/UserOneMany/UserOneMany-service/src/main/resources/META-INF/sql/tables.sql" dialect="GenericSQL" />
+  </component>
+</project>

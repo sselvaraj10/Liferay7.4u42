@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":modules:admin-notification-master:main" external.linked.project.path="$MODULE_DIR$/../../../../modules/admin-notification-master" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="LiferayWorkspace.modules" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../../modules/admin-notification-master/src/main/resources/META-INF/resources" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../modules/admin-notification-master/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../modules/admin-notification-master/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../modules/admin-notification-master/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../modules/admin-notification-master/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.liferay.portal:com.liferay.portal.kernel:73.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.liferay.portal:com.liferay.util.taglib:9.2.11" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.portlet:portlet-api:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: jstl:jstl:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.osgi:org.osgi.compendium:5.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.enterprise:cdi-api:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.el:javax.el-api:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.interceptor:javax.interceptor-api:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.inject:javax.inject:1" level="project" />
+  </component>
+</module>

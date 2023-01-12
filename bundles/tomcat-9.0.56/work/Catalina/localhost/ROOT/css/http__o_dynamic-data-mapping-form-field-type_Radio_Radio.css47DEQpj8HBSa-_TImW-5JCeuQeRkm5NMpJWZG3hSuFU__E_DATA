@@ -1,0 +1,3 @@
+.ddm__radio{word-break:break-all}.ddm__radio .custom-control-inline+.custom-control-inline{margin-left:0}.ddm__radio .custom-control:not(:last-child){margin-right:1rem}
+
+/*# sourceMappingURL=Radio.css.map */

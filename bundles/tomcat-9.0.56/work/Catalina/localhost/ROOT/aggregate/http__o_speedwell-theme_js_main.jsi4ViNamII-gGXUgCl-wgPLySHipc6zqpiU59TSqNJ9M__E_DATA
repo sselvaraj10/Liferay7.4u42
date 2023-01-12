@@ -1,0 +1,3 @@
+/*1663103748000*/
+AUI().ready((()=>{const e=window.Speedwell;e&&e.features&&(e.features.sliders=[],"sliderCallbacks"in e.features&&e.features.sliderCallbacks.length&&Liferay.componentReady("SpeedwellSlider").catch((function(){let e=0;return new Promise(((l,r)=>{const s=setInterval((()=>{if(e++,e<=3){const e=Liferay.component("SpeedwellSlider");e&&(clearInterval(s),l(e))}else clearInterval(s),r(new Error("SpeedwellSlider component failed to initialize"))}),333)}))})).then((l=>(e.features.sliderCallbacks.forEach((r=>{e.features.sliders.push(r(l))})),Promise.resolve()))).catch((e=>(console.error(e),Promise.resolve()))).then((()=>{e.features.sliderCallbacks=[]})))}));
+//# sourceMappingURL=main.js.map

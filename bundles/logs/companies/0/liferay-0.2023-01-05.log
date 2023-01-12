@@ -1,0 +1,391 @@
+2023-01-05 05:29:35.892 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/401/lib/idea_rt.jar=46185:/snap/intellij-idea-ultimate/401/bin
+2023-01-05 05:29:39.738 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2023-01-05 05:29:44.073 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2023-01-05 05:29:44.958 INFO  [ModuleFramework-Static-Bundles-4][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2023-01-05 05:29:47.519 INFO  [ModuleFramework-Static-Bundles-5][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.document.library.web.jar
+2023-01-05 05:29:47.520 INFO  [ModuleFramework-Static-Bundles-5][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2023-01-05 05:29:47.632 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2023-01-05 05:29:47.632 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2023-01-05 05:30:13.856 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2023-01-05 05:30:13.857 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2023-01-05 05:30:17.969 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2023-01-05 05:30:17.970 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2023-01-05 05:30:17.988 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2023-01-05 05:30:17.989 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 0 ms
+2023-01-05 05:30:17.989 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2023-01-05 05:30:18.034 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.add" is obsolete
+2023-01-05 05:30:18.035 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.update" is obsolete
+2023-01-05 05:30:18.035 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.translate" is obsolete
+2023-01-05 05:30:18.036 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 47 ms
+2023-01-05 05:30:18.037 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2023-01-05 05:30:18.037 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 0 ms
+2023-01-05 05:30:18.753 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-01-05 05:30:18.828 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 76 ms
+2023-01-05 05:30:22.922 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2023-01-05 05:30:43.691 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9501
+2023-01-05 05:30:51.286 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2023-01-05 05:30:51.306 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-01-05 05:30:51.325 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 19 ms
+2023-01-05 05:30:51.362 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2023-01-05 05:30:51.938 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2023-01-05 05:31:04.572 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2023-01-05 05:31:04.731 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2023-01-05 05:31:04.874 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2023-01-05 05:31:05.009 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2023-01-05 05:31:05.137 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2023-01-05 05:31:05.254 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2023-01-05 05:31:05.388 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2023-01-05 05:31:05.498 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2023-01-05 05:31:05.625 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2023-01-05 05:31:05.748 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2023-01-05 05:31:06.114 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for cstheme2-theme is available for use
+2023-01-05 06:51:50.590 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for cstheme2-theme was unregistered
+2023-01-05 06:51:50.611 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2023-01-05 06:51:50.623 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2023-01-05 06:51:50.635 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2023-01-05 06:51:50.647 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2023-01-05 06:51:50.664 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2023-01-05 06:51:50.739 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2023-01-05 06:51:50.752 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2023-01-05 06:51:50.766 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2023-01-05 06:51:50.778 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2023-01-05 06:51:50.790 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered
+2023-01-05 06:55:23.067 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/401/lib/idea_rt.jar=44767:/snap/intellij-idea-ultimate/401/bin
+2023-01-05 06:55:25.030 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2023-01-05 06:55:30.197 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2023-01-05 06:55:30.674 INFO  [ModuleFramework-Static-Bundles-5][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2023-01-05 06:55:32.436 INFO  [ModuleFramework-Static-Bundles-3][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.document.library.web.jar
+2023-01-05 06:55:32.437 INFO  [ModuleFramework-Static-Bundles-3][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2023-01-05 06:55:33.056 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2023-01-05 06:55:33.057 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2023-01-05 06:55:55.556 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2023-01-05 06:55:55.557 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2023-01-05 06:55:59.645 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2023-01-05 06:55:59.646 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2023-01-05 06:55:59.662 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2023-01-05 06:55:59.668 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 6 ms
+2023-01-05 06:55:59.669 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2023-01-05 06:55:59.698 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.add" is obsolete
+2023-01-05 06:55:59.704 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.update" is obsolete
+2023-01-05 06:55:59.704 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.translate" is obsolete
+2023-01-05 06:55:59.705 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 36 ms
+2023-01-05 06:55:59.706 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2023-01-05 06:55:59.706 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 0 ms
+2023-01-05 06:56:00.406 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-01-05 06:56:00.465 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 59 ms
+2023-01-05 06:56:04.120 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2023-01-05 06:56:21.101 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9501
+2023-01-05 06:56:29.585 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2023-01-05 06:56:29.605 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-01-05 06:56:29.636 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 30 ms
+2023-01-05 06:56:29.688 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2023-01-05 06:56:30.641 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2023-01-05 06:57:07.289 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2023-01-05 06:57:07.451 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2023-01-05 06:57:07.591 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2023-01-05 06:57:07.740 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2023-01-05 06:57:07.932 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2023-01-05 06:57:08.040 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2023-01-05 06:57:08.172 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2023-01-05 06:57:08.297 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2023-01-05 06:57:08.438 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2023-01-05 06:57:08.627 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2023-01-05 06:57:08.926 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for cstheme2-theme is available for use
+2023-01-05 07:25:45.908 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:80] STOPPED com.liferay.login.web_6.0.27 [1106]
+2023-01-05 07:25:46.105 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.login.web_6.0.27 [1106]
+2023-01-05 09:52:17.983 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 09:52:18.112 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 09:59:39.922 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 09:59:40.052 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:08:01.932 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:08:02.039 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:19:49.884 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:19:49.998 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:21:00.334 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:21:00.446 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:24:31.281 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:24:31.391 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:29:07.476 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:29:07.588 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:29:17.698 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:29:17.812 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:30:23.083 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:30:23.323 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:31:33.804 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.service_1.0.0 [1754]
+2023-01-05 10:32:03.971 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1755]
+2023-01-05 10:32:24.216 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1797]
+2023-01-05 10:32:44.622 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.service_1.0.0 [1798]
+2023-01-05 10:33:39.954 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1797]
+2023-01-05 10:33:40.079 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1797]
+2023-01-05 10:34:25.272 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1797]
+2023-01-05 10:34:35.430 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1799]
+2023-01-05 10:35:00.572 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1799]
+2023-01-05 10:35:30.812 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:37:11.209 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:37:11.322 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:38:11.603 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:38:11.735 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:39:31.960 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:39:32.074 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:41:32.536 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:41:32.669 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:47:18.846 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:47:18.964 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:52:25.060 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 10:52:25.179 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:05:18.199 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:05:18.302 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:08:34.144 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:08:34.251 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:09:19.485 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:09:19.588 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:09:54.773 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:09:54.889 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:13:35.779 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:13:35.883 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:16:01.494 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:16:01.593 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:17:06.904 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:17:07.019 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:19:37.733 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:19:37.834 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:24:14.109 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:24:14.220 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 11:56:32.597 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:77] STARTED com.liferaysavvy.messagebus.example_1.0.0 [1801]
+2023-01-05 11:56:32.607 INFO  [fileinstall-directory-watcher][ParellelDestinationConfig:83] Destination is creared ..liferaysavvy/parallel-destination
+2023-01-05 11:56:32.610 INFO  [fileinstall-directory-watcher][ParellelDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-05 11:56:32.612 INFO  [fileinstall-directory-watcher][SerialDestinationConfig:83] Destination is creared ..liferaysavvy/serial-destination
+2023-01-05 11:56:32.614 INFO  [fileinstall-directory-watcher][SerialDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-05 11:56:32.617 INFO  [fileinstall-directory-watcher][SynchronousDestinationConfig:83] Destination is creared ..liferaysavvy/synchronous-destination
+2023-01-05 11:56:32.619 INFO  [fileinstall-directory-watcher][SynchronousDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-05 11:56:32.789 INFO  [fileinstall-directory-watcher][DestinationListenerRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredParallelMessageListener@708037cb
+2023-01-05 11:56:32.790 INFO  [fileinstall-directory-watcher][DestinationListenerRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSerialMessageListener@5d44471b
+2023-01-05 11:56:32.790 INFO  [fileinstall-directory-watcher][DestinationListenerRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSynchronousMessageListener@119dc791
+2023-01-05 11:56:32.793 INFO  [fileinstall-directory-watcher][MessageBusRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredParallelMessageListener@6143a628
+2023-01-05 11:56:32.794 INFO  [fileinstall-directory-watcher][MessageBusRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSerialMessageListener@76dec9e6
+2023-01-05 11:56:32.794 INFO  [fileinstall-directory-watcher][MessageBusRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSynchronousMessageListener@6e639b5e
+2023-01-05 12:39:23.751 INFO  [fileinstall-directory-watcher][MessageBusEventListenerNotification:37] **********Destination Removed***********liferaysavvy/parallel-destination
+2023-01-05 12:39:23.754 INFO  [fileinstall-directory-watcher][DestinationListenerRegistrator:56] Message Listener Unregistered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredParallelMessageListener@708037cb
+2023-01-05 12:39:23.754 INFO  [fileinstall-directory-watcher][DestinationListenerRegistrator:59] Message Listener Unregistered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSerialMessageListener@5d44471b
+2023-01-05 12:39:23.755 INFO  [fileinstall-directory-watcher][DestinationListenerRegistrator:62] Message Listener Unregistered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSynchronousMessageListener@119dc791
+2023-01-05 12:39:23.756 INFO  [fileinstall-directory-watcher][MessageBusEventListenerNotification:37] **********Destination Removed***********liferaysavvy/serial-destination
+2023-01-05 12:39:23.759 INFO  [fileinstall-directory-watcher][MessageBusEventListenerNotification:37] **********Destination Removed***********liferaysavvy/synchronous-destination
+2023-01-05 12:39:23.790 INFO  [fileinstall-directory-watcher][MessageBusRegistrator:55] Message Listener Unregistered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredParallelMessageListener@6143a628
+2023-01-05 12:39:23.790 INFO  [fileinstall-directory-watcher][MessageBusRegistrator:58] Message Listener Unregistered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSerialMessageListener@76dec9e6
+2023-01-05 12:39:23.790 INFO  [fileinstall-directory-watcher][MessageBusRegistrator:61] Message Listener Unregistered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSynchronousMessageListener@6e639b5e
+2023-01-05 12:39:23.791 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferaysavvy.messagebus.example_1.0.0 [1801]
+2023-01-05 12:39:23.908 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferaysavvy.messagebus.example_1.0.0 [1801]
+2023-01-05 12:39:23.913 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][ParellelDestinationConfig:83] Destination is creared ..liferaysavvy/parallel-destination
+2023-01-05 12:39:23.914 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][ParellelDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-05 12:39:23.916 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][SerialDestinationConfig:83] Destination is creared ..liferaysavvy/serial-destination
+2023-01-05 12:39:23.918 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][SerialDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-05 12:39:23.920 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][SynchronousDestinationConfig:83] Destination is creared ..liferaysavvy/synchronous-destination
+2023-01-05 12:39:23.922 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][SynchronousDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-01-05 12:39:23.964 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][DestinationListenerRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredParallelMessageListener@4cd770a3
+2023-01-05 12:39:23.965 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][DestinationListenerRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSerialMessageListener@6e007bd6
+2023-01-05 12:39:23.965 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][DestinationListenerRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSynchronousMessageListener@2edcfd3b
+2023-01-05 12:39:23.968 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][MessageBusRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredParallelMessageListener@5f02fd64
+2023-01-05 12:39:23.968 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][MessageBusRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSerialMessageListener@6167f53d
+2023-01-05 12:39:23.969 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][MessageBusRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSynchronousMessageListener@230505bd
+2023-01-05 12:39:29.030 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 12:39:29.130 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 12:49:06.328 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 12:49:06.432 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 12:49:06.442 ERROR [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][GuestbookAdminPortlet:56] bundle com.liferay.docs.guestbook.portlet:1.0.0 (1800)[com.liferay.docs.guestbook.portlet.portlet.GuestbookAdminPortlet(11384)] :  Error during instantiation of the implementation object
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.apache.felix.scr.impl.inject.ComponentConstructor.newInstance(ComponentConstructor.java:308) ~[bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:278) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:983) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:956) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901) [bundleFile:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212) [org.eclipse.osgi.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:524) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:464) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:624) [org.eclipse.osgi.jar:?]
+	at com.liferay.portal.osgi.web.portlet.tracker.internal.PortletTracker.addingService(PortletTracker.java:130) [bundleFile:?]
+	at com.liferay.portal.osgi.web.portlet.tracker.internal.PortletTracker.addingService(PortletTracker.java:121) [bundleFile:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:903) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) [org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:666) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:432) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:665) [bundleFile:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:339) [bundleFile:?]
+	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:381) [bundleFile:?]
+	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:49) [bundleFile:?]
+	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:263) [bundleFile:?]
+	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196) [bundleFile:?]
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169) [bundleFile:?]
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:49) [bundleFile:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:488) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:1) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:232) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:908) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:137) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:129) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:191) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:467) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.start(ModuleContainer.java:777) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.applyDelta(ModuleContainer.java:768) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolveAndApply(ModuleContainer.java:538) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolve(ModuleContainer.java:484) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.refresh(ModuleContainer.java:1028) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1409) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+Caused by: java.lang.NullPointerException
+	at com.liferay.docs.guestbook.portlet.portlet.GuestbookAdminPortlet.<init>(GuestbookAdminPortlet.java:64) ~[?:?]
+	... 69 more
+2023-01-05 12:49:06.446 ERROR [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][GuestbookAdminPortlet:56] bundle com.liferay.docs.guestbook.portlet:1.0.0 (1800)[com.liferay.docs.guestbook.portlet.portlet.GuestbookAdminPortlet(11384)] :  Error during instantiation of the implementation object
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.apache.felix.scr.impl.inject.ComponentConstructor.newInstance(ComponentConstructor.java:308) ~[bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:278) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:983) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:956) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:756) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:666) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:432) [bundleFile:?]
+	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:665) [bundleFile:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:339) [bundleFile:?]
+	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:381) [bundleFile:?]
+	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:49) [bundleFile:?]
+	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:263) [bundleFile:?]
+	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196) [bundleFile:?]
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169) [bundleFile:?]
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:49) [bundleFile:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:488) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:1) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:232) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:908) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:137) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:129) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:191) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:467) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.start(ModuleContainer.java:777) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.applyDelta(ModuleContainer.java:768) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolveAndApply(ModuleContainer.java:538) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolve(ModuleContainer.java:484) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.refresh(ModuleContainer.java:1028) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1409) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+Caused by: java.lang.NullPointerException
+	at com.liferay.docs.guestbook.portlet.portlet.GuestbookAdminPortlet.<init>(GuestbookAdminPortlet.java:64) ~[?:?]
+	... 43 more
+2023-01-05 12:49:06.446 WARN  [Framework Event Dispatcher: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][Framework:62] FrameworkEvent WARNING
+org.osgi.framework.ServiceException: org.apache.felix.scr.impl.manager.SingleComponentManager.getService() returned a null service object
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:232) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:524) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:464) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:624) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.osgi.web.portlet.tracker.internal.PortletTracker.addingService(PortletTracker.java:130) ~[?:?]
+	at com.liferay.portal.osgi.web.portlet.tracker.internal.PortletTracker.addingService(PortletTracker.java:121) ~[?:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:903) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:666) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:432) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:665) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:339) ~[?:?]
+	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:381) ~[?:?]
+	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:49) ~[?:?]
+	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:263) ~[?:?]
+	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196) ~[?:?]
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169) ~[?:?]
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:49) ~[?:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:488) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:232) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:908) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:230) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:137) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:129) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:191) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:467) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.start(ModuleContainer.java:777) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.applyDelta(ModuleContainer.java:768) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolveAndApply(ModuleContainer.java:538) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolve(ModuleContainer.java:484) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.refresh(ModuleContainer.java:1028) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1409) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+2023-01-05 12:59:39.026 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 12:59:39.125 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 13:39:43.519 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 13:39:43.633 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 13:42:04.275 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 13:42:04.382 INFO  [Refresh Thread: Equinox Container: 8402eac3-09f9-4471-bab2-0bdce8048968][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1800]
+2023-01-05 13:54:57.443 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for cstheme2-theme was unregistered
+2023-01-05 13:54:57.470 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2023-01-05 13:54:57.492 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2023-01-05 13:54:57.510 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2023-01-05 13:54:57.529 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2023-01-05 13:54:57.554 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2023-01-05 13:54:57.570 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2023-01-05 13:54:57.620 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2023-01-05 13:54:57.651 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2023-01-05 13:54:57.677 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2023-01-05 13:54:57.699 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered

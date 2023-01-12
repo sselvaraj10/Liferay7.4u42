@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay:com.liferay.application.list.api:7.3.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.application.list.api/7.3.2/eaae48592b06cf70d0a5a3a1949f96e61b3cc824/com.liferay.application.list.api-7.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.application.list.api/7.3.2/812a8e38bfdbfa9862d996dcb95a549a9f26acb7/com.liferay.application.list.api-7.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

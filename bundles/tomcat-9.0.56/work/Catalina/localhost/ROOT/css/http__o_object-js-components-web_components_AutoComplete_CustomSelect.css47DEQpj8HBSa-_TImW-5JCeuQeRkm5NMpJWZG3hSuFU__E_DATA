@@ -1,0 +1,3 @@
+.custom-select__wrapper{cursor:not-allowed}.custom-select__icon{color:#666}.custom-select__icon--disabled{color:#a7a9bc;cursor:not-allowed}.custom-select__content{display:flex;justify-content:space-between}.custom-select__content--disabled{color:#a7a9bc;pointer-events:none}.label-inside-custom-select{font-size:.625rem !important;height:auto !important;text-transform:uppercase !important}
+
+/*# sourceMappingURL=CustomSelect.css.map */

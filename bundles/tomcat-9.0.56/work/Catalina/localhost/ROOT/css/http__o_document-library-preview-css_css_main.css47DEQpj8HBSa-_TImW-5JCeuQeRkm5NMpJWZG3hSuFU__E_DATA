@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+ * Clay 3.37.0
+ *
+ * SPDX-FileCopyrightText: © 2020 Liferay, Inc. <https://liferay.com>
+ * SPDX-FileCopyrightText: © 2020 Contributors to the project Clay <https://github.com/liferay/clay/graphs/contributors>
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+/**
+ * Bootstrap v4.4.1
+ *
+ * SPDX-FileCopyrightText: © 2019 Twitter, Inc. <https://twitter.com>
+ * SPDX-FileCopyrightText: © 2019 The Bootstrap Authors <https://getbootstrap.com/>
+ *
+ * SPDX-License-Identifier: LicenseRef-MIT-Bootstrap
+ */
+.preview-file {
+  margin: 1.5rem auto;
+  position: relative;
+}
+.preview-file .floating-bar {
+  background: #393a4a;
+  border-radius: 0.25rem;
+  padding: 0 0.25rem;
+}
+.preview-file .floating-bar .floating-bar-input {
+  background-color: #393a4a;
+  color: #cdced9;
+}
+.preview-file .floating-bar .floating-bar-input-wrapper {
+  margin: 0.25rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+}
+.preview-file .btn-floating-bar {
+  background-color: rgba(0, 0, 0, 0.001);
+  border-radius: 0;
+  border-width: 0;
+  color: #cdced9;
+}
+.preview-file .btn-floating-bar.active, .preview-file .btn-floating-bar:hover {
+  color: #fff;
+}
+.preview-file .btn-floating-bar:disabled, .preview-file .btn-floating-bar.disabled {
+  color: #a7a9bc;
+}
+.preview-file .btn-floating-bar-text {
+  font-size: 0.875rem;
+  padding: 0.5rem;
+}
+.preview-file .separator-floating-bar {
+  background: #272833;
+  margin: 0 0.5rem;
+  min-height: 100%;
+  width: 1px;
+}
+.preview-file .preview-file-container {
+  overflow: auto;
+  position: relative;
+  text-align: center;
+}
+.preview-file .preview-file-container.preview-file-max-height {
+  height: 624px;
+}
+.preview-file .preview-file-loader {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50);
+}
+.preview-file .preview-toolbar-container {
+  bottom: 0;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

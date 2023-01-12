@@ -1,0 +1,6 @@
+Bundle-Name: Jay Jiyani
+Bundle-SymbolicName: com.liferay.site.initializer.jay
+Bundle-Version: 1.0.4
+Liferay-Site-Initializer-Name: Jay Jiyani
+Provide-Capability: liferay.site.initializer
+Web-ContextPath: /site-initializer

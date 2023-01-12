@@ -1,0 +1,3 @@
+body.has-control-menu .portlet-journal .multi-panel-sidebar{top:158px}@media(min-width: 576px){body.has-control-menu .portlet-journal .multi-panel-sidebar{top:166px}}@media(min-width: 992px){body.has-control-menu .portlet-journal .multi-panel-sidebar{top:120px}}
+
+/*# sourceMappingURL=ddm_form.css.map */

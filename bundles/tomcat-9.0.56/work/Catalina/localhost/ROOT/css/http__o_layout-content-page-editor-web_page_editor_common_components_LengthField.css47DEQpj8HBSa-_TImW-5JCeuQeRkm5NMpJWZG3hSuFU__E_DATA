@@ -1,0 +1,3 @@
+html:not(#__):not(#___) .cadmin .page-editor__length-field__button.btn{border-bottom-left-radius:0;border-top-left-radius:0;font-size:.75rem;min-width:45px}html:not(#__):not(#___) .cadmin .page-editor__length-field__dropdown{min-width:96px}html:not(#__):not(#___) .cadmin .page-editor__length-field__dropdown .dropdown-item{font-size:.75rem}
+
+/*# sourceMappingURL=LengthField.css.map */
