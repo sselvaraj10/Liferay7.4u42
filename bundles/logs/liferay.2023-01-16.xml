@@ -1,0 +1,10 @@
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1673849948571" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/401/lib/idea_rt.jar=34797:/snap/intellij-idea-ultimate/401/bin]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="123"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1673849955391" level="INFO" thread="main">
+<log4j:message><![CDATA[Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="153"/>
+</log4j:event>
+

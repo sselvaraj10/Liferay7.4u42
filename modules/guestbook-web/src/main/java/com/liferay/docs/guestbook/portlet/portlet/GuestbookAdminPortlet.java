@@ -30,6 +30,7 @@ import javax.portlet.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -157,17 +158,50 @@ public class GuestbookAdminPortlet extends MVCPortlet {
         public String exportData(ActionRequest request,ActionResponse response)
         {
                 System.out.println("Hello Export");
+                String userId = ParamUtil.getString(request, "UserId");
+            System.out.println("u: "+userId);
+                String groupId = ParamUtil.getString(request, "GroupId");
+                String name = ParamUtil.getString(request, "Name");
+                String userName = ParamUtil.getString(request, "UserName");
+                String createdDate = ParamUtil.getString(request, "Created Date");
+
+
                 ThemeDisplay themeDisplay  =(ThemeDisplay)request.getAttribute(WebKeys.THEME_DISPLAY);
                 ServiceContext serviceContext = null;
                 try {
                         serviceContext = ServiceContextFactory.getInstance(
                                 Entry.class.getName(), request);
-
+                       List<String> data = new ArrayList<String>();
                         Map<String, Serializable> taskContextMap = new HashMap<>();
-                        taskContextMap.put("companyId", themeDisplay.getCompanyId());
-                        taskContextMap.put("language", themeDisplay.getLanguageId());
-                        taskContextMap.put("groupId", themeDisplay.getScopeGroupId());
+                        if(userId!=null)
+                        {
+                                data.add(userId);
+                                System.out.println("Userid: "+userId);
+                        }
+                        if (groupId!=null) {
+                                data.add(groupId);
+                                System.out.println("groupId: "+groupId);
+                        }
+                        if (name!=null) {
+                                data.add(name);
+                                System.out.println("Name: "+name);
+                        }
+                        if (userName!=null) {
+                                data.add(userName);
+                                System.out.println("useername: "+userName);
+                        }
+                       if (createdDate!=null) {
+                                data.add(createdDate);
+                                System.out.println("useername: "+createdDate);
+
+                        }
+//                        else {
+//                                taskContextMap.put("companyId", themeDisplay.getCompanyId());
+//                                taskContextMap.put("language", themeDisplay.getLanguageId());
+//                                taskContextMap.put("groupId", themeDisplay.getScopeGroupId());
+//                        }
                         System.out.println("asas");
+                        taskContextMap.put("data", (Serializable) data);
                         BackgroundTask backgroundTask = BackgroundTaskManagerUtil.addBackgroundTask(themeDisplay.getUserId(),
                                 themeDisplay.getScopeGroupId(), GuestbookEntryBackgroundTaskExecutor.class.getName(), GuestbookEntryBackgroundTaskExecutor.class.getName(), taskContextMap, serviceContext);
 

@@ -44,17 +44,8 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(10);
+    _jspx_dependants = new java.util.ArrayList<String>(1);
     _jspx_dependants.add("/guestbookadminportlet/../init.jsp");
-    _jspx_dependants.add("/META-INF/c.tld");
-    _jspx_dependants.add("/META-INF/liferay-portlet_2_0.tld");
-    _jspx_dependants.add("/META-INF/liferay-aui.tld");
-    _jspx_dependants.add("/META-INF/liferay-portlet-ext.tld");
-    _jspx_dependants.add("/META-INF/liferay-theme.tld");
-    _jspx_dependants.add("/META-INF/liferay-ui.tld");
-    _jspx_dependants.add("/META-INF/resources/WEB-INF/liferay-frontend.tld");
-    _jspx_dependants.add("/META-INF/liferay-security.tld");
-    _jspx_dependants.add("/META-INF/resources/WEB-INF/liferay-clay.tld");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -256,11 +247,7 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_portlet_actionURL_0.release();
       java.lang.String exporting = null;
       exporting = (java.lang.String) _jspx_page_context.findAttribute("exporting");
-      out.write("\n");
-      out.write("\n");
-      out.write("hellojxnsjnjsnxj\n");
-      out.write("\n");
-      out.write("\n");
+      out.write('\n');
       out.write('\n');
       //  aui:button
       com.liferay.taglib.aui.ButtonTag _jspx_th_aui_button_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ButtonTag.class) : new com.liferay.taglib.aui.ButtonTag();
@@ -276,16 +263,7 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_button_0);
       _jspx_th_aui_button_0.release();
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      if (_jspx_meth_liferay$1ui_success_3(_jspx_page_context))
-        return;
       out.write('\n');
       //  portlet:renderURL
       com.liferay.taglib.portlet.RenderURLTag _jspx_th_portlet_renderURL_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.RenderURLTag.class) : new com.liferay.taglib.portlet.RenderURLTag();
@@ -338,11 +316,8 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       if (_jspx_meth_aui_button_1(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\n");
-      out.write("<div id=\"popup_id\">\n");
-      out.write("  Click here\n");
-      out.write("</div>\n");
+      out.write('\n');
+      out.write('\n');
       //  aui:script
       com.liferay.taglib.aui.ScriptTag _jspx_th_aui_script_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ScriptTag.class) : new com.liferay.taglib.aui.ScriptTag();
       _jspx_th_aui_script_0.setPageContext(_jspx_page_context);
@@ -357,37 +332,25 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
         do {
           out.write("\n");
-          out.write("  A.one('#popup_id').on('click', function(event) {\n");
-          out.write("  Liferay.Util.openWindow({ dialog: {\n");
-          out.write("  centered: true,\n");
-          out.write("  height: 750,\n");
-          out.write("  modal: true,\n");
-          out.write("  width: 800,\n");
-          out.write("  destroyOnHide: true,\n");
-          out.write("\n");
-          out.write("  },\n");
-          out.write("  id: '");
+          out.write("  A.one('#");
           if (_jspx_meth_portlet_namespace_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_aui_script_0, _jspx_page_context))
             return;
-          out.write("dialog',\n");
-          out.write("  title: 'Guestbook - Export',\n");
-          out.write("  uri: '");
-          out.print(popupUrl);
-          out.write("'\n");
+          out.write("popup_id').on('click', function(event) {\n");
+          out.write("    Liferay.Util.openWindow({\n");
+          out.write("      dialog: {\n");
+          out.write("          centered: true,\n");
+          out.write("          height: 750,\n");
+          out.write("          modal: true,\n");
+          out.write("          width: 800,\n");
+          out.write("          destroyOnHide: true\n");
+          out.write("      },\n");
+          out.write("      id: 'dialog',\n");
+          out.write("      title: \"Guestbook - Export\",\n");
+          out.write("      uri: \"");
+          out.print(popupUrl.toString());
+          out.write(">\"\n");
+          out.write("    });\n");
           out.write("  });\n");
-          out.write("  });\n");
-          out.write("\n");
-          out.write("  Liferay.provide(\n");
-          out.write("  window,\n");
-          out.write("  'closePopup',\n");
-          out.write("  function(popupId) {\n");
-          out.write("\n");
-          out.write("  var dialog = Liferay.Util.getWindow(popupId);\n");
-          out.write("  dialog.destroy();\n");
-          out.write("  },\n");
-          out.write("  ['aui-base','aui-dialog','aui-dialog-iframe']\n");
-          out.write("  );\n");
-          out.write("\n");
           int evalDoAfterBody = _jspx_th_aui_script_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -402,10 +365,47 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_0);
       _jspx_th_aui_script_0.release();
+      out.write('\n');
+      out.write('\n');
+      if (_jspx_meth_aui_script_1(_jspx_page_context))
+        return;
+      out.write('\n');
+      if (_jspx_meth_aui_script_2(_jspx_page_context))
+        return;
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("<button onClick=\"window.open('/guestbookadminportlet/view.jsp','mywindow','width=500,height=350,toolbar=no,resizable=yes')\">Export Data Pop up</button>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       //  liferay-ui:search-container
       com.liferay.taglib.ui.SearchContainerTag _jspx_th_liferay$1ui_search$1container_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.ui.SearchContainerTag.class) : new com.liferay.taglib.ui.SearchContainerTag();
       _jspx_th_liferay$1ui_search$1container_0.setPageContext(_jspx_page_context);
@@ -658,27 +658,6 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_liferay$1ui_success_3(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  liferay-ui:success
-    com.liferay.taglib.ui.SuccessTag _jspx_th_liferay$1ui_success_3 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.ui.SuccessTag.class) : new com.liferay.taglib.ui.SuccessTag();
-    _jspx_th_liferay$1ui_success_3.setPageContext(_jspx_page_context);
-    _jspx_th_liferay$1ui_success_3.setParent(null);
-    _jspx_th_liferay$1ui_success_3.setKey("success");
-    _jspx_th_liferay$1ui_success_3.setMessage("Your Action Completed Successfully...");
-    int _jspx_eval_liferay$1ui_success_3 = _jspx_th_liferay$1ui_success_3.doStartTag();
-    if (_jspx_th_liferay$1ui_success_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1ui_success_3);
-      _jspx_th_liferay$1ui_success_3.release();
-      return true;
-    }
-    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1ui_success_3);
-    _jspx_th_liferay$1ui_success_3.release();
-    return false;
-  }
-
   private boolean _jspx_meth_portlet_param_0(javax.servlet.jsp.tagext.JspTag _jspx_th_portlet_renderURL_0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -729,9 +708,9 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
     com.liferay.taglib.aui.ButtonTag _jspx_th_aui_button_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ButtonTag.class) : new com.liferay.taglib.aui.ButtonTag();
     _jspx_th_aui_button_1.setPageContext(_jspx_page_context);
     _jspx_th_aui_button_1.setParent(null);
-    _jspx_th_aui_button_1.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${popupUrl}", java.lang.String.class, (PageContext)_jspx_page_context, null));
     _jspx_th_aui_button_1.setUseDialog(true);
-    _jspx_th_aui_button_1.setValue("Open Popup Using useDialog");
+    _jspx_th_aui_button_1.setId("popup_id");
+    _jspx_th_aui_button_1.setValue("Export Popup");
     int _jspx_eval_aui_button_1 = _jspx_th_aui_button_1.doStartTag();
     if (_jspx_th_aui_button_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_button_1);
@@ -759,6 +738,111 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_namespace_0);
     _jspx_th_portlet_namespace_0.release();
+    return false;
+  }
+
+  private boolean _jspx_meth_aui_script_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  aui:script
+    com.liferay.taglib.aui.ScriptTag _jspx_th_aui_script_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ScriptTag.class) : new com.liferay.taglib.aui.ScriptTag();
+    _jspx_th_aui_script_1.setPageContext(_jspx_page_context);
+    _jspx_th_aui_script_1.setParent(null);
+    int _jspx_eval_aui_script_1 = _jspx_th_aui_script_1.doStartTag();
+    if (_jspx_eval_aui_script_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      if (_jspx_eval_aui_script_1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+        out = _jspx_page_context.pushBody();
+        _jspx_th_aui_script_1.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+        _jspx_th_aui_script_1.doInitBody();
+      }
+      do {
+        out.write("\n");
+        out.write("  Liferay.provide(window, 'refreshPortlet', function() {\n");
+        out.write("  var curPortlet = '#p_p_id");
+        if (_jspx_meth_portlet_namespace_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_aui_script_1, _jspx_page_context))
+          return true;
+        out.write("';\n");
+        out.write("  Liferay.Portlet.refresh(curPortlet);\n");
+        out.write("  },\n");
+        out.write("  ['aui-dialog','aui-dialog-iframe']\n");
+        out.write("  );\n");
+        int evalDoAfterBody = _jspx_th_aui_script_1.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+      if (_jspx_eval_aui_script_1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
+        out = _jspx_page_context.popBody();
+    }
+    if (_jspx_th_aui_script_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_1);
+      _jspx_th_aui_script_1.release();
+      return true;
+    }
+    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_1);
+    _jspx_th_aui_script_1.release();
+    return false;
+  }
+
+  private boolean _jspx_meth_portlet_namespace_1(javax.servlet.jsp.tagext.JspTag _jspx_th_aui_script_1, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  portlet:namespace
+    com.liferay.taglib.portlet.NamespaceTag _jspx_th_portlet_namespace_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.NamespaceTag.class) : new com.liferay.taglib.portlet.NamespaceTag();
+    _jspx_th_portlet_namespace_1.setPageContext(_jspx_page_context);
+    _jspx_th_portlet_namespace_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_script_1);
+    int _jspx_eval_portlet_namespace_1 = _jspx_th_portlet_namespace_1.doStartTag();
+    if (_jspx_th_portlet_namespace_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_namespace_1);
+      _jspx_th_portlet_namespace_1.release();
+      return true;
+    }
+    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_namespace_1);
+    _jspx_th_portlet_namespace_1.release();
+    return false;
+  }
+
+  private boolean _jspx_meth_aui_script_2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  aui:script
+    com.liferay.taglib.aui.ScriptTag _jspx_th_aui_script_2 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ScriptTag.class) : new com.liferay.taglib.aui.ScriptTag();
+    _jspx_th_aui_script_2.setPageContext(_jspx_page_context);
+    _jspx_th_aui_script_2.setParent(null);
+    int _jspx_eval_aui_script_2 = _jspx_th_aui_script_2.doStartTag();
+    if (_jspx_eval_aui_script_2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      if (_jspx_eval_aui_script_2 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+        out = _jspx_page_context.pushBody();
+        _jspx_th_aui_script_2.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+        _jspx_th_aui_script_2.doInitBody();
+      }
+      do {
+        out.write("\n");
+        out.write("  Liferay.provide(window, 'closePopup', function(dialogId) {\n");
+        out.write("\n");
+        out.write("            var A = AUI();\n");
+        out.write("\n");
+        out.write("            var dialog = Liferay.Util.Window.getById(dialogId);\n");
+        out.write("            dialog.destroy();\n");
+        out.write("          },\n");
+        out.write("          ['liferay-util-window']\n");
+        out.write("  );\n");
+        int evalDoAfterBody = _jspx_th_aui_script_2.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+      if (_jspx_eval_aui_script_2 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
+        out = _jspx_page_context.popBody();
+    }
+    if (_jspx_th_aui_script_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_2);
+      _jspx_th_aui_script_2.release();
+      return true;
+    }
+    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_2);
+    _jspx_th_aui_script_2.release();
     return false;
   }
 

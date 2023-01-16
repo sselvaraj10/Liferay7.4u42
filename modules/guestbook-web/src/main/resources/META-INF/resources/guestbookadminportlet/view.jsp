@@ -7,20 +7,9 @@
 
 <portlet:actionURL name="exportData" var="exporting" />
 
-hellojxnsjnjsnxj
-
-
-<%--<portlet:resourceURL  var="exportDataUrl" ><portlet:param name="exportCSVData" value="exportCSVData"/></portlet:resourceURL>--%>
 <aui:button onClick="<%= exporting.toString() %>"
             value="Export Data" />
 
-
-
-<%--<portlet:renderURL var="secondJspURL" windowState="<%=LiferayWindowState.POP_UP.toString()%>">--%>
-<%--  <portlet:param name="mvcPath" value="/guestbookadminportlet/view.jsp"/>--%>
-<%--</portlet:renderURL>--%>
-
-<liferay-ui:success key="success" message="Your Action Completed Successfully..."/>
 <portlet:renderURL var="secondJspURL" windowState="<%=LiferayWindowState.POP_UP.toString()%>">
   <portlet:param name="mvcPath"
                  value="view.jsp" />
@@ -29,42 +18,77 @@ hellojxnsjnjsnxj
 <portlet:renderURL var="popupUrl" windowState="<%=LiferayWindowState.POP_UP.toString() %>">
   <portlet:param name="mvcPath" value="/guestbookadminportlet/export.jsp"/>
 </portlet:renderURL>
-<aui:button href="${popupUrl}" useDialog="true"  value="Open Popup Using useDialog" />
+<aui:button useDialog="true" id="popup_id"   value="Export Popup" />
 
-<div id="popup_id">
-  Click here
-</div>
 <aui:script use="liferay-util-window">
-  A.one('#popup_id').on('click', function(event) {
-  Liferay.Util.openWindow({ dialog: {
-  centered: true,
-  height: 750,
-  modal: true,
-  width: 800,
-  destroyOnHide: true,
-
-  },
-  id: '<portlet:namespace />dialog',
-  title: 'Guestbook - Export',
-  uri: '<%=popupUrl%>'
+  A.one('#<portlet:namespace />popup_id').on('click', function(event) {
+    Liferay.Util.openWindow({
+      dialog: {
+          centered: true,
+          height: 750,
+          modal: true,
+          width: 800,
+          destroyOnHide: true
+      },
+      id: 'dialog',
+      title: "Guestbook - Export",
+      uri: "<%=popupUrl.toString()%>>"
+    });
   });
-  });
-
-  Liferay.provide(
-  window,
-  'closePopup',
-  function(popupId) {
-
-  var dialog = Liferay.Util.getWindow(popupId);
-  dialog.destroy();
-  },
-  ['aui-base','aui-dialog','aui-dialog-iframe']
-  );
-
 </aui:script>
 
+<aui:script>
+  Liferay.provide(window, 'refreshPortlet', function() {
+  var curPortlet = '#p_p_id<portlet:namespace />';
+  Liferay.Portlet.refresh(curPortlet);
+  },
+  ['aui-dialog','aui-dialog-iframe']
+  );
+</aui:script>
+<aui:script>
+  Liferay.provide(window, 'closePopup', function(dialogId) {
 
-<button onClick="window.open('/guestbookadminportlet/view.jsp','mywindow','width=500,height=350,toolbar=no,resizable=yes')">Export Data Pop up</button>
+            var A = AUI();
+
+            var dialog = Liferay.Util.Window.getById(dialogId);
+            dialog.destroy();
+          },
+          ['liferay-util-window']
+  );
+</aui:script>
+<%--<aui:script use="liferay-util-window">--%>
+<%--  A.one('#popup_id').on('click', function(event) {--%>
+<%--  Liferay.Util.openWindow({ dialog: {--%>
+<%--  centered: true,--%>
+<%--  height: 750,--%>
+<%--  modal: true,--%>
+<%--  width: 800,--%>
+<%--  destroyOnHide: true,--%>
+
+<%--  },--%>
+<%--  id: '<portlet:namespace />dialog',--%>
+<%--  title: 'Guestbook - Export',--%>
+<%--  uri: '<%=popupUrl%>'--%>
+<%--  });--%>
+<%--  });--%>
+
+<%--  Liferay.provide(--%>
+<%--  window,--%>
+<%--  'closePopup',--%>
+<%--  function(popupId) {--%>
+
+<%--  var dialog = Liferay.Util.getWindow(popupId);--%>
+<%--  dialog.destroy();--%>
+<%--  },--%>
+<%--  ['aui-base','aui-dialog','aui-dialog-iframe','liferay-util-window']--%>
+<%--  );--%>
+
+<%--</aui:script>--%>
+
+
+<%--<button onClick="window.open('/guestbookadminportlet/view.jsp','mywindow','width=500,height=350,toolbar=no,resizable=yes')">Export Data Pop up</button>--%>
+
+
 <liferay-ui:search-container
         total="<%= GuestbookLocalServiceUtil.getGuestbooksCount(scopeGroupId) %>">
   <liferay-ui:search-container-results

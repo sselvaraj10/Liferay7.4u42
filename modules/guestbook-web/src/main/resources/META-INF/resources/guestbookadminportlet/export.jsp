@@ -1,3 +1,4 @@
+<%@ taglib prefix="liferay-product-navigation" uri="http://liferay.com/tld/product-navigation" %>
 <%@include file="../init.jsp"%>
 <style>
     .form-dg{
@@ -6,10 +7,9 @@
     }
 
 </style>
-<portlet:renderURL var="viewURL">
-    <portlet:param name="mvcPath" value="/guestbookadminportlet/view.jsp" />
-</portlet:renderURL>
-
+<liferay-product-navigation:personal-menu
+        expanded="<%= true %>"
+/>
 <portlet:actionURL name="exportData" var="exporting" />
 
 <aui:form name="fmExport" id="fmID" cssClass="form-dg" method="POST" action="<%=exporting.toString()%>">
@@ -27,10 +27,10 @@
                                  label="GuestbookId" />
                        <aui:input type="checkbox" name="Name" label="Name"
                                  value="Name" />
-                    <aui:input type="checkbox" name="GroupId" label="UserName"
-                               value="GroupId" />
-                    <aui:input type="checkbox" name="GroupId" label="Created Date"
-                               value="GroupId" />
+                    <aui:input type="checkbox" name="UserName" label="UserName"
+                               value="UserName" />
+                    <aui:input type="checkbox" name="Created Date" label="Created Date"
+                               value="Created Date" />
                 </aui:fieldset>
             </aui:fieldset-group>
         </aui:col>
@@ -38,12 +38,37 @@
     </aui:row>
     <aui:button-row>
 
-        <aui:button name="submitButton"  id="export" value="Export" type="submit"/>
-        <aui:button id="closePopup" name="closeDialog" type="cancel"  />
-<%--        <aui:button onClick="<%= viewURL %>" type="cancel"  />--%>
+        <aui:button name="submitButton" value="Export" type="submit"/>
+        <aui:button name="closeDialog" type="cancel" />
 
     </aui:button-row>
 </aui:form>
+
+
+<aui:script use="aui-base,aui-io-request">
+    A.one('#<portlet:namespace />submitButton').on('click', function(event) {
+    var A = AUI();
+    var url = '<%=exporting.toString()%>';
+    A.io.request(
+    url,
+    {
+    method: 'POST',
+    on: {
+    success: function() {
+    Liferay.Util.getOpener().refreshPortlet();
+    Liferay.Util.getOpener().closePopup('dialog');
+    }
+    }
+    }
+    );
+    });
+</aui:script>
+<aui:script use="aui-base">
+    A.one('#<portlet:namespace />closeDialog').on('click', function(event) {
+    Liferay.Util.getOpener().closePopup('dialog');
+    });
+</aui:script>
+
 <%--<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>--%>
 <%--<script>--%>
 
@@ -171,3 +196,15 @@
 <%--    Liferay.Util.getOpener().closePopup('dialog');--%>
 <%--    });--%>
 <%--</aui:script>--%>
+
+
+
+<%--<aui:form action="<%=exporting.toString()%>" method="POST" name="fmUpdateState">--%>
+<%--    <aui:fieldset>--%>
+<%--   hellodata--%>
+<%--    </aui:fieldset>--%>
+<%--    <aui:button-row>--%>
+<%--        <aui:button name="saveForm" value="Opslaan" />--%>
+<%--        <aui:button name="closeDialog" type="cancel" />--%>
+<%--    </aui:button-row>--%>
+<%--</aui:form>--%>

@@ -43,7 +43,8 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants = new java.util.ArrayList<String>(2);
+    _jspx_dependants.add("/META-INF/resources/WEB-INF/liferay-product-navigation.tld");
     _jspx_dependants.add("/guestbookadminportlet/../init.jsp");
   }
 
@@ -77,6 +78,7 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write('\n');
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -225,29 +227,19 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    }\n");
       out.write("\n");
       out.write("</style>\n");
-      //  portlet:renderURL
-      com.liferay.taglib.portlet.RenderURLTag _jspx_th_portlet_renderURL_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.RenderURLTag.class) : new com.liferay.taglib.portlet.RenderURLTag();
-      _jspx_th_portlet_renderURL_0.setPageContext(_jspx_page_context);
-      _jspx_th_portlet_renderURL_0.setParent(null);
-      _jspx_th_portlet_renderURL_0.setVar("viewURL");
-      int _jspx_eval_portlet_renderURL_0 = _jspx_th_portlet_renderURL_0.doStartTag();
-      if (_jspx_eval_portlet_renderURL_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        out.write("\n");
-        out.write("    ");
-        if (_jspx_meth_portlet_param_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_portlet_renderURL_0, _jspx_page_context))
-          return;
-        out.write('\n');
-      }
-      if (_jspx_th_portlet_renderURL_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_0);
-        _jspx_th_portlet_renderURL_0.release();
+      //  liferay-product-navigation:personal-menu
+      com.liferay.product.navigation.taglib.servlet.taglib.ProductNavigationPersonalMenuTag _jspx_th_liferay$1product$1navigation_personal$1menu_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.product.navigation.taglib.servlet.taglib.ProductNavigationPersonalMenuTag.class) : new com.liferay.product.navigation.taglib.servlet.taglib.ProductNavigationPersonalMenuTag();
+      _jspx_th_liferay$1product$1navigation_personal$1menu_0.setPageContext(_jspx_page_context);
+      _jspx_th_liferay$1product$1navigation_personal$1menu_0.setParent(null);
+      _jspx_th_liferay$1product$1navigation_personal$1menu_0.setExpanded( true );
+      int _jspx_eval_liferay$1product$1navigation_personal$1menu_0 = _jspx_th_liferay$1product$1navigation_personal$1menu_0.doStartTag();
+      if (_jspx_th_liferay$1product$1navigation_personal$1menu_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1product$1navigation_personal$1menu_0);
+        _jspx_th_liferay$1product$1navigation_personal$1menu_0.release();
         return;
       }
-      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_0);
-      _jspx_th_portlet_renderURL_0.release();
-      java.lang.String viewURL = null;
-      viewURL = (java.lang.String) _jspx_page_context.findAttribute("viewURL");
-      out.write('\n');
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1product$1navigation_personal$1menu_0);
+      _jspx_th_liferay$1product$1navigation_personal$1menu_0.release();
       out.write('\n');
       //  portlet:actionURL
       com.liferay.taglib.portlet.ActionURLTag _jspx_th_portlet_actionURL_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.ActionURLTag.class) : new com.liferay.taglib.portlet.ActionURLTag();
@@ -295,58 +287,60 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_form_0);
       _jspx_th_aui_form_0.release();
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      //  aui:script
+      com.liferay.taglib.aui.ScriptTag _jspx_th_aui_script_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ScriptTag.class) : new com.liferay.taglib.aui.ScriptTag();
+      _jspx_th_aui_script_0.setPageContext(_jspx_page_context);
+      _jspx_th_aui_script_0.setParent(null);
+      _jspx_th_aui_script_0.setUse("aui-base,aui-io-request");
+      int _jspx_eval_aui_script_0 = _jspx_th_aui_script_0.doStartTag();
+      if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+          out = _jspx_page_context.pushBody();
+          _jspx_th_aui_script_0.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+          _jspx_th_aui_script_0.doInitBody();
+        }
+        do {
+          out.write("\n");
+          out.write("    A.one('#");
+          if (_jspx_meth_portlet_namespace_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_aui_script_0, _jspx_page_context))
+            return;
+          out.write("submitButton').on('click', function(event) {\n");
+          out.write("    var A = AUI();\n");
+          out.write("    var url = '");
+          out.print(exporting.toString());
+          out.write("';\n");
+          out.write("    A.io.request(\n");
+          out.write("    url,\n");
+          out.write("    {\n");
+          out.write("    method: 'POST',\n");
+          out.write("    on: {\n");
+          out.write("    success: function() {\n");
+          out.write("    Liferay.Util.getOpener().refreshPortlet();\n");
+          out.write("    Liferay.Util.getOpener().closePopup('dialog');\n");
+          out.write("    }\n");
+          out.write("    }\n");
+          out.write("    }\n");
+          out.write("    );\n");
+          out.write("    });\n");
+          int evalDoAfterBody = _jspx_th_aui_script_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+        if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
+          out = _jspx_page_context.popBody();
+      }
+      if (_jspx_th_aui_script_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_0);
+        _jspx_th_aui_script_0.release();
+        return;
+      }
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_0);
+      _jspx_th_aui_script_0.release();
       out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      if (_jspx_meth_aui_script_0(_jspx_page_context))
+      if (_jspx_meth_aui_script_1(_jspx_page_context))
         return;
       out.write('\n');
       out.write('\n');
@@ -375,6 +369,23 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       out.write('\n');
       out.write('\n');
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
       out.write('\n');
       out.write('\n');
@@ -410,6 +421,59 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       out.write('\n');
       out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write('\n');
       out.write('\n');
       out.write('\n');
@@ -430,27 +494,6 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
-  }
-
-  private boolean _jspx_meth_portlet_param_0(javax.servlet.jsp.tagext.JspTag _jspx_th_portlet_renderURL_0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  portlet:param
-    com.liferay.taglib.util.ParamTag _jspx_th_portlet_param_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.util.ParamTag.class) : new com.liferay.taglib.util.ParamTag();
-    _jspx_th_portlet_param_0.setPageContext(_jspx_page_context);
-    _jspx_th_portlet_param_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_portlet_renderURL_0);
-    _jspx_th_portlet_param_0.setName("mvcPath");
-    _jspx_th_portlet_param_0.setValue("/guestbookadminportlet/view.jsp");
-    int _jspx_eval_portlet_param_0 = _jspx_th_portlet_param_0.doStartTag();
-    if (_jspx_th_portlet_param_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_0);
-      _jspx_th_portlet_param_0.release();
-      return true;
-    }
-    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_0);
-    _jspx_th_portlet_param_0.release();
-    return false;
   }
 
   private boolean _jspx_meth_aui_row_0(javax.servlet.jsp.tagext.JspTag _jspx_th_aui_form_0, PageContext _jspx_page_context)
@@ -714,9 +757,9 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_aui_input_4.setPageContext(_jspx_page_context);
     _jspx_th_aui_input_4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_fieldset_0);
     _jspx_th_aui_input_4.setType("checkbox");
-    _jspx_th_aui_input_4.setName("GroupId");
+    _jspx_th_aui_input_4.setName("UserName");
     _jspx_th_aui_input_4.setLabel("UserName");
-    _jspx_th_aui_input_4.setValue(new String("GroupId"));
+    _jspx_th_aui_input_4.setValue(new String("UserName"));
     int _jspx_eval_aui_input_4 = _jspx_th_aui_input_4.doStartTag();
     if (_jspx_th_aui_input_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_input_4);
@@ -737,9 +780,9 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_aui_input_5.setPageContext(_jspx_page_context);
     _jspx_th_aui_input_5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_fieldset_0);
     _jspx_th_aui_input_5.setType("checkbox");
-    _jspx_th_aui_input_5.setName("GroupId");
+    _jspx_th_aui_input_5.setName("Created Date");
     _jspx_th_aui_input_5.setLabel("Created Date");
-    _jspx_th_aui_input_5.setValue(new String("GroupId"));
+    _jspx_th_aui_input_5.setValue(new String("Created Date"));
     int _jspx_eval_aui_input_5 = _jspx_th_aui_input_5.doStartTag();
     if (_jspx_th_aui_input_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_input_5);
@@ -790,7 +833,6 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        ");
       if (_jspx_meth_aui_button_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_aui_button$1row_0, _jspx_page_context))
         return true;
-      out.write('\n');
       out.write("\n");
       out.write("\n");
       out.write("    ");
@@ -814,7 +856,6 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_aui_button_0.setPageContext(_jspx_page_context);
     _jspx_th_aui_button_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_button$1row_0);
     _jspx_th_aui_button_0.setName("submitButton");
-    _jspx_th_aui_button_0.setId("export");
     _jspx_th_aui_button_0.setValue("Export");
     _jspx_th_aui_button_0.setType("submit");
     int _jspx_eval_aui_button_0 = _jspx_th_aui_button_0.doStartTag();
@@ -836,7 +877,6 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
     com.liferay.taglib.aui.ButtonTag _jspx_th_aui_button_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ButtonTag.class) : new com.liferay.taglib.aui.ButtonTag();
     _jspx_th_aui_button_1.setPageContext(_jspx_page_context);
     _jspx_th_aui_button_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_button$1row_0);
-    _jspx_th_aui_button_1.setId("closePopup");
     _jspx_th_aui_button_1.setName("closeDialog");
     _jspx_th_aui_button_1.setType("cancel");
     int _jspx_eval_aui_button_1 = _jspx_th_aui_button_1.doStartTag();
@@ -847,48 +887,6 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_button_1);
     _jspx_th_aui_button_1.release();
-    return false;
-  }
-
-  private boolean _jspx_meth_aui_script_0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  aui:script
-    com.liferay.taglib.aui.ScriptTag _jspx_th_aui_script_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ScriptTag.class) : new com.liferay.taglib.aui.ScriptTag();
-    _jspx_th_aui_script_0.setPageContext(_jspx_page_context);
-    _jspx_th_aui_script_0.setParent(null);
-    _jspx_th_aui_script_0.setUse("aui-base");
-    int _jspx_eval_aui_script_0 = _jspx_th_aui_script_0.doStartTag();
-    if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.pushBody();
-        _jspx_th_aui_script_0.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
-        _jspx_th_aui_script_0.doInitBody();
-      }
-      do {
-        out.write("\n");
-        out.write("    A.one('#");
-        if (_jspx_meth_portlet_namespace_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_aui_script_0, _jspx_page_context))
-          return true;
-        out.write("closeDialog').on('click', function(event) {\n");
-        out.write("        console.log(\"sasasa\");\n");
-        out.write("    Liferay.Util.getOpener().closePopup('dialog');\n");
-        out.write("    });\n");
-        int evalDoAfterBody = _jspx_th_aui_script_0.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-      if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
-        out = _jspx_page_context.popBody();
-    }
-    if (_jspx_th_aui_script_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_0);
-      _jspx_th_aui_script_0.release();
-      return true;
-    }
-    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_0);
-    _jspx_th_aui_script_0.release();
     return false;
   }
 
@@ -908,6 +906,66 @@ public final class export_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_namespace_0);
     _jspx_th_portlet_namespace_0.release();
+    return false;
+  }
+
+  private boolean _jspx_meth_aui_script_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  aui:script
+    com.liferay.taglib.aui.ScriptTag _jspx_th_aui_script_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ScriptTag.class) : new com.liferay.taglib.aui.ScriptTag();
+    _jspx_th_aui_script_1.setPageContext(_jspx_page_context);
+    _jspx_th_aui_script_1.setParent(null);
+    _jspx_th_aui_script_1.setUse("aui-base");
+    int _jspx_eval_aui_script_1 = _jspx_th_aui_script_1.doStartTag();
+    if (_jspx_eval_aui_script_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      if (_jspx_eval_aui_script_1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+        out = _jspx_page_context.pushBody();
+        _jspx_th_aui_script_1.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+        _jspx_th_aui_script_1.doInitBody();
+      }
+      do {
+        out.write("\n");
+        out.write("    A.one('#");
+        if (_jspx_meth_portlet_namespace_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_aui_script_1, _jspx_page_context))
+          return true;
+        out.write("closeDialog').on('click', function(event) {\n");
+        out.write("    Liferay.Util.getOpener().closePopup('dialog');\n");
+        out.write("    });\n");
+        int evalDoAfterBody = _jspx_th_aui_script_1.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+      if (_jspx_eval_aui_script_1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
+        out = _jspx_page_context.popBody();
+    }
+    if (_jspx_th_aui_script_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_1);
+      _jspx_th_aui_script_1.release();
+      return true;
+    }
+    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_1);
+    _jspx_th_aui_script_1.release();
+    return false;
+  }
+
+  private boolean _jspx_meth_portlet_namespace_1(javax.servlet.jsp.tagext.JspTag _jspx_th_aui_script_1, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  portlet:namespace
+    com.liferay.taglib.portlet.NamespaceTag _jspx_th_portlet_namespace_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.NamespaceTag.class) : new com.liferay.taglib.portlet.NamespaceTag();
+    _jspx_th_portlet_namespace_1.setPageContext(_jspx_page_context);
+    _jspx_th_portlet_namespace_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_script_1);
+    int _jspx_eval_portlet_namespace_1 = _jspx_th_portlet_namespace_1.doStartTag();
+    if (_jspx_th_portlet_namespace_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_namespace_1);
+      _jspx_th_portlet_namespace_1.release();
+      return true;
+    }
+    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_namespace_1);
+    _jspx_th_portlet_namespace_1.release();
     return false;
   }
 }

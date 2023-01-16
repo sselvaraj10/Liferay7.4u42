@@ -20,6 +20,7 @@ import org.osgi.service.component.annotations.Reference;
 import java.io.*;
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 @Component(
         immediate = true,
@@ -36,10 +37,19 @@ public class GuestbookEntryBackgroundTaskExecutor extends BaseBackgroundTaskExec
     @Override
     public BackgroundTaskResult execute(BackgroundTask backgroundTask)
             throws Exception {
-
+        Map<String, Serializable> data = backgroundTask.getTaskContextMap();
         List<Guestbook> guestbookList = GuestbookLocalServiceUtil.getGuestbooks(backgroundTask.getGroupId());
-        String[] columnNames = { "UserId","GroupId", "GuestbookId","Name","Created Date"};
-
+      //  String[] columnNames = { "UserId","GroupId", "GuestbookId","Name","Created Date"};
+        String[] columnNames = new String[data.size()];
+        System.out.println("kajskajksa: "+data.get("data"));
+        for(Map.Entry<String, Serializable> m : data.entrySet())
+        {
+            System.out.println(m.getKey()+" :key   val: "+m.getValue());
+        }
+        for (int i = 0; i < columnNames.length; i++) {
+            columnNames[i] = (String) data.get(i);
+            System.out.println("col name :"+columnNames[i]);
+        }
         final String COMMA = ",";
 
 
