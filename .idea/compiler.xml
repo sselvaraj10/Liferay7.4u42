@@ -187,6 +187,10 @@
       <module name="OverrideJSP_main" target="11" />
       <module name="OverrideJSP_test" target="11" />
       <module name="OverrideJSP_testIntegration" target="11" />
+      <module name="OverrideLoginWithCSS" target="11" />
+      <module name="OverrideLoginWithCSS_main" target="11" />
+      <module name="OverrideLoginWithCSS_test" target="11" />
+      <module name="OverrideLoginWithCSS_testIntegration" target="11" />
       <module name="OverrideMvcBolg" target="11" />
       <module name="OverrideMvcBolg_main" target="11" />
       <module name="OverrideMvcBolg_test" target="11" />
@@ -259,6 +263,10 @@
       <module name="site-initializer-welcome_main" target="11" />
       <module name="site-initializer-welcome_test" target="11" />
       <module name="site-initializer-welcome_testIntegration" target="11" />
+      <module name="smdnsmdns" target="11" />
+      <module name="smdnsmdns_main" target="11" />
+      <module name="smdnsmdns_test" target="11" />
+      <module name="smdnsmdns_testIntegration" target="11" />
       <module name="ThemeContributor" target="11" />
       <module name="ThemeContributor_main" target="11" />
       <module name="ThemeContributor_test" target="11" />

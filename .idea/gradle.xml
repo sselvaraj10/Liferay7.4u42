@@ -34,6 +34,7 @@
             <option value="$PROJECT_DIR$/modules/Organization" />
             <option value="$PROJECT_DIR$/modules/OverrideArticleJSP" />
             <option value="$PROJECT_DIR$/modules/OverrideJSP" />
+            <option value="$PROJECT_DIR$/modules/OverrideLoginWithCSS" />
             <option value="$PROJECT_DIR$/modules/OverrideMvcBolg" />
             <option value="$PROJECT_DIR$/modules/PanelAppDemo" />
             <option value="$PROJECT_DIR$/modules/PortletProviderDemo" />
@@ -77,6 +78,7 @@
             <option value="$PROJECT_DIR$/modules/site-initializer-brijesh" />
             <option value="$PROJECT_DIR$/modules/site-initializer-demo" />
             <option value="$PROJECT_DIR$/modules/site-initializer-welcome222" />
+            <option value="$PROJECT_DIR$/modules/smdnsmdns" />
             <option value="$PROJECT_DIR$/modules/userdemo" />
           </set>
         </option>

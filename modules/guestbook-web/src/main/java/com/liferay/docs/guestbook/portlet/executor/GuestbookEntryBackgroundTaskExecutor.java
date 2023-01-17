@@ -14,11 +14,13 @@ import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.repository.model.FileEntry;
 import com.liferay.portal.kernel.util.*;
+import org.apache.commons.lang.SerializationUtils;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 import java.io.*;
 import java.io.File;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -37,45 +39,78 @@ public class GuestbookEntryBackgroundTaskExecutor extends BaseBackgroundTaskExec
     @Override
     public BackgroundTaskResult execute(BackgroundTask backgroundTask)
             throws Exception {
+
         Map<String, Serializable> data = backgroundTask.getTaskContextMap();
         List<Guestbook> guestbookList = GuestbookLocalServiceUtil.getGuestbooks(backgroundTask.getGroupId());
       //  String[] columnNames = { "UserId","GroupId", "GuestbookId","Name","Created Date"};
-        String[] columnNames = new String[data.size()];
-        System.out.println("kajskajksa: "+data.get("data"));
-        for(Map.Entry<String, Serializable> m : data.entrySet())
-        {
-            System.out.println(m.getKey()+" :key   val: "+m.getValue());
+      //  String[] columnNames = new String[data.size()];
+
+        String [] columnNames = (String[]) data.get("data");
+        for(String s : columnNames) {
+            System.out.println("Byests : " + s);
         }
-        for (int i = 0; i < columnNames.length; i++) {
-            columnNames[i] = (String) data.get(i);
-            System.out.println("col name :"+columnNames[i]);
-        }
+//        String st = new String(repr);
+//        System.out.println("Bytes data: :  "+st);
+
+
+//        String s = new String((String) data.get("data"));
+//        System.out.println("FSgfsgfags:  "+s);
+//        for(Map.Entry<String, Serializable> m : data.entrySet())
+//        {
+//            System.out.println(m.getKey()+" :key   val: "+m.getValue());
+//        }
+//        for (int i = 0; i < columnNames.length; i++) {
+//            columnNames[i] = (String) data.get(i);
+//            System.out.println("col name :"+columnNames[i]);
+//        }
         final String COMMA = ",";
 
 
         StringBundler sb = new StringBundler();
 
         for (String columnName : columnNames) {
+           if(columnName!=null) {
+               sb.append(getCSVFormattedValue(columnName));
 
-            sb.append(getCSVFormattedValue(columnName));
-
-            sb.append(COMMA);
+               sb.append(COMMA);
+           }
 
         }
         sb.setIndex(sb.index() - 1);
         sb.append(CharPool.NEW_LINE);
         for(Guestbook guestbook : guestbookList)
         {
-            sb.append(getCSVFormattedValue(String.valueOf(guestbook.getUserId())));
-            sb.append(COMMA);
-            sb.append(getCSVFormattedValue(String.valueOf(guestbook.getGroupId())));
-            sb.append(COMMA);
-            sb.append(getCSVFormattedValue(String.valueOf(guestbook.getGuestbookId())));
-            sb.append(COMMA);
-            sb.append(getCSVFormattedValue(guestbook.getName()));
-            sb.append(COMMA);
-            sb.append(getCSVFormattedValue(String.valueOf(guestbook.getCreateDate())));
-            sb.append(COMMA);
+            if(Arrays.stream(columnNames).anyMatch("UserId"::equals)) {
+                sb.append(getCSVFormattedValue(String.valueOf(guestbook.getUserId())));
+                sb.append(COMMA);
+                System.out.println("userid");
+            }
+            if(Arrays.stream(columnNames).anyMatch("GroupId"::equals)) {
+                sb.append(getCSVFormattedValue(String.valueOf(guestbook.getGroupId())));
+                sb.append(COMMA);
+                System.out.println("GroupId");
+            }
+            if(Arrays.stream(columnNames).anyMatch("GuestbookId"::equals)) {
+                sb.append(getCSVFormattedValue(String.valueOf(guestbook.getGuestbookId())));
+                sb.append(COMMA);
+                System.out.println("GuestbookId");
+            }
+            if(Arrays.stream(columnNames).anyMatch("Name"::equals)) {
+                sb.append(getCSVFormattedValue(guestbook.getName()));
+                sb.append(COMMA);
+                System.out.println("Name");
+            }
+            if(Arrays.stream(columnNames).anyMatch("UserName"::equals)) {
+                sb.append(getCSVFormattedValue(String.valueOf(guestbook.getUserName())));
+                sb.append(COMMA);
+                System.out.println("UserName");
+            }
+            if(Arrays.stream(columnNames).anyMatch("Created Date"::equals)) {
+                sb.append(getCSVFormattedValue(String.valueOf(guestbook.getCreateDate())));
+                sb.append(COMMA);
+                System.out.println("Created Date");
+            }
+
 
             sb.setIndex(sb.index() - 1);
 

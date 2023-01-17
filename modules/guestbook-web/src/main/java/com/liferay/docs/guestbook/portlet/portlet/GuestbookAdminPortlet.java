@@ -159,8 +159,11 @@ public class GuestbookAdminPortlet extends MVCPortlet {
         {
                 System.out.println("Hello Export");
                 String userId = ParamUtil.getString(request, "UserId");
+            String msg = ParamUtil.getString(request, "brij");
+            System.out.println("MSSSG: "+msg);
             System.out.println("u: "+userId);
                 String groupId = ParamUtil.getString(request, "GroupId");
+                String guestbookId = ParamUtil.getString(request, "GuestbookId");
                 String name = ParamUtil.getString(request, "Name");
                 String userName = ParamUtil.getString(request, "UserName");
                 String createdDate = ParamUtil.getString(request, "Created Date");
@@ -171,37 +174,49 @@ public class GuestbookAdminPortlet extends MVCPortlet {
                 try {
                         serviceContext = ServiceContextFactory.getInstance(
                                 Entry.class.getName(), request);
-                       List<String> data = new ArrayList<String>();
+                       String[] data = new String[6];
+                       int index =0;
                         Map<String, Serializable> taskContextMap = new HashMap<>();
-                        if(userId!=null)
+                        if(!userId.equals("false"))
                         {
-                                data.add(userId);
+                                data[index]=userId;
+                                index++;
                                 System.out.println("Userid: "+userId);
                         }
-                        if (groupId!=null) {
-                                data.add(groupId);
+                        if (!groupId.equals("false")) {
+                                data[index]=groupId;
+                                index++;
                                 System.out.println("groupId: "+groupId);
                         }
-                        if (name!=null) {
-                                data.add(name);
-                                System.out.println("Name: "+name);
-                        }
-                        if (userName!=null) {
-                                data.add(userName);
-                                System.out.println("useername: "+userName);
-                        }
-                       if (createdDate!=null) {
-                                data.add(createdDate);
-                                System.out.println("useername: "+createdDate);
+                        if (!guestbookId.equals("false")) {
+                            data[index]=guestbookId;
+                            index++;
+                            System.out.println("guestbookId: "+guestbookId);
 
                         }
-//                        else {
-//                                taskContextMap.put("companyId", themeDisplay.getCompanyId());
-//                                taskContextMap.put("language", themeDisplay.getLanguageId());
-//                                taskContextMap.put("groupId", themeDisplay.getScopeGroupId());
-//                        }
-                        System.out.println("asas");
-                        taskContextMap.put("data", (Serializable) data);
+                        if (!name.equals("false")) {
+                            data[index]=name;
+                            index++;
+                                System.out.println("Name: "+name);
+                        }
+                        if (!userName.equals("false")) {
+                                data[index]=userName;
+                                index++;
+                                System.out.println("useername: "+userName);
+                        }
+                       if (!createdDate.equals("false")) {
+                               data[index]=createdDate;
+                               index++;
+                                System.out.println("createdDate: "+createdDate);
+
+                        }
+                        else {
+                                taskContextMap.put("companyId", themeDisplay.getCompanyId());
+                                taskContextMap.put("language", themeDisplay.getLanguageId());
+                                taskContextMap.put("groupId", themeDisplay.getScopeGroupId());
+                        }
+                        taskContextMap.put("data", data);
+                    System.out.println("Data: "+data);
                         BackgroundTask backgroundTask = BackgroundTaskManagerUtil.addBackgroundTask(themeDisplay.getUserId(),
                                 themeDisplay.getScopeGroupId(), GuestbookEntryBackgroundTaskExecutor.class.getName(), GuestbookEntryBackgroundTaskExecutor.class.getName(), taskContextMap, serviceContext);
 

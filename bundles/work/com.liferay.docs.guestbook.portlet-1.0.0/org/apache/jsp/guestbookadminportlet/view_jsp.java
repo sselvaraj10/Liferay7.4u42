@@ -44,8 +44,17 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants = new java.util.ArrayList<String>(10);
     _jspx_dependants.add("/guestbookadminportlet/../init.jsp");
+    _jspx_dependants.add("/META-INF/c.tld");
+    _jspx_dependants.add("/META-INF/liferay-portlet_2_0.tld");
+    _jspx_dependants.add("/META-INF/liferay-aui.tld");
+    _jspx_dependants.add("/META-INF/liferay-portlet-ext.tld");
+    _jspx_dependants.add("/META-INF/liferay-theme.tld");
+    _jspx_dependants.add("/META-INF/liferay-ui.tld");
+    _jspx_dependants.add("/META-INF/resources/WEB-INF/liferay-frontend.tld");
+    _jspx_dependants.add("/META-INF/liferay-security.tld");
+    _jspx_dependants.add("/META-INF/resources/WEB-INF/liferay-clay.tld");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -265,12 +274,17 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_aui_button_0.release();
       out.write('\n');
       out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
       //  portlet:renderURL
       com.liferay.taglib.portlet.RenderURLTag _jspx_th_portlet_renderURL_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.RenderURLTag.class) : new com.liferay.taglib.portlet.RenderURLTag();
       _jspx_th_portlet_renderURL_0.setPageContext(_jspx_page_context);
       _jspx_th_portlet_renderURL_0.setParent(null);
-      _jspx_th_portlet_renderURL_0.setVar("secondJspURL");
-      _jspx_th_portlet_renderURL_0.setWindowState(LiferayWindowState.POP_UP.toString());
+      _jspx_th_portlet_renderURL_0.setVar("popupUrl");
+      _jspx_th_portlet_renderURL_0.setWindowState(LiferayWindowState.POP_UP.toString() );
       int _jspx_eval_portlet_renderURL_0 = _jspx_th_portlet_renderURL_0.doStartTag();
       if (_jspx_eval_portlet_renderURL_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         out.write("\n");
@@ -286,31 +300,6 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_0);
       _jspx_th_portlet_renderURL_0.release();
-      java.lang.String secondJspURL = null;
-      secondJspURL = (java.lang.String) _jspx_page_context.findAttribute("secondJspURL");
-      out.write('\n');
-      out.write('\n');
-      //  portlet:renderURL
-      com.liferay.taglib.portlet.RenderURLTag _jspx_th_portlet_renderURL_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.RenderURLTag.class) : new com.liferay.taglib.portlet.RenderURLTag();
-      _jspx_th_portlet_renderURL_1.setPageContext(_jspx_page_context);
-      _jspx_th_portlet_renderURL_1.setParent(null);
-      _jspx_th_portlet_renderURL_1.setVar("popupUrl");
-      _jspx_th_portlet_renderURL_1.setWindowState(LiferayWindowState.POP_UP.toString() );
-      int _jspx_eval_portlet_renderURL_1 = _jspx_th_portlet_renderURL_1.doStartTag();
-      if (_jspx_eval_portlet_renderURL_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        out.write("\n");
-        out.write("  ");
-        if (_jspx_meth_portlet_param_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_portlet_renderURL_1, _jspx_page_context))
-          return;
-        out.write('\n');
-      }
-      if (_jspx_th_portlet_renderURL_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_1);
-        _jspx_th_portlet_renderURL_1.release();
-        return;
-      }
-      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_1);
-      _jspx_th_portlet_renderURL_1.release();
       java.lang.String popupUrl = null;
       popupUrl = (java.lang.String) _jspx_page_context.findAttribute("popupUrl");
       out.write('\n');
@@ -374,38 +363,6 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write('\n');
       out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
       //  liferay-ui:search-container
       com.liferay.taglib.ui.SearchContainerTag _jspx_th_liferay$1ui_search$1container_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.ui.SearchContainerTag.class) : new com.liferay.taglib.ui.SearchContainerTag();
       _jspx_th_liferay$1ui_search$1container_0.setPageContext(_jspx_page_context);
@@ -518,42 +475,42 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\n");
         out.write("  ");
         //  portlet:renderURL
-        com.liferay.taglib.portlet.RenderURLTag _jspx_th_portlet_renderURL_2 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.RenderURLTag.class) : new com.liferay.taglib.portlet.RenderURLTag();
-        _jspx_th_portlet_renderURL_2.setPageContext(_jspx_page_context);
-        _jspx_th_portlet_renderURL_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_button$1row_0);
-        _jspx_th_portlet_renderURL_2.setVar("addGuestbookURL");
-        int _jspx_eval_portlet_renderURL_2 = _jspx_th_portlet_renderURL_2.doStartTag();
-        if (_jspx_eval_portlet_renderURL_2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        com.liferay.taglib.portlet.RenderURLTag _jspx_th_portlet_renderURL_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.portlet.RenderURLTag.class) : new com.liferay.taglib.portlet.RenderURLTag();
+        _jspx_th_portlet_renderURL_1.setPageContext(_jspx_page_context);
+        _jspx_th_portlet_renderURL_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_button$1row_0);
+        _jspx_th_portlet_renderURL_1.setVar("addGuestbookURL");
+        int _jspx_eval_portlet_renderURL_1 = _jspx_th_portlet_renderURL_1.doStartTag();
+        if (_jspx_eval_portlet_renderURL_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
           out.write("\n");
           out.write("    ");
-          if (_jspx_meth_portlet_param_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_portlet_renderURL_2, _jspx_page_context))
+          if (_jspx_meth_portlet_param_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_portlet_renderURL_1, _jspx_page_context))
             return;
           out.write("\n");
           out.write("    ");
           //  portlet:param
-          com.liferay.taglib.util.ParamTag _jspx_th_portlet_param_3 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.util.ParamTag.class) : new com.liferay.taglib.util.ParamTag();
-          _jspx_th_portlet_param_3.setPageContext(_jspx_page_context);
-          _jspx_th_portlet_param_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_portlet_renderURL_2);
-          _jspx_th_portlet_param_3.setName("redirect");
-          _jspx_th_portlet_param_3.setValue( "currentURL" );
-          int _jspx_eval_portlet_param_3 = _jspx_th_portlet_param_3.doStartTag();
-          if (_jspx_th_portlet_param_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-            if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_3);
-            _jspx_th_portlet_param_3.release();
+          com.liferay.taglib.util.ParamTag _jspx_th_portlet_param_2 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.util.ParamTag.class) : new com.liferay.taglib.util.ParamTag();
+          _jspx_th_portlet_param_2.setPageContext(_jspx_page_context);
+          _jspx_th_portlet_param_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_portlet_renderURL_1);
+          _jspx_th_portlet_param_2.setName("redirect");
+          _jspx_th_portlet_param_2.setValue( "currentURL" );
+          int _jspx_eval_portlet_param_2 = _jspx_th_portlet_param_2.doStartTag();
+          if (_jspx_th_portlet_param_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+            if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_2);
+            _jspx_th_portlet_param_2.release();
             return;
           }
-          if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_3);
-          _jspx_th_portlet_param_3.release();
+          if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_2);
+          _jspx_th_portlet_param_2.release();
           out.write("\n");
           out.write("  ");
         }
-        if (_jspx_th_portlet_renderURL_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-          if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_2);
-          _jspx_th_portlet_renderURL_2.release();
+        if (_jspx_th_portlet_renderURL_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+          if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_1);
+          _jspx_th_portlet_renderURL_1.release();
           return;
         }
-        if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_2);
-        _jspx_th_portlet_renderURL_2.release();
+        if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_renderURL_1);
+        _jspx_th_portlet_renderURL_1.release();
         java.lang.String addGuestbookURL = null;
         addGuestbookURL = (java.lang.String) _jspx_page_context.findAttribute("addGuestbookURL");
         out.write("\n");
@@ -667,7 +624,7 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_portlet_param_0.setPageContext(_jspx_page_context);
     _jspx_th_portlet_param_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_portlet_renderURL_0);
     _jspx_th_portlet_param_0.setName("mvcPath");
-    _jspx_th_portlet_param_0.setValue("view.jsp");
+    _jspx_th_portlet_param_0.setValue("/guestbookadminportlet/export.jsp");
     int _jspx_eval_portlet_param_0 = _jspx_th_portlet_param_0.doStartTag();
     if (_jspx_th_portlet_param_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_0);
@@ -676,27 +633,6 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_0);
     _jspx_th_portlet_param_0.release();
-    return false;
-  }
-
-  private boolean _jspx_meth_portlet_param_1(javax.servlet.jsp.tagext.JspTag _jspx_th_portlet_renderURL_1, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  portlet:param
-    com.liferay.taglib.util.ParamTag _jspx_th_portlet_param_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.util.ParamTag.class) : new com.liferay.taglib.util.ParamTag();
-    _jspx_th_portlet_param_1.setPageContext(_jspx_page_context);
-    _jspx_th_portlet_param_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_portlet_renderURL_1);
-    _jspx_th_portlet_param_1.setName("mvcPath");
-    _jspx_th_portlet_param_1.setValue("/guestbookadminportlet/export.jsp");
-    int _jspx_eval_portlet_param_1 = _jspx_th_portlet_param_1.doStartTag();
-    if (_jspx_th_portlet_param_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_1);
-      _jspx_th_portlet_param_1.release();
-      return true;
-    }
-    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_1);
-    _jspx_th_portlet_param_1.release();
     return false;
   }
 
@@ -906,24 +842,24 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_portlet_param_2(javax.servlet.jsp.tagext.JspTag _jspx_th_portlet_renderURL_2, PageContext _jspx_page_context)
+  private boolean _jspx_meth_portlet_param_1(javax.servlet.jsp.tagext.JspTag _jspx_th_portlet_renderURL_1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  portlet:param
-    com.liferay.taglib.util.ParamTag _jspx_th_portlet_param_2 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.util.ParamTag.class) : new com.liferay.taglib.util.ParamTag();
-    _jspx_th_portlet_param_2.setPageContext(_jspx_page_context);
-    _jspx_th_portlet_param_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_portlet_renderURL_2);
-    _jspx_th_portlet_param_2.setName("mvcPath");
-    _jspx_th_portlet_param_2.setValue("/guestbookadminportlet/edit_guestbook.jsp");
-    int _jspx_eval_portlet_param_2 = _jspx_th_portlet_param_2.doStartTag();
-    if (_jspx_th_portlet_param_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_2);
-      _jspx_th_portlet_param_2.release();
+    com.liferay.taglib.util.ParamTag _jspx_th_portlet_param_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.util.ParamTag.class) : new com.liferay.taglib.util.ParamTag();
+    _jspx_th_portlet_param_1.setPageContext(_jspx_page_context);
+    _jspx_th_portlet_param_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_portlet_renderURL_1);
+    _jspx_th_portlet_param_1.setName("mvcPath");
+    _jspx_th_portlet_param_1.setValue("/guestbookadminportlet/edit_guestbook.jsp");
+    int _jspx_eval_portlet_param_1 = _jspx_th_portlet_param_1.doStartTag();
+    if (_jspx_th_portlet_param_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_1);
+      _jspx_th_portlet_param_1.release();
       return true;
     }
-    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_2);
-    _jspx_th_portlet_param_2.release();
+    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_portlet_param_1);
+    _jspx_th_portlet_param_1.release();
     return false;
   }
 }

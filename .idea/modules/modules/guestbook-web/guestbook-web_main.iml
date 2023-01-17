@@ -22,5 +22,6 @@
     <orderEntry type="module" module-name="guestbook-api_main" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.liferay.portal:release.dxp.api:7.4.13.u42" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.liferay:com.liferay.application.list.api:7.3.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
   </component>
 </module>

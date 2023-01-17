@@ -1,4 +1,3 @@
-<%@ taglib prefix="liferay-product-navigation" uri="http://liferay.com/tld/product-navigation" %>
 <%@include file="../init.jsp"%>
 <style>
     .form-dg{
@@ -48,7 +47,7 @@
 <aui:script use="aui-base,aui-io-request">
     A.one('#<portlet:namespace />submitButton').on('click', function(event) {
     var A = AUI();
-    var url = '<%=exporting.toString()%>';
+    var url = ' ';
     A.io.request(
     url,
     {
