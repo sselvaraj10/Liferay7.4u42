@@ -157,6 +157,25 @@
       <module name="liferay-messagebus-example-master_main" target="11" />
       <module name="liferay-messagebus-example-master_test" target="11" />
       <module name="liferay-messagebus-example-master_testIntegration" target="11" />
+      <module name="LIferayDXP7.4(54)" target="11" />
+      <module name="LIferayDXP7.4(54).main" target="11" />
+      <module name="LIferayDXP7.4(54).modules.JournalArticleServiceWrapper" target="11" />
+      <module name="LIferayDXP7.4(54).modules.JournalArticleServiceWrapper.main" target="11" />
+      <module name="LIferayDXP7.4(54).modules.JournalArticleServiceWrapper.test" target="11" />
+      <module name="LIferayDXP7.4(54).modules.JournalArticleServiceWrapper.testIntegration" target="11" />
+      <module name="LIferayDXP7.4(54).modules.reactDemo" target="11" />
+      <module name="LIferayDXP7.4(54).modules.reactDemo.main" target="11" />
+      <module name="LIferayDXP7.4(54).modules.reactDemo.test" target="11" />
+      <module name="LIferayDXP7.4(54).modules.reactDemo.testIntegration" target="11" />
+      <module name="LIferayDXP7.4(54).modules.site-initializer-liferay-learn-brijesh" target="11" />
+      <module name="LIferayDXP7.4(54).modules.site-initializer-liferay-learn-brijesh.main" target="11" />
+      <module name="LIferayDXP7.4(54).modules.site-initializer-liferay-learn-brijesh.test" target="11" />
+      <module name="LIferayDXP7.4(54).modules.site-initializer-liferay-learn-brijesh.testIntegration" target="11" />
+      <module name="LIferayDXP7.4(54).modules.untitled" target="11" />
+      <module name="LIferayDXP7.4(54).modules.untitled.main" target="11" />
+      <module name="LIferayDXP7.4(54).modules.untitled.test" target="11" />
+      <module name="LIferayDXP7.4(54).modules.untitled.testIntegration" target="11" />
+      <module name="LIferayDXP7.4(54).test" target="11" />
       <module name="LiferayWorkspace.modules-liferay-messagebus-example-master" target="11" />
       <module name="LiferayWorkspace.modules-liferay-messagebus-example-master_main" target="11" />
       <module name="LiferayWorkspace.modules-liferay-messagebus-example-master_test" target="11" />
@@ -207,6 +226,14 @@
       <module name="Product_Search_main" target="11" />
       <module name="Product_Search_test" target="11" />
       <module name="Product_Search_testIntegration" target="11" />
+      <module name="react-demo" target="11" />
+      <module name="react-demo_main" target="11" />
+      <module name="react-demo_test" target="11" />
+      <module name="react-demo_testIntegration" target="11" />
+      <module name="ReactModules" target="11" />
+      <module name="ReactModules_main" target="11" />
+      <module name="ReactModules_test" target="11" />
+      <module name="ReactModules_testIntegration" target="11" />
       <module name="RestBuilderApiDemo-api" target="11" />
       <module name="RestBuilderApiDemo-api_main" target="11" />
       <module name="RestBuilderApiDemo-api_test" target="11" />

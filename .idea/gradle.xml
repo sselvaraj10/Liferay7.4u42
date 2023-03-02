@@ -4,7 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
@@ -31,6 +30,10 @@
             <option value="$PROJECT_DIR$/modules/LanguageModule" />
             <option value="$PROJECT_DIR$/modules/LayoutTemplateDemo" />
             <option value="$PROJECT_DIR$/modules/MVCTask" />
+            <option value="$PROJECT_DIR$/modules/ModuleBlacklistConfiguration" />
+            <option value="$PROJECT_DIR$/modules/ModuleBlacklistService" />
+            <option value="$PROJECT_DIR$/modules/ModuleBlacklistService/ModuleBlacklistService-api" />
+            <option value="$PROJECT_DIR$/modules/ModuleBlacklistService/ModuleBlacklistService-service" />
             <option value="$PROJECT_DIR$/modules/Organization" />
             <option value="$PROJECT_DIR$/modules/OverrideArticleJSP" />
             <option value="$PROJECT_DIR$/modules/OverrideJSP" />
@@ -39,6 +42,7 @@
             <option value="$PROJECT_DIR$/modules/PanelAppDemo" />
             <option value="$PROJECT_DIR$/modules/PortletProviderDemo" />
             <option value="$PROJECT_DIR$/modules/Product_Search" />
+            <option value="$PROJECT_DIR$/modules/ReactModules" />
             <option value="$PROJECT_DIR$/modules/SearchJSpDM" />
             <option value="$PROJECT_DIR$/modules/SearchJspforDM" />
             <option value="$PROJECT_DIR$/modules/SessionPortlet" />
@@ -73,6 +77,7 @@
             <option value="$PROJECT_DIR$/modules/liferay-messagebus-example-master" />
             <option value="$PROJECT_DIR$/modules/my-ckeditor-fragment" />
             <option value="$PROJECT_DIR$/modules/myckeditorbutton" />
+            <option value="$PROJECT_DIR$/modules/react-demo" />
             <option value="$PROJECT_DIR$/modules/searchBackupforDM" />
             <option value="$PROJECT_DIR$/modules/searchProducts" />
             <option value="$PROJECT_DIR$/modules/site-initializer-brijesh" />
@@ -80,9 +85,10 @@
             <option value="$PROJECT_DIR$/modules/site-initializer-welcome222" />
             <option value="$PROJECT_DIR$/modules/smdnsmdns" />
             <option value="$PROJECT_DIR$/modules/userdemo" />
+            <option value="$PROJECT_DIR$/themes" />
+            <option value="$PROJECT_DIR$/themes/module-based-theme" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

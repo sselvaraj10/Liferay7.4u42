@@ -1,5 +1,6 @@
 package com.task.demo.portlet;
 
+import com.liferay.batch.planner.rest.dto.v1_0.SiteScope;
 import com.liferay.document.library.kernel.model.DLFolderConstants;
 import com.liferay.journal.model.JournalArticle;
 import com.liferay.journal.service.JournalArticleLocalServiceUtil;
@@ -23,6 +24,7 @@ import javax.portlet.*;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ServiceScope;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -36,14 +38,17 @@ import java.util.List;
 	property = {
 		"com.liferay.portlet.display-category=category.sample",
 		"com.liferay.portlet.header-portlet-css=/css/main.css",
+		"com.liferay.portlet.scopeable=true",
 		"com.liferay.portlet.instanceable=true",
 		"javax.portlet.display-name=MVCTask",
 		"javax.portlet.init-param.template-path=/",
 		"javax.portlet.init-param.view-template=/view.jsp",
 		"javax.portlet.name=" + MVCTaskPortletKeys.MVCTASK,
 		"javax.portlet.resource-bundle=content.Language",
-		"javax.portlet.security-role-ref=power-user,user"
+		"javax.portlet.security-role-ref=power-user,user",
+			"site.id=86704"
 	},
+		scope = ServiceScope.SINGLETON,
 	service = Portlet.class
 )
 public class MVCTaskPortlet extends MVCPortlet {
@@ -53,7 +58,6 @@ public class MVCTaskPortlet extends MVCPortlet {
 	@Override
 	public void render(RenderRequest renderRequest, RenderResponse renderResponse)
 			throws PortletException, IOException {
-
 		ThemeDisplay themeDisplay= (ThemeDisplay) renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
 		long portletGroupId= themeDisplay.getSiteGroupId();
 

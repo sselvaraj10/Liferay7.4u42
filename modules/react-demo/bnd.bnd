@@ -1,0 +1,5 @@
+Bundle-Name: react-demo
+Bundle-SymbolicName: com.react.demo
+Bundle-Version: 1.0.0
+Export-Package: com.react.demo.constants
+Web-ContextPath: /react-demo

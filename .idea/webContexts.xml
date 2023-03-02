@@ -4,6 +4,7 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/modules/MVCTask/src/main/resources/META-INF/resources/view.jsp" value="file://$PROJECT_DIR$/modules/MVCTask/src/main/resources/META-INF/resources" />
+        <entry key="file://$PROJECT_DIR$/modules/ModuleBlacklistConfiguration/src/main/resources/META-INF/resources/view.jsp" value="file://$PROJECT_DIR$/modules/ModuleBlacklistConfiguration/src/main/resources/META-INF/resources" />
         <entry key="file://$PROJECT_DIR$/modules/demo/src/main/resources/META-INF/resources/view.jsp" value="file://$PROJECT_DIR$/modules/demo/src/main/resources/META-INF/resources" />
         <entry key="file://$PROJECT_DIR$/modules/guestbook-web/src/main/resources/META-INF/resources/guestbookadminportlet/export.jsp" value="file://$PROJECT_DIR$/modules/guestbook-web/src/main/resources/META-INF/resources/guestbookadminportlet" />
         <entry key="file://$PROJECT_DIR$/modules/guestbook-web/src/main/resources/META-INF/resources/init.jsp" value="file://$PROJECT_DIR$/modules/guestbook-web/src/main/resources/META-INF/resources" />

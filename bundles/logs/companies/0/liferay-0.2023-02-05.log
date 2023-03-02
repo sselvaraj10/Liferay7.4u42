@@ -1,0 +1,124 @@
+2023-02-05 10:56:11.567 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/405/lib/idea_rt.jar=45723:/snap/intellij-idea-ultimate/405/bin
+2023-02-05 10:56:14.300 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2023-02-05 10:56:18.252 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2023-02-05 10:56:18.886 INFO  [ModuleFramework-Static-Bundles-8][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2023-02-05 10:56:20.894 INFO  [ModuleFramework-Static-Bundles-8][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.document.library.web.jar
+2023-02-05 10:56:20.895 INFO  [ModuleFramework-Static-Bundles-8][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2023-02-05 10:56:21.012 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2023-02-05 10:56:21.013 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2023-02-05 10:56:37.627 INFO  [Start Level: Equinox Container: d02f3944-189d-4e29-810c-a942cbedbba4][MessageBusRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredParallelMessageListener@511361d5
+2023-02-05 10:56:37.628 INFO  [Start Level: Equinox Container: d02f3944-189d-4e29-810c-a942cbedbba4][MessageBusRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSerialMessageListener@1e90a9c0
+2023-02-05 10:56:37.629 INFO  [Start Level: Equinox Container: d02f3944-189d-4e29-810c-a942cbedbba4][MessageBusRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSynchronousMessageListener@32da66f6
+2023-02-05 10:56:37.714 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2023-02-05 10:56:37.714 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2023-02-05 10:56:41.011 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2023-02-05 10:56:41.012 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2023-02-05 10:56:41.023 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2023-02-05 10:56:41.023 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 0 ms
+2023-02-05 10:56:41.024 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2023-02-05 10:56:41.044 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.add" is obsolete
+2023-02-05 10:56:41.045 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.update" is obsolete
+2023-02-05 10:56:41.045 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.translate" is obsolete
+2023-02-05 10:56:41.046 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 22 ms
+2023-02-05 10:56:41.046 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2023-02-05 10:56:41.046 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 0 ms
+2023-02-05 10:56:41.472 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-02-05 10:56:41.511 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 39 ms
+2023-02-05 10:56:45.578 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2023-02-05 10:56:58.448 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9501
+2023-02-05 10:57:02.505 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scheduled_user_ldap_import
+2023-02-05 10:57:02.513 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/audit
+2023-02-05 10:57:02.517 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/segments_entry_reindex
+2023-02-05 10:57:02.522 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/interest_terms
+2023-02-05 10:57:02.526 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/tensorflow_model_download
+2023-02-05 10:57:02.531 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scripting_executor
+2023-02-05 10:57:02.539 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/SYSTEM_ENGINE
+2023-02-05 10:57:02.542 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/SYSTEM_ENGINE
+2023-02-05 10:57:02.575 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/GENERIC_ENGINE
+2023-02-05 10:57:02.578 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/GENERIC_ENGINE
+2023-02-05 10:57:02.588 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/monitoring
+2023-02-05 10:57:02.592 INFO  [main][ParellelDestinationConfig:83] Destination is creared ..liferaysavvy/parallel-destination
+2023-02-05 10:57:02.593 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/parallel-destination
+2023-02-05 10:57:02.595 INFO  [main][ParellelDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-02-05 10:57:02.598 INFO  [main][SerialDestinationConfig:83] Destination is creared ..liferaysavvy/serial-destination
+2023-02-05 10:57:02.600 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/serial-destination
+2023-02-05 10:57:02.602 INFO  [main][SerialDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-02-05 10:57:02.605 INFO  [main][SynchronousDestinationConfig:83] Destination is creared ..liferaysavvy/synchronous-destination
+2023-02-05 10:57:02.609 INFO  [main][DestinationListenerRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredParallelMessageListener@6b1936c1
+2023-02-05 10:57:02.610 INFO  [main][DestinationListenerRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSerialMessageListener@4290b9bd
+2023-02-05 10:57:02.610 INFO  [main][DestinationListenerRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSynchronousMessageListener@572ac798
+2023-02-05 10:57:02.611 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/synchronous-destination
+2023-02-05 10:57:02.612 INFO  [main][SynchronousDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-02-05 10:57:02.615 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/ddm_structure_reindex
+2023-02-05 10:57:02.619 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_base_price_list
+2023-02-05 10:57:02.622 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_order_status
+2023-02-05 10:57:02.624 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_payment_status
+2023-02-05 10:57:02.626 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_shipment_status
+2023-02-05 10:57:02.627 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_subscription_status
+2023-02-05 10:57:02.631 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_async
+2023-02-05 10:57:02.636 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_sync
+2023-02-05 10:57:02.640 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/analytics_messages_processor
+2023-02-05 10:57:02.643 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/default_response
+2023-02-05 10:57:02.645 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/message_status
+2023-02-05 10:57:02.648 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/live_users
+2023-02-05 10:57:02.651 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_audio_processor
+2023-02-05 10:57:02.653 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/async_service
+2023-02-05 10:57:02.654 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_local_publisher
+2023-02-05 10:57:02.656 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/convert_process
+2023-02-05 10:57:02.657 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_pdf_processor
+2023-02-05 10:57:02.659 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_clean_up
+2023-02-05 10:57:02.660 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_video_processor
+2023-02-05 10:57:02.662 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_raw_metadata_processor
+2023-02-05 10:57:02.664 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_image_processor
+2023-02-05 10:57:02.667 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_boards_mailing_list
+2023-02-05 10:57:02.669 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_sender
+2023-02-05 10:57:02.670 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/hot_deploy
+2023-02-05 10:57:02.672 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_remote_publisher
+2023-02-05 10:57:02.680 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_comet_response
+2023-02-05 10:57:02.681 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_response
+2023-02-05 10:57:02.683 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller
+2023-02-05 10:57:02.686 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_definition
+2023-02-05 10:57:02.688 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_instance
+2023-02-05 10:57:02.689 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_log
+2023-02-05 10:57:02.691 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_task
+2023-02-05 10:57:02.692 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_engine
+2023-02-05 10:57:02.693 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_comparator
+2023-02-05 10:57:02.694 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_status
+2023-02-05 10:57:02.696 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/mail
+2023-02-05 10:57:02.700 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/adaptive_media_processor
+2023-02-05 10:57:02.983 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/flags
+2023-02-05 10:57:04.579 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2023-02-05 10:57:04.595 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-02-05 10:57:04.621 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 26 ms
+2023-02-05 10:57:04.628 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/lcs_status
+2023-02-05 10:57:04.666 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2023-02-05 10:57:05.207 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2023-02-05 10:57:16.606 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2023-02-05 10:57:16.749 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2023-02-05 10:57:17.027 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2023-02-05 10:57:17.146 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2023-02-05 10:57:17.281 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2023-02-05 10:57:17.426 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2023-02-05 10:57:17.551 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2023-02-05 10:57:17.630 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2023-02-05 10:57:17.779 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2023-02-05 10:57:17.887 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2023-02-05 10:57:18.145 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for cstheme2-theme is available for use
+2023-02-05 11:02:09.235 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:238] Processing LangHook.war
+2023-02-05 11:02:17.186 INFO  [fileinstall-directory-watcher][HookHotDeployListener:544] Hook for LangHook was unregistered
+2023-02-05 11:02:17.233 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED LangHook_1.0.0 [1691]
+2023-02-05 11:02:17.284 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:43] Copying portlets for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20230205110217234YWGCSRBC/LangHook.war
+2023-02-05 11:02:17.360 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:50] Portlets for /media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/20230205110217234YWGCSRBC/LangHook.war copied successfully
+2023-02-05 11:02:18.335 INFO  [Refresh Thread: Equinox Container: d02f3944-189d-4e29-810c-a942cbedbba4][HookHotDeployListener:496] Hook for LangHook is available for use
+2023-02-05 11:02:18.373 INFO  [Refresh Thread: Equinox Container: d02f3944-189d-4e29-810c-a942cbedbba4][BundleStartStopLogger:77] STARTED LangHook_1.0.0 [1691]
+2023-02-05 11:17:20.758 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2023-02-05 11:17:20.786 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for cstheme2-theme was unregistered
+2023-02-05 11:17:20.808 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2023-02-05 11:17:20.823 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2023-02-05 11:17:20.841 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2023-02-05 11:17:20.859 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2023-02-05 11:17:20.874 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2023-02-05 11:17:20.894 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2023-02-05 11:17:20.929 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2023-02-05 11:17:20.946 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2023-02-05 11:17:20.963 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered

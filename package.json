@@ -1,5 +1,16 @@
 {
-  "dependencies": {
-    "liferay-ckeditor": "^4.18.0-liferay.4"
-  }
+    "dependencies": {
+        "liferay-ckeditor": "^4.18.0-liferay.4"
+    },
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "modules/react-demo",
+            "modules/ReactModules",
+            "bundles/cstheme2-theme",
+            "bundles/demotheme-theme",
+            "bundles/democlassictheme-theme",
+            "bundles/my-liferay-theme"
+        ]
+    }
 }

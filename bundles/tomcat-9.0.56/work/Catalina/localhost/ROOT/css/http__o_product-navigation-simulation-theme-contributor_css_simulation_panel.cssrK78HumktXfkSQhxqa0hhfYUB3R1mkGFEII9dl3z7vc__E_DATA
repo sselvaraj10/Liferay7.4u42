@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/**
+ * Clay 3.57.0
+ *
+ * SPDX-FileCopyrightText: © 2020 Liferay, Inc. <https://liferay.com>
+ * SPDX-FileCopyrightText: © 2020 Contributors to the project Clay <https://github.com/liferay/clay/graphs/contributors>
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+/**
+ * Bootstrap v4.4.1
+ *
+ * SPDX-FileCopyrightText: © 2019 Twitter, Inc. <https://twitter.com>
+ * SPDX-FileCopyrightText: © 2019 The Bootstrap Authors <https://getbootstrap.com/>
+ *
+ * SPDX-License-Identifier: LicenseRef-MIT-Bootstrap
+ */
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel.open-admin-panel.sidenav-menu-slider {
+  visibility: visible;
+  width: 320px;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .sidebar {
+  border-left: 1px solid #e7e7ed;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .sidebar-header {
+  line-height: 32px;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .panel-header {
+  border-bottom: 1px solid #a7a9bc;
+  color: #272833;
+  font-size: 12px;
+  line-height: 18px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .panel-header .collapse-icon-closed,
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .panel-header .collapse-icon-open {
+  color: #6b6c7e;
+  right: 0;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .list-group-item {
+  border: 0 none;
+}
+@media (max-width: 991.98px) {
+  html:not(#__):not(#___) .cadmin.lfr-simulation-panel .custom-devices {
+    display: none !important;
+  }
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .custom-devices .form-control {
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .custom-devices .form-group {
+  margin-bottom: 0;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .default-devices .icon-monospaced {
+  height: 40px;
+  line-height: 34px;
+  width: 40px;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .default-devices .icon-monospaced > .lexicon-icon {
+  height: 1.2em;
+  margin-top: 3px;
+  width: 1.2em;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .lfr-device-item {
+  color: #6b6c7e;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .lfr-device-item:hover {
+  color: #272833;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .lfr-device-item.selected {
+  color: #272833;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .lfr-device-item.selected .icon {
+  background-color: #f1f2f5;
+  border-radius: 4px;
+}
+html:not(#__):not(#___) .cadmin.lfr-simulation-panel .panel .simulation-app-panel-body {
+  padding: 16px 0 0;
+}
+html:not(#__):not(#___) .lfr-simulation-device {
+  bottom: 0;
+  display: none;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 320px;
+  top: 56px;
+  z-index: 500;
+}
+html:not(#__):not(#___) .lfr-simulation-device .modal-content {
+  border-width: 0;
+}
+html:not(#__):not(#___) .lfr-simulation-device .modal-dialog {
+  position: absolute;
+}
+html:not(#__):not(#___) .lfr-simulation-device .modal-dialog.autosize {
+  margin-top: 56px;
+  position: fixed;
+}
+html:not(#__):not(#___) .lfr-device {
+  box-sizing: content-box;
+}
+html:not(#__):not(#___) .lfr-device .modal-header {
+  display: none;
+}
+html:not(#__):not(#___) .lfr-device.autosize {
+  border-width: 0;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status {
+  position: absolute;
+  width: 100%;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status .lfr-device-size-status-content {
+  display: inline-block;
+  font-size: 11px;
+  height: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 4px;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status.b, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.bl, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.br {
+  bottom: 10px;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status.t, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.tl, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.tr {
+  top: 10px;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status.b, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.t {
+  text-align: center;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status.r, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.br, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.tr {
+  text-align: right;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status.l, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.bl, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.tl {
+  text-align: left;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status.r, html:not(#__):not(#___) .lfr-device .lfr-device-size-status.l {
+  margin-top: -15px;
+  top: 50%;
+}
+html:not(#__):not(#___) .lfr-device:after {
+  bottom: 10px;
+  content: "";
+  display: none;
+  height: 30px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 30px;
+}
+html:not(#__):not(#___) .lfr-device:before {
+  content: "";
+  display: none;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+html:not(#__):not(#___) .lfr-device.rotated:after {
+  bottom: 0;
+  left: 10px;
+  margin: auto;
+  right: auto;
+  top: 0;
+}
+html:not(#__):not(#___) .lfr-device.rotated:before {
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  right: 20px;
+  top: 0;
+}
+html:not(#__):not(#___) .lfr-device.smartphone:after, html:not(#__):not(#___) .lfr-device.smartphone:before, html:not(#__):not(#___) .lfr-device.tablet:after, html:not(#__):not(#___) .lfr-device.tablet:before {
+  display: block;
+}
+html:not(#__):not(#___) .lfr-device.smartphone {
+  padding: 50px 10px;
+}
+html:not(#__):not(#___) .lfr-device.smartphone.rotated {
+  padding: 10px 50px;
+}
+html:not(#__):not(#___) .lfr-device.smartphone.rotated:before {
+  height: 50px;
+  width: 5px;
+}
+html:not(#__):not(#___) .lfr-device.smartphone:before {
+  height: 5px;
+  width: 50px;
+}
+html:not(#__):not(#___) .lfr-device.tablet {
+  padding: 50px 20px;
+}
+html:not(#__):not(#___) .lfr-device.tablet.rotated {
+  padding: 20px 50px;
+}
+html:not(#__):not(#___) .lfr-device.tablet.rotated:before {
+  height: 10px;
+  width: 10px;
+}
+html:not(#__):not(#___) .lfr-device.tablet:before {
+  height: 10px;
+  width: 10px;
+}
+html:not(#__):not(#___) .lfr-has-simulation-panel {
+  overflow: auto;
+}
+html:not(#__):not(#___) .lfr-has-simulation-panel .lfr-configurator-visibility {
+  display: none;
+}
+html:not(#__):not(#___) .lfr-has-simulation-panel .lfr-simulation-device {
+  display: block;
+}
+
+html:not(#__):not(#___) .lfr-simulation-device {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device-size-status-content {
+  border-radius: 3px;
+  box-shadow: 0 0 1px #fff;
+  opacity: 0.9;
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device.lfr-device--is-navigating {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device:after, html:not(#__):not(#___) .lfr-simulation-device .lfr-device:before {
+  box-shadow: #111 0 1px 0;
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device:after {
+  border-radius: 15px;
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device.rotated:after, html:not(#__):not(#___) .lfr-simulation-device .lfr-device.rotated:before {
+  box-shadow: #111 -1px 1px 0;
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device.smartphone, html:not(#__):not(#___) .lfr-simulation-device .lfr-device.tablet {
+  border-radius: 25px;
+}
+html:not(#__):not(#___) .lfr-simulation-device .lfr-device.tablet:before {
+  border-radius: 5px;
+}
+html:not(#__):not(#___) .lfr-simulation-device .loading-animation-simulation-device {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+html:not(#__):not(#___) .lfr-simulation-device .modal-dialog {
+  max-width: none;
+}
+html:not(#__):not(#___) .lfr-simulation-device .modal-dialog .modal-content {
+  border-radius: 0;
+}
+html:not(#__):not(#___) .lfr-device .lfr-device-size-status .lfr-device-size-status-content {
+  background-color: #000;
+  color: #fff;
+}
+html:not(#__):not(#___) .lfr-device:after, html:not(#__):not(#___) .lfr-device:before {
+  background: #666;
+}
+html:not(#__):not(#___) .lfr-device.smartphone, html:not(#__):not(#___) .lfr-device.tablet, html:not(#__):not(#___) .lfr-device.desktop {
+  background: #333;
+}
+html:not(#__):not(#___) .lfr-device.smartphone .modal-body.dialog-iframe-bd, html:not(#__):not(#___) .lfr-device.tablet .modal-body.dialog-iframe-bd, html:not(#__):not(#___) .lfr-device.desktop .modal-body.dialog-iframe-bd, html:not(#__):not(#___) .lfr-device.custom .modal-body.dialog-iframe-bd {
+  margin-top: 0;
+}
+html:not(#__):not(#___) .lfr-device.desktop {
+  border-radius: 16px;
+  padding: 24px;
+}
+html:not(#__):not(#___) .lfr-device.custom, html:not(#__):not(#___) .lfr-device.resizable-device {
+  background-color: var(--btn-outline-primary-hover-border-color);
+  padding: 2px;
+}
+html:not(#__):not(#___) .lfr-device.custom.show, html:not(#__):not(#___) .lfr-device.resizable-device.show {
+  overflow: visible;
+}
+html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle {
+  display: none;
+}
+html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-tl, html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-tr, html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-bl, html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-br, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-tl, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-tr, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-bl, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-br {
+  display: block;
+}
+html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-inner-tl, html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-inner-tr, html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-inner-bl, html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-inner-br, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-inner-tl, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-inner-tr, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-inner-bl, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-inner-br {
+  background-image: url(/o/frontend-js-aui-web/aui/resize-base/assets/skins/sam/arrows.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 15px;
+  overflow: hidden;
+  text-indent: -99999em;
+  width: 15px;
+}
+html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-inner-bl, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-inner-bl {
+  bottom: 0;
+  right: -18px;
+}
+html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-inner-tl, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-inner-tl {
+  bottom: -15px;
+  right: -18px;
+}
+html:not(#__):not(#___) .lfr-device.custom.show .yui3-resize-handle-inner-tr, html:not(#__):not(#___) .lfr-device.resizable-device.show .yui3-resize-handle-inner-tr {
+  bottom: -15px;
+  right: 0;
+}

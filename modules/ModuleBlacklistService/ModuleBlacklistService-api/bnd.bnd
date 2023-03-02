@@ -1,0 +1,10 @@
+Bundle-Name: ModuleBlacklistService-api
+Bundle-SymbolicName: moduleblacklistservice.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	moduleblacklistservice.exception,\
+	moduleblacklistservice.model,\
+	moduleblacklistservice.service,\
+	moduleblacklistservice.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../ModuleBlacklistService-service/service.xml

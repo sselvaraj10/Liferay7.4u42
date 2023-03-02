@@ -2,4 +2,5 @@
 
 <p>
 	<b><liferay-ui:message key="panelappdemo.caption" /></b>
+	KSAJksjkjkjks
 </p>

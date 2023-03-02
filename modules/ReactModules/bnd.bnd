@@ -1,0 +1,5 @@
+Bundle-Name: ReactModules
+Bundle-SymbolicName: reactmodules
+Bundle-Version: 1.0.0
+Export-Package: reactmodules.constants
+Web-ContextPath: /ReactModules
