@@ -1,0 +1,1065 @@
+2023-03-09 05:54:22.467 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/405/lib/idea_rt.jar=44779:/snap/intellij-idea-ultimate/405/bin
+2023-03-09 05:54:25.859 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2023-03-09 05:54:30.676 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2023-03-09 05:54:31.525 INFO  [ModuleFramework-Static-Bundles-6][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2023-03-09 05:54:33.955 INFO  [ModuleFramework-Static-Bundles-5][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.document.library.web.jar
+2023-03-09 05:54:33.956 INFO  [ModuleFramework-Static-Bundles-5][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2023-03-09 05:54:34.186 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2023-03-09 05:54:34.186 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2023-03-09 05:55:01.963 INFO  [Start Level: Equinox Container: 92ee0382-cbf2-42f7-95a1-cc25e6ef70d4][MessageBusRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredParallelMessageListener@666be24f
+2023-03-09 05:55:01.965 INFO  [Start Level: Equinox Container: 92ee0382-cbf2-42f7-95a1-cc25e6ef70d4][MessageBusRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSerialMessageListener@6df60401
+2023-03-09 05:55:01.966 INFO  [Start Level: Equinox Container: 92ee0382-cbf2-42f7-95a1-cc25e6ef70d4][MessageBusRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSynchronousMessageListener@3b22fe5f
+2023-03-09 05:55:02.189 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2023-03-09 05:55:02.190 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2023-03-09 05:55:06.559 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2023-03-09 05:55:06.560 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2023-03-09 05:55:06.575 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2023-03-09 05:55:06.576 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 1 ms
+2023-03-09 05:55:06.577 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2023-03-09 05:55:06.643 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.add" is obsolete
+2023-03-09 05:55:06.643 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.update" is obsolete
+2023-03-09 05:55:06.644 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.translate" is obsolete
+2023-03-09 05:55:06.644 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 67 ms
+2023-03-09 05:55:06.645 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2023-03-09 05:55:06.645 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 0 ms
+2023-03-09 05:55:07.334 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-03-09 05:55:07.395 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 61 ms
+2023-03-09 05:55:11.071 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2023-03-09 05:55:12.075 WARN  [com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarMainProcessCallable@1f508745[-Xms1g -Xmx1g -XX:+AlwaysPreTouch -Des.path.conf=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/sidecar14218945299290160850/config -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dio.netty.allocator.type=unpooled -Dio.netty.allocator.numDirectArenas=0 -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp/sidecar14218945299290160850 -Djava.security.policy=jar:file:/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/state/org.eclipse.osgi/287/0/bundleFile!/META-INF/sidecar.policy -Djna.nosys=true]-][Sidecar:633] Sidecar Elasticsearch process is aborted
+java.util.concurrent.ExecutionException: com.liferay.petra.process.ProcessException: java.lang.ExceptionInInitializerError
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar$RestartFutureListener.complete(Sidecar.java:629) [bundleFile:?]
+	at com.liferay.petra.concurrent.DefaultNoticeableFuture$OnceFutureListener.complete(DefaultNoticeableFuture.java:111) [com.liferay.petra.concurrent.jar:?]
+	at com.liferay.petra.concurrent.DefaultNoticeableFuture.done(DefaultNoticeableFuture.java:85) [com.liferay.petra.concurrent.jar:?]
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:381) [?:?]
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:250) [?:?]
+	at com.liferay.petra.concurrent.DefaultNoticeableFuture.setException(DefaultNoticeableFuture.java:79) [com.liferay.petra.concurrent.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:269) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: com.liferay.petra.process.ProcessException: java.lang.ExceptionInInitializerError
+	at com.liferay.petra.process.local.LocalProcessLauncher.main(LocalProcessLauncher.java:153) ~[com.liferay.petra.process.jar:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at com.liferay.petra.reflect.ReflectionUtil.<clinit>(ReflectionUtil.java:162) ~[com.liferay.petra.reflect.jar:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarMainProcessCallable._loadModifiedClasses(SidecarMainProcessCallable.java:63) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarMainProcessCallable.call(SidecarMainProcessCallable.java:51) ~[?:?]
+	at com.liferay.petra.process.local.LocalProcessLauncher.main(LocalProcessLauncher.java:135) ~[com.liferay.petra.process.jar:?]
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException accessible: module java.base does not "opens java.lang" to unnamed module @5e922278
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at com.liferay.petra.reflect.ReflectionUtil.<clinit>(ReflectionUtil.java:155) ~[com.liferay.petra.reflect.jar:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarMainProcessCallable._loadModifiedClasses(SidecarMainProcessCallable.java:63) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarMainProcessCallable.call(SidecarMainProcessCallable.java:51) ~[?:?]
+	at com.liferay.petra.process.local.LocalProcessLauncher.main(LocalProcessLauncher.java:135) ~[com.liferay.petra.process.jar:?]
+2023-03-09 05:55:12.076 ERROR [main][ElasticsearchConnectionManager:82] Elasticsearch sidecar could not be started. Search will be unavailable. Manual installation of Elasticsearch and activation of remote mode is recommended.
+java.util.concurrent.CancellationException: null
+	at java.util.concurrent.FutureTask.report(FutureTask.java:121) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar._waitForPublishedAddress(Sidecar.java:592) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar._startElasticsearch(Sidecar.java:559) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar.start(Sidecar.java:116) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager.lambda$applyConfigurations$0(SidecarManager.java:135) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnection.connect(ElasticsearchConnection.java:61) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager.addElasticsearchConnection(ElasticsearchConnectionManager.java:76) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager.applyConfigurations(SidecarManager.java:142) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager.activate(SidecarManager.java:79) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:228) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:664) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:510) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:310) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:300) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:341) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:983) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:956) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:765) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerService(ModuleFrameworkImpl.java:1265) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.lambda$_registerApplicationContext$4(ModuleFrameworkImpl.java:1218) ~[com.liferay.portal.bootstrap.jar:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerApplicationContext(ModuleFrameworkImpl.java:1205) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.registerContext(ModuleFrameworkImpl.java:255) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.registerContext(ModuleFrameworkUtil.java:41) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:354) [portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) [?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2023-03-09 05:55:12.118 ERROR [main][SidecarManager:56] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.53 (287)[com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager(798)] : The activate method has thrown an exception
+java.util.concurrent.CancellationException: null
+	at java.util.concurrent.FutureTask.report(FutureTask.java:121) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar._waitForPublishedAddress(Sidecar.java:592) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar._startElasticsearch(Sidecar.java:559) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar.start(Sidecar.java:116) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager.lambda$applyConfigurations$0(SidecarManager.java:135) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnection.connect(ElasticsearchConnection.java:61) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager.addElasticsearchConnection(ElasticsearchConnectionManager.java:76) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager.applyConfigurations(SidecarManager.java:142) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager.activate(SidecarManager.java:79) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:228) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:664) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:510) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:310) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:300) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:341) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:983) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:956) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:765) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerService(ModuleFrameworkImpl.java:1265) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.lambda$_registerApplicationContext$4(ModuleFrameworkImpl.java:1218) ~[com.liferay.portal.bootstrap.jar:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerApplicationContext(ModuleFrameworkImpl.java:1205) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.registerContext(ModuleFrameworkImpl.java:255) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.registerContext(ModuleFrameworkUtil.java:41) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:354) [portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) [?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2023-03-09 05:55:15.263 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/tensorflow_model_download
+2023-03-09 05:55:15.272 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/SYSTEM_ENGINE
+2023-03-09 05:55:15.275 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/SYSTEM_ENGINE
+2023-03-09 05:55:15.279 ERROR [main][ElasticsearchEngineConfigurator:56] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.53 (287)[com.liferay.portal.search.elasticsearch7.internal.ElasticsearchEngineConfigurator(634)] : The activate method has thrown an exception
+com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionNotInitializedException: Elasticsearch connection not found. Production Mode Enabled: false, Connection ID: null, Prefer Local Cluster: true, Cross-Cluster Replication Enabled: false. Enable INFO logs on class com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager for more information
+	at com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager.getRestHighLevelClient(ElasticsearchConnectionManager.java:193) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.HealthClusterRequestExecutorImpl._getClusterHealthResponse(HealthClusterRequestExecutorImpl.java:105) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.HealthClusterRequestExecutorImpl.execute(HealthClusterRequestExecutorImpl.java:49) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.ElasticsearchClusterRequestExecutor.executeClusterRequest(ElasticsearchClusterRequestExecutor.java:53) ~[?:?]
+	at com.liferay.portal.search.engine.adapter.cluster.HealthClusterRequest.accept(HealthClusterRequest.java:40) ~[?:?]
+	at com.liferay.portal.search.engine.adapter.cluster.HealthClusterRequest.accept(HealthClusterRequest.java:22) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.ElasticsearchClusterRequestExecutor.execute(ElasticsearchClusterRequestExecutor.java:46) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.ElasticsearchSearchEngineAdapterImpl.execute(ElasticsearchSearchEngineAdapterImpl.java:69) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine._waitForYellowStatus(ElasticsearchSearchEngine.java:445) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine.initialize(ElasticsearchSearchEngine.java:151) ~[?:?]
+	at com.liferay.portal.kernel.search.SearchEngineProxyWrapper.initialize(SearchEngineProxyWrapper.java:66) ~[portal-kernel.jar:?]
+	at com.liferay.portal.search.elasticsearch7.internal.BaseSearchEngineConfigurator.setSearchEngine(BaseSearchEngineConfigurator.java:258) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.BaseSearchEngineConfigurator._initSearchEngine(BaseSearchEngineConfigurator.java:428) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.BaseSearchEngineConfigurator.initialize(BaseSearchEngineConfigurator.java:211) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.ElasticsearchEngineConfigurator.activate(ElasticsearchEngineConfigurator.java:52) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:228) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:664) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:510) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:310) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:300) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:341) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:983) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:956) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212) ~[org.eclipse.osgi.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:524) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:464) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:624) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.search.internal.SearchEngineHelperImpl$1.addingService(SearchEngineHelperImpl.java:316) ~[?:?]
+	at com.liferay.portal.search.internal.SearchEngineHelperImpl$1.addingService(SearchEngineHelperImpl.java:308) ~[?:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:903) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerService(ModuleFrameworkImpl.java:1265) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.lambda$_registerApplicationContext$4(ModuleFrameworkImpl.java:1218) ~[com.liferay.portal.bootstrap.jar:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerApplicationContext(ModuleFrameworkImpl.java:1205) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.registerContext(ModuleFrameworkImpl.java:255) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.registerContext(ModuleFrameworkUtil.java:41) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:354) [portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) [?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2023-03-09 05:55:15.304 WARN  [Framework Event Dispatcher: Equinox Container: 92ee0382-cbf2-42f7-95a1-cc25e6ef70d4][Framework:62] FrameworkEvent WARNING
+org.osgi.framework.ServiceException: org.apache.felix.scr.impl.manager.SingleComponentManager.getService() returned a null service object
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:232) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:524) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:464) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:624) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.search.internal.SearchEngineHelperImpl$1.addingService(SearchEngineHelperImpl.java:316) ~[?:?]
+	at com.liferay.portal.search.internal.SearchEngineHelperImpl$1.addingService(SearchEngineHelperImpl.java:308) ~[?:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:903) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerService(ModuleFrameworkImpl.java:1265) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.lambda$_registerApplicationContext$4(ModuleFrameworkImpl.java:1218) ~[com.liferay.portal.bootstrap.jar:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerApplicationContext(ModuleFrameworkImpl.java:1205) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.registerContext(ModuleFrameworkImpl.java:255) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.registerContext(ModuleFrameworkUtil.java:41) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:354) ~[portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) ~[com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) ~[com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) ~[?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) ~[catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) ~[?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) ~[catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) ~[bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) ~[bootstrap.jar:9.0.56]
+2023-03-09 05:55:15.328 ERROR [Framework Event Dispatcher: Equinox Container: 92ee0382-cbf2-42f7-95a1-cc25e6ef70d4][Framework:56] FrameworkEvent ERROR
+java.lang.NullPointerException: null
+	at com.liferay.portal.search.internal.SearchEngineHelperImpl$1.addingService(SearchEngineHelperImpl.java:318) ~[?:?]
+	at com.liferay.portal.search.internal.SearchEngineHelperImpl$1.addingService(SearchEngineHelperImpl.java:308) ~[?:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) ~[org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:903) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerService(ModuleFrameworkImpl.java:1265) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.lambda$_registerApplicationContext$4(ModuleFrameworkImpl.java:1218) ~[com.liferay.portal.bootstrap.jar:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerApplicationContext(ModuleFrameworkImpl.java:1205) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.registerContext(ModuleFrameworkImpl.java:255) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.registerContext(ModuleFrameworkUtil.java:41) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:354) ~[portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) ~[com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) ~[com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) ~[?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) ~[catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) ~[?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) ~[catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) ~[bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) ~[bootstrap.jar:9.0.56]
+2023-03-09 05:55:15.306 ERROR [main][ElasticsearchEngineConfigurator:56] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.53 (287)[com.liferay.portal.search.elasticsearch7.internal.ElasticsearchEngineConfigurator(634)] : The activate method has thrown an exception
+com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionNotInitializedException: Elasticsearch connection not found. Production Mode Enabled: false, Connection ID: null, Prefer Local Cluster: true, Cross-Cluster Replication Enabled: false. Enable INFO logs on class com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager for more information
+	at com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager.getRestHighLevelClient(ElasticsearchConnectionManager.java:193) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.HealthClusterRequestExecutorImpl._getClusterHealthResponse(HealthClusterRequestExecutorImpl.java:105) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.HealthClusterRequestExecutorImpl.execute(HealthClusterRequestExecutorImpl.java:49) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.ElasticsearchClusterRequestExecutor.executeClusterRequest(ElasticsearchClusterRequestExecutor.java:53) ~[?:?]
+	at com.liferay.portal.search.engine.adapter.cluster.HealthClusterRequest.accept(HealthClusterRequest.java:40) ~[?:?]
+	at com.liferay.portal.search.engine.adapter.cluster.HealthClusterRequest.accept(HealthClusterRequest.java:22) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.ElasticsearchClusterRequestExecutor.execute(ElasticsearchClusterRequestExecutor.java:46) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.ElasticsearchSearchEngineAdapterImpl.execute(ElasticsearchSearchEngineAdapterImpl.java:69) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine._waitForYellowStatus(ElasticsearchSearchEngine.java:445) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine.initialize(ElasticsearchSearchEngine.java:151) ~[?:?]
+	at com.liferay.portal.kernel.search.SearchEngineProxyWrapper.initialize(SearchEngineProxyWrapper.java:66) ~[portal-kernel.jar:?]
+	at com.liferay.portal.search.elasticsearch7.internal.BaseSearchEngineConfigurator.setSearchEngine(BaseSearchEngineConfigurator.java:258) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.BaseSearchEngineConfigurator._initSearchEngine(BaseSearchEngineConfigurator.java:428) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.BaseSearchEngineConfigurator.initialize(BaseSearchEngineConfigurator.java:211) ~[?:?]
+	at com.liferay.portal.search.elasticsearch7.internal.ElasticsearchEngineConfigurator.activate(ElasticsearchEngineConfigurator.java:52) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:228) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:664) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:510) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:310) ~[?:?]
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:300) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:341) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:983) ~[?:?]
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:956) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:756) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892) ~[?:?]
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959) ~[?:?]
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1053) ~[?:?]
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1007) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880) ~[?:?]
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168) ~[?:?]
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125) ~[?:?]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:891) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:469) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerService(ModuleFrameworkImpl.java:1265) ~[com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.lambda$_registerApplicationContext$4(ModuleFrameworkImpl.java:1218) ~[com.liferay.portal.bootstrap.jar:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._registerApplicationContext(ModuleFrameworkImpl.java:1205) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.registerContext(ModuleFrameworkImpl.java:255) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.registerContext(ModuleFrameworkUtil.java:41) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:354) [portal-impl.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) [?:?]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2023-03-09 05:55:15.355 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_async
+2023-03-09 05:55:15.361 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_sync
+2023-03-09 05:55:15.368 INFO  [main][ParellelDestinationConfig:83] Destination is creared ..liferaysavvy/parallel-destination
+2023-03-09 05:55:15.370 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/parallel-destination
+2023-03-09 05:55:15.372 INFO  [main][ParellelDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-03-09 05:55:15.375 INFO  [main][SerialDestinationConfig:83] Destination is creared ..liferaysavvy/serial-destination
+2023-03-09 05:55:15.376 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/serial-destination
+2023-03-09 05:55:15.379 INFO  [main][SerialDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-03-09 05:55:15.382 INFO  [main][SynchronousDestinationConfig:83] Destination is creared ..liferaysavvy/synchronous-destination
+2023-03-09 05:55:15.383 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/synchronous-destination
+2023-03-09 05:55:15.387 INFO  [main][DestinationListenerRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredParallelMessageListener@7a587439
+2023-03-09 05:55:15.388 INFO  [main][DestinationListenerRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSerialMessageListener@624e1774
+2023-03-09 05:55:15.389 INFO  [main][DestinationListenerRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSynchronousMessageListener@fffc91d
+2023-03-09 05:55:15.390 INFO  [main][SynchronousDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-03-09 05:55:15.391 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/analytics_messages_processor
+2023-03-09 05:55:15.394 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scheduled_user_ldap_import
+2023-03-09 05:55:15.398 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/default_response
+2023-03-09 05:55:15.400 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/message_status
+2023-03-09 05:55:15.403 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/live_users
+2023-03-09 05:55:15.406 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_audio_processor
+2023-03-09 05:55:15.408 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/async_service
+2023-03-09 05:55:15.411 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_local_publisher
+2023-03-09 05:55:15.414 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/convert_process
+2023-03-09 05:55:15.417 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_pdf_processor
+2023-03-09 05:55:15.420 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_clean_up
+2023-03-09 05:55:15.423 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_video_processor
+2023-03-09 05:55:15.427 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_raw_metadata_processor
+2023-03-09 05:55:15.430 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_image_processor
+2023-03-09 05:55:15.434 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_boards_mailing_list
+2023-03-09 05:55:15.438 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_sender
+2023-03-09 05:55:15.441 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/hot_deploy
+2023-03-09 05:55:15.443 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_remote_publisher
+2023-03-09 05:55:15.460 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_comet_response
+2023-03-09 05:55:15.463 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_response
+2023-03-09 05:55:15.466 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller
+2023-03-09 05:55:15.474 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_definition
+2023-03-09 05:55:15.477 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_instance
+2023-03-09 05:55:15.480 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_log
+2023-03-09 05:55:15.483 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_task
+2023-03-09 05:55:15.487 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_engine
+2023-03-09 05:55:15.491 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_comparator
+2023-03-09 05:55:15.495 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_status
+2023-03-09 05:55:15.503 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/mail
+2023-03-09 05:55:15.515 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scripting_executor
+2023-03-09 05:55:15.521 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/ddm_structure_reindex
+2023-03-09 05:55:15.528 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/segments_entry_reindex
+2023-03-09 05:55:15.535 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_base_price_list
+2023-03-09 05:55:15.539 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_order_status
+2023-03-09 05:55:15.543 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_payment_status
+2023-03-09 05:55:15.558 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_shipment_status
+2023-03-09 05:55:15.563 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_subscription_status
+2023-03-09 05:55:15.574 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/monitoring
+2023-03-09 05:55:15.596 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/adaptive_media_processor
+2023-03-09 05:55:15.604 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/GENERIC_ENGINE
+2023-03-09 05:55:15.609 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/GENERIC_ENGINE
+2023-03-09 05:55:15.618 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/interest_terms
+2023-03-09 05:55:15.624 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/audit
+2023-03-09 05:55:16.538 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/flags
+2023-03-09 05:55:18.940 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2023-03-09 05:55:18.960 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-03-09 05:55:18.988 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 27 ms
+2023-03-09 05:55:18.995 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/lcs_status
+2023-03-09 05:55:19.025 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2023-03-09 05:55:19.688 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2023-03-09 05:55:53.349 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2023-03-09 05:55:53.736 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2023-03-09 05:55:53.987 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2023-03-09 05:55:54.164 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2023-03-09 05:55:54.295 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2023-03-09 05:55:54.454 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2023-03-09 05:55:54.554 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2023-03-09 05:55:54.649 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2023-03-09 05:55:54.807 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2023-03-09 05:55:54.930 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2023-03-09 05:55:55.200 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for cstheme2-theme is available for use
+2023-03-09 05:55:55.390 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for module-based-theme is available for use
+2023-03-09 11:43:30.210 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for module-based-theme was unregistered
+2023-03-09 11:43:30.228 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for cstheme2-theme was unregistered
+2023-03-09 11:43:30.256 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2023-03-09 11:43:30.271 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2023-03-09 11:43:30.285 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2023-03-09 11:43:30.300 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2023-03-09 11:43:30.324 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2023-03-09 11:43:30.344 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2023-03-09 11:43:30.366 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2023-03-09 11:43:30.414 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2023-03-09 11:43:30.435 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2023-03-09 11:43:30.457 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered
+2023-03-09 11:43:54.167 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Dcatalina.base=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dcatalina.home=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56 -Dfile.encoding=UTF8 -Djava.io.tmpdir=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/temp -Djava.net.preferIPv4Stack=true -Djava.util.logging.config.file=/media/root322/Data/Documents/LiferayWorkspace/bundles/tomcat-9.0.56/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -javaagent:/snap/intellij-idea-ultimate/405/lib/idea_rt.jar=42907:/snap/intellij-idea-ultimate/405/bin
+2023-03-09 11:43:56.303 INFO  [main][DialectDetector:153] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2023-03-09 11:43:59.653 INFO  [main][ModuleFrameworkImpl:1279] Starting initial bundles
+2023-03-09 11:44:00.057 INFO  [ModuleFramework-Static-Bundles-3][InterpolationConfigurationPlugin:109] Configured directory for secrets: /media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/configs
+2023-03-09 11:44:01.445 INFO  [ModuleFramework-Static-Bundles-2][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.document.library.web.jar
+2023-03-09 11:44:01.451 INFO  [ModuleFramework-Static-Bundles-2][DefaultLPKGDeployer:456] Using overriding JAR bundle LPKG-Override::/media/root322/Data/Documents/LiferayWorkspace/bundles/osgi/marketplace/override/com.liferay.portal.language.lang.jar
+2023-03-09 11:44:01.723 INFO  [main][ModuleFrameworkImpl:1576] Started initial bundles
+2023-03-09 11:44:01.724 INFO  [main][ModuleFrameworkImpl:1625] Starting dynamic bundles
+2023-03-09 11:44:16.411 INFO  [Start Level: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][MessageBusRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredParallelMessageListener@3d87cfa
+2023-03-09 11:44:16.412 INFO  [Start Level: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][MessageBusRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSerialMessageListener@4fcdb7a3
+2023-03-09 11:44:16.413 INFO  [Start Level: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][MessageBusRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.MessageBusRegisteredSynchronousMessageListener@745b0bf2
+2023-03-09 11:44:16.576 INFO  [main][ModuleFrameworkImpl:1647] Started dynamic bundles
+2023-03-09 11:44:16.577 INFO  [main][ModuleFrameworkImpl:1654] Starting web bundles
+2023-03-09 11:44:20.827 INFO  [main][ModuleFrameworkImpl:1708] Started web bundles
+2023-03-09 11:44:20.827 INFO  [main][ModuleFrameworkImpl:278] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2023-03-09 11:44:20.847 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2023-03-09 11:44:20.849 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 2 ms
+2023-03-09 11:44:20.851 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2023-03-09 11:44:20.891 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.add" is obsolete
+2023-03-09 11:44:20.896 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.update" is obsolete
+2023-03-09 11:44:20.896 ERROR [main][VerifyProperties:182] Portal property "journal.article.form.translate" is obsolete
+2023-03-09 11:44:20.898 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 46 ms
+2023-03-09 11:44:20.898 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary
+2023-03-09 11:44:20.898 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 0 ms
+2023-03-09 11:44:21.516 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-03-09 11:44:21.587 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 71 ms
+2023-03-09 11:44:25.302 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2023-03-09 11:44:43.948 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9501
+2023-03-09 11:44:49.554 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/adaptive_media_processor
+2023-03-09 11:44:49.560 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/ddm_structure_reindex
+2023-03-09 11:44:49.567 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_base_price_list
+2023-03-09 11:44:49.571 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_order_status
+2023-03-09 11:44:49.576 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_payment_status
+2023-03-09 11:44:49.580 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_shipment_status
+2023-03-09 11:44:49.583 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/commerce_subscription_status
+2023-03-09 11:44:49.606 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scripting_executor
+2023-03-09 11:44:49.628 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/SYSTEM_ENGINE
+2023-03-09 11:44:49.637 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/SYSTEM_ENGINE
+2023-03-09 11:44:50.086 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/audit
+2023-03-09 11:44:50.097 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/interest_terms
+2023-03-09 11:44:50.112 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/monitoring
+2023-03-09 11:44:50.117 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/segments_entry_reindex
+2023-03-09 11:44:50.123 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/tensorflow_model_download
+2023-03-09 11:44:50.128 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/analytics_messages_processor
+2023-03-09 11:44:50.133 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/scheduled_user_ldap_import
+2023-03-09 11:44:50.137 INFO  [main][ParellelDestinationConfig:83] Destination is creared ..liferaysavvy/parallel-destination
+2023-03-09 11:44:50.139 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/parallel-destination
+2023-03-09 11:44:50.140 INFO  [main][ParellelDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-03-09 11:44:50.143 INFO  [main][SerialDestinationConfig:83] Destination is creared ..liferaysavvy/serial-destination
+2023-03-09 11:44:50.144 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/serial-destination
+2023-03-09 11:44:50.145 INFO  [main][SerialDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-03-09 11:44:50.148 INFO  [main][SynchronousDestinationConfig:83] Destination is creared ..liferaysavvy/synchronous-destination
+2023-03-09 11:44:50.151 INFO  [main][DestinationListenerRegistrator:41] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredParallelMessageListener@576f4b4b
+2023-03-09 11:44:50.152 INFO  [main][DestinationListenerRegistrator:45] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSerialMessageListener@4c8082b7
+2023-03-09 11:44:50.153 INFO  [main][DestinationListenerRegistrator:49] Message Listener Registered..com.liferaysavvy.messagebus.event.listener.DestinationRegisteredSynchronousMessageListener@1a46f6f4
+2023-03-09 11:44:50.153 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferaysavvy/synchronous-destination
+2023-03-09 11:44:50.155 INFO  [main][SynchronousDestinationConfig:90] Destination is registred with Service Regisration ..
+2023-03-09 11:44:50.159 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_async
+2023-03-09 11:44:50.164 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/export_import_lifecycle_event_sync
+2023-03-09 11:44:50.170 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/default_response
+2023-03-09 11:44:50.173 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_bus/message_status
+2023-03-09 11:44:50.176 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/live_users
+2023-03-09 11:44:50.179 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_audio_processor
+2023-03-09 11:44:50.183 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/async_service
+2023-03-09 11:44:50.186 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_local_publisher
+2023-03-09 11:44:50.189 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/convert_process
+2023-03-09 11:44:50.192 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_pdf_processor
+2023-03-09 11:44:50.195 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_clean_up
+2023-03-09 11:44:50.198 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_video_processor
+2023-03-09 11:44:50.200 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_raw_metadata_processor
+2023-03-09 11:44:50.202 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/document_library_image_processor
+2023-03-09 11:44:50.204 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/message_boards_mailing_list
+2023-03-09 11:44:50.207 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/subscription_sender
+2023-03-09 11:44:50.210 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/hot_deploy
+2023-03-09 11:44:50.213 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/layouts_remote_publisher
+2023-03-09 11:44:50.231 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_comet_response
+2023-03-09 11:44:50.234 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller_response
+2023-03-09 11:44:50.237 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/poller
+2023-03-09 11:44:50.245 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_definition
+2023-03-09 11:44:50.250 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_instance
+2023-03-09 11:44:50.253 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_log
+2023-03-09 11:44:50.255 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_task
+2023-03-09 11:44:50.258 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_engine
+2023-03-09 11:44:50.262 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_comparator
+2023-03-09 11:44:50.265 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/workflow_status
+2023-03-09 11:44:50.269 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/mail
+2023-03-09 11:44:50.285 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_reader/GENERIC_ENGINE
+2023-03-09 11:44:50.290 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/search_writer/GENERIC_ENGINE
+2023-03-09 11:44:50.628 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/flags
+2023-03-09 11:44:53.503 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2023-03-09 11:44:53.547 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2023-03-09 11:44:53.597 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 49 ms
+2023-03-09 11:44:53.611 INFO  [main][MessageBusEventListenerNotification:33] **********Destination Added***********liferay/lcs_status
+2023-03-09 11:44:53.657 INFO  [main][LicenseManager:-1] Digital Enterprise Development license validation passed
+2023-03-09 11:44:54.234 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /media/root322/Data/Documents/LiferayWorkspace/bundles/deploy
+2023-03-09 11:45:27.663 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2023-03-09 11:45:27.854 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2023-03-09 11:45:27.986 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2023-03-09 11:45:28.090 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2023-03-09 11:45:28.253 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2023-03-09 11:45:28.364 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][HookHotDeployListener:496] Hook for LangHook is available for use
+2023-03-09 11:45:28.477 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][LayoutTemplateHotDeployListener:107] 1 layout template for LayoutTemplateDemo is available for use
+2023-03-09 11:45:28.608 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for democlassictheme-theme is available for use
+2023-03-09 11:45:28.717 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for demotheme-theme is available for use
+2023-03-09 11:45:28.835 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for my-liferay-theme is available for use
+2023-03-09 11:45:29.131 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for cstheme2-theme is available for use
+2023-03-09 11:45:29.374 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for module-based-theme is available for use
+2023-03-09 12:27:05.647 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.api_1.0.0 [1851]
+2023-03-09 12:27:05.756 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.service_1.0.0 [1852]
+2023-03-09 12:27:05.773 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.portlet_1.0.0 [1835]
+2023-03-09 12:27:05.804 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:80] STOPPED background-task_1.0.0 [1803]
+2023-03-09 12:27:06.090 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:77] STARTED background-task_1.0.0 [1803]
+2023-03-09 12:27:06.096 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.portlet_1.0.0 [1835]
+2023-03-09 12:27:06.246 ERROR [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][ServiceConfigurationInitializer:107] Unable to initialize service component
+com.liferay.portal.kernel.exception.OldServiceComponentException: Build namespace GB has build number 83 which is newer than 61
+	at com.liferay.portal.service.impl.ServiceComponentLocalServiceImpl.initServiceComponent(ServiceComponentLocalServiceImpl.java:192) ~[portal-impl.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor133.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:50) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.transaction.TransactionInterceptor.invoke(TransactionInterceptor.java:69) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57) ~[portal-impl.jar:?]
+	at com.liferay.change.tracking.internal.aop.CTTransactionAdvice.invoke(CTTransactionAdvice.java:79) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopInvocationHandler.invoke(AopInvocationHandler.java:49) ~[portal-impl.jar:?]
+	at com.sun.proxy.$Proxy285.initServiceComponent(Unknown Source) ~[?:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer._initServiceComponent(ServiceConfigurationInitializer.java:102) ~[?:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer.start(ServiceConfigurationInitializer.java:64) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor132.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.felix.dm.impl.InvocationUtil.invokeMethod(InvocationUtil.java:157) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.InvocationUtil.invokeCallbackMethod(InvocationUtil.java:112) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invokeCallbackMethod(ComponentImpl.java:638) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invoke(ComponentImpl.java:1783) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invokeStart(ComponentImpl.java:1281) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.performTransition(ComponentImpl.java:1232) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.handleChange(ComponentImpl.java:1166) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.lambda$start$2(ComponentImpl.java:502) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.runTask(SerialExecutor.java:138) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.runTasks(SerialExecutor.java:120) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.execute(SerialExecutor.java:86) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.execute(SerialExecutor.java:105) [bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.start(ComponentImpl.java:500) [bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentScheduler.add(ComponentScheduler.java:69) [bundleFile:?]
+	at org.apache.felix.dm.DependencyManager.add(DependencyManager.java:141) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender$ServiceConfigurationExtension.start(ServiceConfigurationExtender.java:111) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender.addingBundle(ServiceConfigurationExtender.java:85) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender.addingBundle(ServiceConfigurationExtender.java:46) [bundleFile:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:908) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:137) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:129) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:191) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:578) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:449) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.start(ModuleContainer.java:777) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.applyDelta(ModuleContainer.java:754) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolveAndApply(ModuleContainer.java:538) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolve(ModuleContainer.java:484) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.refresh(ModuleContainer.java:1028) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1409) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+2023-03-09 12:27:06.413 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.service_1.0.0 [1852]
+2023-03-09 12:27:06.414 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.api_1.0.0 [1851]
+2023-03-09 12:27:11.549 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:80] STOPPED com.liferay.docs.guestbook.service_1.0.0 [1852]
+2023-03-09 12:27:11.698 ERROR [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][ServiceConfigurationInitializer:107] Unable to initialize service component
+com.liferay.portal.kernel.exception.OldServiceComponentException: Build namespace GB has build number 83 which is newer than 64
+	at com.liferay.portal.service.impl.ServiceComponentLocalServiceImpl.initServiceComponent(ServiceComponentLocalServiceImpl.java:192) ~[portal-impl.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor133.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:50) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.transaction.TransactionInterceptor.invoke(TransactionInterceptor.java:69) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57) ~[portal-impl.jar:?]
+	at com.liferay.change.tracking.internal.aop.CTTransactionAdvice.invoke(CTTransactionAdvice.java:79) ~[?:?]
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57) ~[portal-impl.jar:?]
+	at com.liferay.portal.spring.aop.AopInvocationHandler.invoke(AopInvocationHandler.java:49) ~[portal-impl.jar:?]
+	at com.sun.proxy.$Proxy285.initServiceComponent(Unknown Source) ~[?:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer._initServiceComponent(ServiceConfigurationInitializer.java:102) ~[?:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer.start(ServiceConfigurationInitializer.java:64) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor132.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.felix.dm.impl.InvocationUtil.invokeMethod(InvocationUtil.java:157) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.InvocationUtil.invokeCallbackMethod(InvocationUtil.java:112) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invokeCallbackMethod(ComponentImpl.java:638) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invoke(ComponentImpl.java:1783) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.invokeStart(ComponentImpl.java:1281) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.performTransition(ComponentImpl.java:1232) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.handleChange(ComponentImpl.java:1166) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.lambda$start$2(ComponentImpl.java:502) ~[bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.runTask(SerialExecutor.java:138) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.runTasks(SerialExecutor.java:120) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.execute(SerialExecutor.java:86) [bundleFile:?]
+	at org.apache.felix.dm.impl.SerialExecutor.execute(SerialExecutor.java:105) [bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentImpl.start(ComponentImpl.java:500) [bundleFile:?]
+	at org.apache.felix.dm.impl.ComponentScheduler.add(ComponentScheduler.java:69) [bundleFile:?]
+	at org.apache.felix.dm.DependencyManager.add(DependencyManager.java:141) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender$ServiceConfigurationExtension.start(ServiceConfigurationExtender.java:111) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender.addingBundle(ServiceConfigurationExtender.java:85) [bundleFile:?]
+	at com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationExtender.addingBundle(ServiceConfigurationExtender.java:46) [bundleFile:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.eclipse.osgi.jar:?]
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:908) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:137) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:129) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:191) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:578) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:449) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.start(ModuleContainer.java:777) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.applyDelta(ModuleContainer.java:768) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolveAndApply(ModuleContainer.java:538) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.resolve(ModuleContainer.java:484) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer.refresh(ModuleContainer.java:1028) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1409) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerWiring.dispatchEvent(ModuleContainer.java:1) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+2023-03-09 12:27:11.850 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.service_1.0.0 [1852]

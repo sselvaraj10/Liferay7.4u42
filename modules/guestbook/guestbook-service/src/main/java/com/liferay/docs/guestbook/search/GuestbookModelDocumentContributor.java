@@ -31,6 +31,8 @@ public class GuestbookModelDocumentContributor   implements ModelDocumentContrib
             String localizedTitle = LocalizationUtil.getLocalizedName(
                     Field.TITLE, defaultLocale.toString());
 
+
+
             document.addText(localizedTitle, guestbook.getName());
         } catch (PortalException pe) {
             if (_log.isWarnEnabled()) {

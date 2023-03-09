@@ -659,6 +659,10 @@ public abstract class GuestbookLocalServiceBaseImpl
 		assetEntryLocalService;
 
 	@Reference
+	protected com.liferay.asset.kernel.service.AssetLinkLocalService
+		assetLinkLocalService;
+
+	@Reference
 	protected com.liferay.asset.kernel.service.AssetTagLocalService
 		assetTagLocalService;
 

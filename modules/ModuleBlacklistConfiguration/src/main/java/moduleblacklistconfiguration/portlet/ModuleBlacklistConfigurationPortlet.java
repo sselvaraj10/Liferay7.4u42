@@ -64,6 +64,11 @@ public class ModuleBlacklistConfigurationPortlet extends MVCPortlet {
 					Portlet.class.getName(), renderRequest);
 			ThemeDisplay themeDisplay  =(ThemeDisplay)renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
 			List<com.liferay.portal.kernel.model.Portlet> portlets = PortletLocalServiceUtil.getPortlets(232,PortletLocalServiceUtil.getPortletsCount());
+			System.out.println("Portlet info1: "+portlets.get(0).getAllPortletModes());
+			System.out.println("Portlet info2: "+portlets.get(0).getAllWindowStates());
+			System.out.println("Portlet info3: "+portlets.get(0).getConfigurationActionClass());
+			System.out.println("Portlet info4: "+portlets.get(0).getControlPanelEntryCategory());
+
 			renderRequest.setAttribute("portlets", portlets);
 
 		} catch (PortalException e) {

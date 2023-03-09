@@ -30,9 +30,9 @@
 			<finder-column name="groupId" />
 		</finder>
 		<!-- References -->
-
-		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
-		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset"/>
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset"/>
+		<reference package-path="com.liferay.portlet.asset" entity="AssetLink"/>
 	</entity>
 
 
@@ -64,5 +64,9 @@
 			<finder-column name="groupId" />
 			<finder-column name="guestbookId" />
 		</finder>
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset"/>
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset"/>
+		<reference package-path="com.liferay.portlet.asset" entity="AssetLink"/>
 	</entity>
 </service-builder>

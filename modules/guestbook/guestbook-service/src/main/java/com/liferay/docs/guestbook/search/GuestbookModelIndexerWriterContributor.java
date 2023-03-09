@@ -41,18 +41,18 @@ public class GuestbookModelIndexerWriterContributor implements ModelIndexerWrite
         return guestbook.getCompanyId();
     }
 
-    @Override
-    public void modelIndexed(Guestbook guestbook) {
-        guestbookEntryBatchReindexer.reindex(
-                guestbook.getGuestbookId(), guestbook.getCompanyId());
-    }
+//    @Override
+//    public void modelIndexed(Guestbook guestbook) {
+//        guestbookEntryBatchReindexer.reindex(
+//                guestbook.getGuestbookId(), guestbook.getCompanyId());
+//    }
 
     @Reference
     protected DynamicQueryBatchIndexingActionableFactory
             dynamicQueryBatchIndexingActionableFactory;
 
-    @Reference
-    protected GuestbookEntryBatchReindexer guestbookEntryBatchReindexer;
+//    @Reference
+//    protected GuestbookEntryBatchReindexer guestbookEntryBatchReindexer;
 
     @Reference
     protected GuestbookLocalService guestbookLocalService;

@@ -1097,3 +1097,952 @@ Caused by: com.liferay.portal.kernel.repository.InvalidRepositoryIdException: No
 <log4j:locationInfo class="com.liferay.layout.seo.web.internal.util.OpenGraphImageProvider" method="_getFileEntryOpenGraphImageOptional" file="OpenGraphImageProvider.java" line="159"/>
 </log4j:event>
 
+<log4j:event logger="com.liferay.portal.internal.servlet.MainServlet" timestamp="1677740039204" level="ERROR" thread="http-nio-8000-exec-2">
+<log4j:message><![CDATA[null]]></log4j:message>
+<log4j:throwable><![CDATA[com.liferay.portal.kernel.exception.SystemException: com.liferay.portal.kernel.dao.orm.ORMException: javax.persistence.OptimisticLockException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at com.liferay.portal.kernel.service.persistence.impl.BasePersistenceImpl.processException(BasePersistenceImpl.java:639)
+	at com.liferay.portal.service.persistence.impl.UserPersistenceImpl.updateImpl(UserPersistenceImpl.java:8587)
+	at com.liferay.portal.service.persistence.impl.UserPersistenceImpl.updateImpl(UserPersistenceImpl.java:91)
+	at com.liferay.portal.kernel.service.persistence.impl.BasePersistenceImpl.update(BasePersistenceImpl.java:786)
+	at com.liferay.portal.service.impl.UserLocalServiceImpl.resetFailedLoginAttempts(UserLocalServiceImpl.java:6237)
+	at com.liferay.portal.service.impl.UserLocalServiceImpl.updateLastLogin(UserLocalServiceImpl.java:4608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.liferay.portal.kernel.bean.ClassLoaderBeanHandler.invoke(ClassLoaderBeanHandler.java:66)
+	at com.sun.proxy.$Proxy1471.updateLastLogin(Unknown Source)
+	at com.liferay.portal.kernel.service.UserLocalServiceWrapper.updateLastLogin(UserLocalServiceWrapper.java:3092)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.liferay.portal.kernel.bean.ClassLoaderBeanHandler.invoke(ClassLoaderBeanHandler.java:66)
+	at com.sun.proxy.$Proxy1472.updateLastLogin(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:50)
+	at com.liferay.portal.spring.transaction.TransactionInterceptor.invoke(TransactionInterceptor.java:69)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57)
+	at com.liferay.portal.kernel.aop.ChainableMethodAdvice.invoke(ChainableMethodAdvice.java:64)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57)
+	at com.liferay.change.tracking.internal.aop.CTTransactionAdvice.invoke(CTTransactionAdvice.java:79)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57)
+	at com.liferay.portal.spring.aop.AopInvocationHandler.invoke(AopInvocationHandler.java:49)
+	at com.sun.proxy.$Proxy129.updateLastLogin(Unknown Source)
+	at com.liferay.portal.kernel.service.UserLocalServiceUtil.updateLastLogin(UserLocalServiceUtil.java:2828)
+	at com.liferay.portal.internal.servlet.MainServlet._loginUser(MainServlet.java:997)
+	at com.liferay.portal.internal.servlet.MainServlet.service(MainServlet.java:534)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:124)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.change.tracking.internal.servlet.filter.CTCollectionPreviewFilter.processFilter(CTCollectionPreviewFilter.java:66)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:62)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:58)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:339)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:139)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:99)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:104)
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at com.liferay.friendly.url.internal.servlet.FriendlyURLServlet.service(FriendlyURLServlet.java:527)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at com.liferay.portal.servlet.ServletAdapter.service(ServletAdapter.java:98)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:124)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.change.tracking.internal.servlet.filter.CTCollectionPreviewFilter.processFilter(CTCollectionPreviewFilter.java:66)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.i18n.I18nFilter.processFilter(I18nFilter.java:364)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:62)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:58)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:339)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:262)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.sharepoint.SharepointFilter.processFilter(SharepointFilter.java:88)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:245)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:139)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:196)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:196)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:99)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:175)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:175)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:196)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:104)
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.liferay.portal.kernel.dao.orm.ORMException: javax.persistence.OptimisticLockException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at com.liferay.portal.dao.orm.hibernate.ExceptionTranslator.translate(ExceptionTranslator.java:78)
+	at com.liferay.portal.dao.orm.hibernate.SessionImpl.merge(SessionImpl.java:346)
+	at com.liferay.portal.service.persistence.impl.UserPersistenceImpl.updateImpl(UserPersistenceImpl.java:8583)
+	... 172 more
+Caused by: javax.persistence.OptimisticLockException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at org.hibernate.internal.ExceptionConverterImpl.wrapStaleStateException(ExceptionConverterImpl.java:223)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:93)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:840)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:816)
+	at com.liferay.portal.dao.orm.hibernate.SessionImpl.merge(SessionImpl.java:343)
+	... 173 more
+Caused by: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:341)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:172)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:70)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:829)
+	... 175 more
+]]></log4j:throwable>
+<log4j:locationInfo class="com.liferay.portal.internal.servlet.MainServlet" method="service" file="MainServlet.java" line="543"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.internal.servlet.MainServlet" timestamp="1677740041665" level="ERROR" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[null]]></log4j:message>
+<log4j:throwable><![CDATA[com.liferay.portal.kernel.exception.SystemException: com.liferay.portal.kernel.dao.orm.ORMException: javax.persistence.OptimisticLockException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at com.liferay.portal.kernel.service.persistence.impl.BasePersistenceImpl.processException(BasePersistenceImpl.java:639)
+	at com.liferay.portal.service.persistence.impl.UserPersistenceImpl.updateImpl(UserPersistenceImpl.java:8587)
+	at com.liferay.portal.service.persistence.impl.UserPersistenceImpl.updateImpl(UserPersistenceImpl.java:91)
+	at com.liferay.portal.kernel.service.persistence.impl.BasePersistenceImpl.update(BasePersistenceImpl.java:786)
+	at com.liferay.portal.service.impl.UserLocalServiceImpl.resetFailedLoginAttempts(UserLocalServiceImpl.java:6237)
+	at com.liferay.portal.service.impl.UserLocalServiceImpl.updateLastLogin(UserLocalServiceImpl.java:4608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.liferay.portal.kernel.bean.ClassLoaderBeanHandler.invoke(ClassLoaderBeanHandler.java:66)
+	at com.sun.proxy.$Proxy1471.updateLastLogin(Unknown Source)
+	at com.liferay.portal.kernel.service.UserLocalServiceWrapper.updateLastLogin(UserLocalServiceWrapper.java:3092)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.liferay.portal.kernel.bean.ClassLoaderBeanHandler.invoke(ClassLoaderBeanHandler.java:66)
+	at com.sun.proxy.$Proxy1472.updateLastLogin(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:50)
+	at com.liferay.portal.spring.transaction.TransactionInterceptor.invoke(TransactionInterceptor.java:69)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57)
+	at com.liferay.portal.kernel.aop.ChainableMethodAdvice.invoke(ChainableMethodAdvice.java:64)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57)
+	at com.liferay.change.tracking.internal.aop.CTTransactionAdvice.invoke(CTTransactionAdvice.java:79)
+	at com.liferay.portal.spring.aop.AopMethodInvocationImpl.proceed(AopMethodInvocationImpl.java:57)
+	at com.liferay.portal.spring.aop.AopInvocationHandler.invoke(AopInvocationHandler.java:49)
+	at com.sun.proxy.$Proxy129.updateLastLogin(Unknown Source)
+	at com.liferay.portal.kernel.service.UserLocalServiceUtil.updateLastLogin(UserLocalServiceUtil.java:2828)
+	at com.liferay.portal.internal.servlet.MainServlet._loginUser(MainServlet.java:997)
+	at com.liferay.portal.internal.servlet.MainServlet.service(MainServlet.java:534)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:124)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.change.tracking.internal.servlet.filter.CTCollectionPreviewFilter.processFilter(CTCollectionPreviewFilter.java:66)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:62)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:58)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:339)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:139)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:99)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:104)
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at com.liferay.friendly.url.internal.servlet.FriendlyURLServlet.service(FriendlyURLServlet.java:527)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at com.liferay.portal.servlet.ServletAdapter.service(ServletAdapter.java:98)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at com.liferay.shielded.container.internal.proxy.ServletWrapper.service(ServletWrapper.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:124)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.change.tracking.internal.servlet.filter.CTCollectionPreviewFilter.processFilter(CTCollectionPreviewFilter.java:66)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.i18n.I18nFilter.processFilter(I18nFilter.java:364)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.password.modified.PasswordModifiedFilter.processFilter(PasswordModifiedFilter.java:62)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.servlet.filters.lockout.LockoutFilter.processFilter(LockoutFilter.java:58)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.secure.BaseAuthFilter.processFilter(BaseAuthFilter.java:339)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.autologin.AutoLoginFilter.processFilter(AutoLoginFilter.java:262)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.sharepoint.SharepointFilter.processFilter(SharepointFilter.java:88)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.servlet.filters.virtualhost.VirtualHostFilter.processFilter(VirtualHostFilter.java:245)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.BaseFilter.processFilter(BaseFilter.java:147)
+	at com.liferay.portal.monitoring.internal.servlet.filter.MonitoringFilter.processFilter(MonitoringFilter.java:139)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:196)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:196)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+	at com.liferay.portal.url.rewrite.filter.internal.URLRewriteFilter.processFilter(URLRewriteFilter.java:99)
+	at com.liferay.portal.kernel.servlet.BaseFilter.doFilter(BaseFilter.java:49)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDoFilter(InvokerFilterChain.java:215)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:116)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:175)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:175)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.processDirectCallFilter(InvokerFilterChain.java:196)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilterChain.doFilter(InvokerFilterChain.java:99)
+	at com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter.doFilter(InvokerFilter.java:104)
+	at com.liferay.shielded.container.internal.proxy.FilterWrapper.doFilter(FilterWrapper.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.liferay.portal.kernel.dao.orm.ORMException: javax.persistence.OptimisticLockException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at com.liferay.portal.dao.orm.hibernate.ExceptionTranslator.translate(ExceptionTranslator.java:78)
+	at com.liferay.portal.dao.orm.hibernate.SessionImpl.merge(SessionImpl.java:346)
+	at com.liferay.portal.service.persistence.impl.UserPersistenceImpl.updateImpl(UserPersistenceImpl.java:8583)
+	... 172 more
+Caused by: javax.persistence.OptimisticLockException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at org.hibernate.internal.ExceptionConverterImpl.wrapStaleStateException(ExceptionConverterImpl.java:223)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:93)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:840)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:816)
+	at com.liferay.portal.dao.orm.hibernate.SessionImpl.merge(SessionImpl.java:343)
+	... 173 more
+Caused by: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [com.liferay.portal.model.impl.UserImpl#20125]
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:341)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:172)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:70)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:829)
+	... 175 more
+]]></log4j:throwable>
+<log4j:locationInfo class="com.liferay.portal.internal.servlet.MainServlet" method="service" file="MainServlet.java" line="543"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141589" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141589" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141877" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141877" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141878" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141878" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141878" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141884" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141885" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141885" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740141885" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740142140" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740142141" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740142191" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740142191" level="WARN" thread="http-nio-8000-exec-3">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740148804" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740148805" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149102" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149102" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149102" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149103" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149103" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149105" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149106" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149106" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740149107" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740154588" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740154588" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740161168" level="WARN" thread="http-nio-8000-exec-5">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740161169" level="WARN" thread="http-nio-8000-exec-5">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740182580" level="WARN" thread="http-nio-8000-exec-10">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740182581" level="WARN" thread="http-nio-8000-exec-10">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740189936" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740189936" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201332" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201332" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201429" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201430" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201430" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201430" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201431" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201434" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201435" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201435" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740201435" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213031" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213031" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213088" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213088" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213088" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213088" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213089" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213093" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213094" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213094" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740213094" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740223937" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740223937" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224019" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224019" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224020" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224020" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224020" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224023" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224023" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224024" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740224024" level="WARN" thread="http-nio-8000-exec-4">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236728" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236729" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236789" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236790" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236790" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236790" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236791" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236793" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236793" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236794" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677740236794" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751033922" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751033928" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034060" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034061" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034061" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034061" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034062" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034068" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034068" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034068" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034068" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034240" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034241" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034277" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751034278" level="WARN" thread="http-nio-8000-exec-6">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751036327" level="WARN" thread="http-nio-8000-exec-10">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751036328" level="WARN" thread="http-nio-8000-exec-10">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751041981" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751041981" level="WARN" thread="http-nio-8000-exec-9">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751042436" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.service.impl.ThemeLocalServiceImpl" timestamp="1677751042437" level="WARN" thread="http-nio-8000-exec-1">
+<log4j:message><![CDATA[No theme found for specified theme id customclassic_WAR_customclassictheme. Returning the default theme.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.service.impl.ThemeLocalServiceImpl" method="getTheme" file="ThemeLocalServiceImpl.java" line="229"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215356" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7776da19 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215358" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ab86e9e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215359" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@18d2e7e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215360" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40ea9a44 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215361" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45d3ecbc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215373" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a80bdf7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215374" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13df4837 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215375" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7346c497 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215377" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6370a5ec (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1677764215378" level="WARN" thread="PersistedQuartzSchedulerEngineInstance_QuartzSchedulerThread">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c30d370 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+

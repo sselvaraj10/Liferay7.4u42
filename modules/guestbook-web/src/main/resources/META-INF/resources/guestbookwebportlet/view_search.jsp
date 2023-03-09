@@ -60,7 +60,7 @@ keywords: ${keywords}
 
         long entryId = GetterUtil
                 .getLong(doc.get(Field.ENTRY_CLASS_PK));
-
+        System.out.println("rint: "+doc);
         Entry entry = null;
 
         try {

@@ -44,17 +44,8 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(10);
+    _jspx_dependants = new java.util.ArrayList<String>(1);
     _jspx_dependants.add("/guestbookadminportlet/../init.jsp");
-    _jspx_dependants.add("/META-INF/c.tld");
-    _jspx_dependants.add("/META-INF/liferay-portlet_2_0.tld");
-    _jspx_dependants.add("/META-INF/liferay-aui.tld");
-    _jspx_dependants.add("/META-INF/liferay-portlet-ext.tld");
-    _jspx_dependants.add("/META-INF/liferay-theme.tld");
-    _jspx_dependants.add("/META-INF/liferay-ui.tld");
-    _jspx_dependants.add("/META-INF/resources/WEB-INF/liferay-frontend.tld");
-    _jspx_dependants.add("/META-INF/liferay-security.tld");
-    _jspx_dependants.add("/META-INF/resources/WEB-INF/liferay-clay.tld");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
