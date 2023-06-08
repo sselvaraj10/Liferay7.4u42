@@ -1,8 +1,0 @@
-24-Feb-2023 05:59:38.202 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [929] milliseconds
-24-Feb-2023 06:02:14.741 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [156533] milliseconds
-24-Feb-2023 07:26:05.732 SEVERE [http-nio-8000-Acceptor] org.apache.tomcat.util.net.Acceptor.run Socket accept failed
-	java.io.IOException: Duplicate accept detected. This is a known OS bug. Please consider reporting that you are affected: https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1924298
-		at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:545)
-		at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:78)
-		at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:129)
-		at java.base/java.lang.Thread.run(Thread.java:834)

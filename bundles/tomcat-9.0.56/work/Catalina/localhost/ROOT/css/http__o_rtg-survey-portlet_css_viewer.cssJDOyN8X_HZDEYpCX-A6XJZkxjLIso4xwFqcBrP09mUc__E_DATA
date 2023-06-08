@@ -1,0 +1,392 @@
+.survey-viewer-portlet {
+  /* Simple Poll */
+  /* Fluent Poll */
+}
+.survey-viewer-portlet .portlet-content {
+  overflow: auto;
+  margin: 20px;
+}
+.survey-viewer-portlet li {
+  line-height: 1.4em;
+}
+.survey-viewer-portlet .form-group {
+  margin-bottom: 10px;
+}
+.survey-viewer-portlet .form-group.form-inline {
+  display: inline-block;
+}
+.survey-viewer-portlet .form-group.show-survey-results, .survey-viewer-portlet .form-group.poll-select {
+  margin-bottom: 100px;
+}
+.survey-viewer-portlet label {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.survey-viewer-portlet .radio label {
+  padding-left: 20px;
+}
+.survey-viewer-portlet .survey-description {
+  margin: 20px 0;
+}
+.survey-viewer-portlet .help-inline div.required {
+  color: #f00;
+}
+.survey-viewer-portlet .survey-page {
+  clear: both;
+}
+.survey-viewer-portlet .survey-page .page-navigation {
+  margin: 10px 5px;
+}
+.survey-viewer-portlet .survey-page .page-navigation .previous-button {
+  float: left;
+}
+.survey-viewer-portlet .survey-page .page-navigation .next-button {
+  float: right;
+}
+.survey-viewer-portlet ul.survey-translations {
+  list-style: none;
+  white-space: nowrap;
+  float: right;
+}
+.survey-viewer-portlet ul.survey-translations li {
+  display: inline;
+  white-space: nowrap;
+  padding: 0 2px;
+}
+.survey-viewer-portlet ul.survey-translations li a {
+  text-decoration: none;
+}
+.survey-viewer-portlet ul.survey-translations li a:hover, .survey-viewer-portlet ul.survey-translations li a:focus {
+  text-decoration: none;
+}
+.survey-viewer-portlet #question-container li.question ul {
+  margin-left: 10px;
+  padding-left: 0;
+}
+.survey-viewer-portlet #question-container li.question label {
+  font-size: 1em;
+}
+.survey-viewer-portlet #question-container li.question .question-header {
+  padding: 5px;
+  margin: 2px;
+}
+.survey-viewer-portlet #question-container li.question .question-content {
+  padding: 5px;
+  overflow: hidden;
+}
+.survey-viewer-portlet #question-container li.question .question-content .question-description {
+  margin: 10px 0;
+  overflow: hidden;
+}
+.survey-viewer-portlet #question-container li.question .question-content .question-description .question-description-file {
+  max-width: 100%;
+}
+.survey-viewer-portlet #question-container li.question .question-content .scale-question,
+.survey-viewer-portlet #question-container li.question .question-content .rating-question {
+  margin-left: 20px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .scale-question .radio-answer,
+.survey-viewer-portlet #question-container li.question .question-content .rating-question .radio-answer {
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .scale-question .radio-answer label,
+.survey-viewer-portlet #question-container li.question .question-content .rating-question .radio-answer label {
+  padding-right: 5px;
+  white-space: nowrap;
+}
+.survey-viewer-portlet #question-container li.question .question-content .rating-question .radio-answer label input {
+  visibility: hidden;
+  position: absolute;
+}
+.survey-viewer-portlet #question-container li.question .question-content .rating-question .radio-answer label svg {
+  cursor: pointer;
+}
+.survey-viewer-portlet #question-container li.question .question-content .multiple-choice-question li.answer input {
+  border: 1px solid;
+}
+.survey-viewer-portlet #question-container li.question .question-content .multiple-choice-question label[for].checkbox {
+  font-weight: normal;
+}
+.survey-viewer-portlet #question-container li.question .question-content .freetext-question,
+.survey-viewer-portlet #question-container li.question .question-content .email-question {
+  padding: 5px 0 0 5px;
+  margin-left: 15px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .freetext-question textarea,
+.survey-viewer-portlet #question-container li.question .question-content .freetext-question input[type=text],
+.survey-viewer-portlet #question-container li.question .question-content .email-question textarea,
+.survey-viewer-portlet #question-container li.question .question-content .email-question input[type=text] {
+  max-width: 95%;
+  width: 400px;
+  border: 1px solid;
+}
+.survey-viewer-portlet #question-container li.question .question-content .freetext-question textarea,
+.survey-viewer-portlet #question-container li.question .question-content .email-question textarea {
+  height: 100px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .matrix-question .matrix-table {
+  margin: 5px 10px 15px 20px;
+  width: 95%;
+}
+.survey-viewer-portlet #question-container li.question .question-content .matrix-question .matrix-table th {
+  padding-bottom: 5px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .matrix-question .matrix-table .matrix-answer {
+  text-align: center;
+}
+.survey-viewer-portlet #question-container li.question .question-content .matrix-question .matrix-table tr.matrix-row td {
+  padding: 5px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .matrix-question .matrix-table tr.matrix-row td input[type=radio] {
+  margin: 0;
+}
+.survey-viewer-portlet #question-container li.question .question-content .date-question {
+  margin-left: 15px;
+  padding: 5px 0 0 px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer.radio-answer {
+  padding-left: 20px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer.radio-answer .help-inline {
+  display: block;
+}
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer.radio-answer input[type=radio] {
+  margin-right: 5px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer .form-group {
+  display: inline;
+}
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer input[type=text] {
+  margin-bottom: 0px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer input[type=radio],
+.survey-viewer-portlet #question-container li.question .question-content .answers li.answer input[type=checkbox] {
+  margin-right: 5px;
+}
+.survey-viewer-portlet #question-container li.question .question-content .form-validator-stack *[role=alert] {
+  color: #df4230;
+}
+.survey-viewer-portlet .simple-poll ul.answers {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.survey-viewer-portlet .simple-poll ul#question-container {
+  max-width: 400px;
+}
+.survey-viewer-portlet .simple-poll .alert-info {
+  max-width: 400px;
+}
+.survey-viewer-portlet .fluent-poll {
+  max-width: 500px;
+  overflow: hidden;
+}
+.survey-viewer-portlet .fluent-poll h1.question {
+  font-size: 1.7em;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+}
+.survey-viewer-portlet .fluent-poll .survey-description {
+  margin: 15px 5px;
+  position: relative;
+}
+.survey-viewer-portlet .fluent-poll ul.answers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.survey-viewer-portlet .fluent-poll ul.answers li.answer {
+  padding: 0;
+  margin: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  line-height: 2em;
+  font-weight: 200;
+  font-size: 1.1em;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 2em;
+  clear: both;
+}
+.survey-viewer-portlet .fluent-poll ul.answers li.answer .hover-indicator {
+  width: 3px;
+  height: 100%;
+  border: none;
+  display: inline-block;
+  float: left;
+  visibility: hidden;
+}
+.survey-viewer-portlet .fluent-poll .survey-description p {
+  margin-left: 10px;
+}
+.survey-viewer-portlet .fluent-poll .survey-description p:last-child {
+  margin-bottom: 0;
+}
+.survey-viewer-portlet .fluent-poll .survey-description img {
+  margin-left: -10px;
+  max-width: 103%;
+}
+.survey-viewer-portlet .fluent-poll .success-message {
+  display: none;
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+}
+.survey-viewer-portlet .fluent-poll .vote-counter {
+  display: none;
+  padding: 0 5px;
+  text-align: right;
+  font-weight: bold;
+}
+.survey-viewer-portlet .fluent-poll .answer-result {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.survey-viewer-portlet .fluent-poll .answer-text {
+  padding-left: 10px;
+  color: #000;
+  max-width: 430px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.survey-viewer-portlet .fluent-poll .answer-bar {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+}
+.survey-viewer-portlet .fluent-poll .answer-percent {
+  float: right;
+  color: #000;
+  margin-right: 5px;
+}
+.survey-viewer-portlet .fluent-poll .poll-question-container {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  text-align: center;
+  background-color: #232323;
+  opacity: 0.75;
+}
+.survey-viewer-portlet .fluent-poll .poll-question-container .question {
+  background: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.survey-viewer-portlet .loading-animation {
+  max-width: 500px;
+  display: block;
+}
+.survey-viewer-portlet #result-container {
+  margin-top: 20px;
+  max-width: 600px;
+}
+.survey-viewer-portlet #result-container.poll-result {
+  width: 400px;
+}
+.survey-viewer-portlet #result-container.poll-result .answer-list ul li:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.survey-viewer-portlet #result-container.poll-result .answer-list ul li:first-child .answer-bar {
+  border-top-left-radius: 4px;
+}
+.survey-viewer-portlet #result-container.poll-result .answer-list ul li:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.survey-viewer-portlet #result-container.poll-result .answer-list ul li:last-child .answer-bar {
+  border-bottom-left-radius: 4px;
+}
+.survey-viewer-portlet #result-container .question .answer-list {
+  margin-bottom: 15px;
+}
+.survey-viewer-portlet #result-container .answer-list ul {
+  margin-top: 15px;
+}
+.survey-viewer-portlet #result-container .answer-list ul li {
+  list-style: none;
+  width: 350px;
+  height: 30px;
+  clear: both;
+  position: relative;
+}
+.survey-viewer-portlet #result-container .answer-list ul li .answer-bar {
+  height: 28px;
+  position: absolute;
+}
+.survey-viewer-portlet #result-container .answer-list ul li:not(:first-child) {
+  border-top: none;
+}
+.survey-viewer-portlet #result-container .answer-list ul li:not(:first-child) .answer-bar {
+  height: 29px;
+}
+.survey-viewer-portlet #result-container .answer-list ul li .answer {
+  padding: 5px;
+  position: absolute;
+  width: 97%;
+}
+.survey-viewer-portlet #result-container .answer-list ul li .answer-label {
+  float: left;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.survey-viewer-portlet #result-container .answer-list ul li .answer-percent {
+  float: right;
+}
+
+.dialog-with-footer .portlet-configuration {
+  padding: 20px;
+}
+.dialog-with-footer .portlet-configuration .button-holder.dialog-footer {
+  position: relative;
+  margin: 25px -20px 0;
+  width: calc(100% + 40px);
+}
+
+/* Configuration */
+.portlet-configuration.survey-viewer-portlet .preview-container {
+  display: inline-block;
+  border: 1px solid #555;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.portlet-configuration.survey-viewer-portlet .template-preview {
+  float: left;
+  margin-right: 10px;
+}
+.portlet-configuration.survey-viewer-portlet .template-preview img {
+  width: 150px !important;
+  height: 150px !important;
+}
+.portlet-configuration.survey-viewer-portlet .theme-preview {
+  float: left;
+}
+.portlet-configuration.survey-viewer-portlet .theme-preview div {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  display: inline-block;
+  border: 1px solid #555;
+}

@@ -1,0 +1,114 @@
+/* Question header */
+.survey-viewer-portlet .liferay_7 .ui-widget-header,
+.survey-editor-portlet .ui-widget-header {
+	border: 1px solid #26363F;
+	background: none;
+	background-color: #18272E; /* Header background color */
+	font-weight: bold;
+	color: #fff !important;
+}
+
+/* Result bars for polls, hover indicator */
+.survey-viewer-portlet .liferay_7 .ui-state-active,
+.survey-viewer-portlet .liferay_7 .ui-widget-content .ui-state-active,
+.survey-viewer-portlet .liferay_7 .ui-widget-header .ui-state-active,
+.survey-editor-portlet .ui-state-active,
+.survey-editor-portlet .ui-widget-content .ui-state-active,
+.survey-editor-portlet .ui-widget-header .ui-state-active {
+	border: none;
+  	background: none;
+  	background-color: #bce0ec; /* Result bar background color */
+	color: #1e1b1d;
+}
+
+/* Question & answer background */
+.survey-viewer-portlet .liferay_7 .ui-widget-content,
+.survey-editor-portlet .ui-widget-content {
+	border: 1px solid #869CAD;
+	background: none;
+	background-color: #fafafa; /* Question/answer background color*/
+	color: #1e1b1d;
+}
+
+/* Answer hover for polls & result display */
+.survey-viewer-portlet .liferay_7 .ui-state-hover,
+.survey-viewer-portlet .liferay_7 .ui-widget-content .ui-state-hover,
+.survey-viewer-portlet .liferay_7 .ui-widget-header .ui-state-hover,
+.survey-editor-portlet .ui-state-hover,
+.survey-editor-portlet .ui-widget-content .ui-state-hover,
+.survey-editor-portlet .ui-widget-header .ui-state-hover {
+	border: 1px solid #869CAD;
+	background: none;
+	background-color: #e5f5fc; /* Answer hover background color */
+	font-weight: normal;
+	color: #1e1b1d;
+}
+
+/* Marker for own answer in fluent polls */
+.survey-viewer-portlet .liferay_7 .ui-state-default,
+.survey-viewer-portlet .liferay_7 .ui-widget-content .ui-state-default,
+.survey-viewer-portlet .liferay_7 .ui-widget-header .ui-state-default,
+.survey-editor-portlet .ui-state-default,
+.survey-editor-portlet .ui-widget-content .ui-state-default,
+.survey-editor-portlet .ui-widget-header .ui-state-default {
+	border: none;
+	background: none;
+	background-color: #3A4D5A; /* Own answer indicator background color */
+	font-weight: normal;
+	color: #fff;
+}
+
+.survey-viewer-portlet .liferay_7 .fluent-poll .answer-bar.ui-widget-header,
+.survey-editor-portlet .fluent-poll .answer-bar.ui-widget-header {
+	background-color: #B3DAEF;
+}
+
+/* Submit button */
+.survey-viewer-portlet .liferay_7 .survey-submit,
+.survey-viewer-portlet .liferay_7 .survey-submit:focus,
+.survey-editor-portlet .survey-submit,
+.survey-editor-portlet .survey-submit:focus {
+	background-color: #65B6F0; /* Submit button background color */
+	background-image: none;
+	border: none;
+	outline: none;
+	text-shadow: none;
+	color: #fff;
+}
+
+/* Submit button hover */
+.survey-viewer-portlet .liferay_7 .survey-submit:hover,
+.survey-editor-portlet .survey-submit:hover {
+	background-color: #6ab8ee;
+}
+
+/* Submit button active */
+.survey-viewer-portlet .liferay_7 .survey-submit:active,
+.survey-viewer-portlet .liferay_7 .survey-submit.active,
+.survey-viewer-portlet .liferay_7 .survey-submit.disabled,
+.survey-viewer-portlet .liferay_7 .survey-submit[disabled],
+.survey-editor-portlet .survey-submit:active,
+.survey-editor-portlet .survey-submit.active,
+.survey-editor-portlet .survey-submit.disabled,
+.survey-editor-portlet .survey-submit[disabled] {
+	background-color: #40a4ec; /* Submit button hover background color */
+	box-shadow: none;
+}
+
+/* Disable rounded corners for surveys */
+.survey-viewer-portlet .liferay_7 #question-container .ui-corner-all,
+.survey-editor-portlet #question-container .ui-corner-all {
+  border-radius: 0;
+}
+
+/* Marker for inactive rating question icons */
+.survey-viewer-portlet .liferay_7 .rating-question .radio-answer label i,
+.survey-editor-portlet .rating-question .radio-answer label i {
+	color: #869CAD;
+}
+
+/* Marker for active/hovered rating question icons */
+.survey-viewer-portlet .liferay_7 .rating-question .radio-answer label.marked svg,
+.survey-editor-portlet .rating-question .radio-answer label.marked svg {
+	color: #65B6F0;
+}

@@ -68,3 +68,124 @@ GuestBook
 	<liferay-ui:search-iterator />
 
 </liferay-ui:search-container>
+
+asasasasa<%= themeDisplay.getURLSignIn() %>
+
+
+
+
+
+
+		<c:choose>
+		<c:when test="<%= themeDisplay.isShowSignInIcon() %>">
+        		<span class="sign-in text-default" role="presentation">
+        		Brijesh
+        			<a href="<%= themeDisplay.getURLSignIn() %>" class="sign-in text-default"><button>Sign-in</button> </a>
+        		</span>
+
+        		<aui:script sandbox="<%= true %>">
+        			var signInLink = document.querySelector('.sign-in > a');
+console.log("link: "+signInLink);
+        			if (signInLink) {
+        				var signInURL = '<%= themeDisplay.getURLSignIn() %>';
+
+        				var modalSignInURL = Liferay.Util.addParams(
+        					'windowState=exclusive',
+        					signInURL
+        				);
+
+        				var setModalContent = function (html) {
+        					var modalBody = document.querySelector('.liferay-modal-body');
+
+        					if (modalBody) {
+        						var fragment = document
+        							.createRange()
+        							.createContextualFragment(html);
+
+        						modalBody.innerHTML = '';
+
+        						modalBody.appendChild(fragment);
+        					}
+        				};
+
+        				var loading = false;
+        				var redirect = false;
+        				var html = '';
+        				var modalOpen = false;
+console.log("html :"+html);
+
+        				var fetchModalSignIn = function () {
+        					if (loading || html) {
+        						return;
+        					}
+console.log("infetch modal");
+        					loading = true;
+
+        					Liferay.Util.fetch(modalSignInURL)
+        						.then((response) => {
+        							return response.text();
+        						})
+        						.then((response) => {
+        							if (!loading) {
+        								return;
+        							}
+
+        							loading = false;
+
+        							if (!response) {
+        								redirect = true;
+
+        								return;
+        							}
+
+        							html = response;
+console.log("html2 :"+html);
+
+        							if (modalOpen) {
+        								setModalContent(response);
+        							}
+        						})
+        						.catch(() => {
+        							redirect = true;
+        						});
+        				};
+
+        				window.addEventListener('load', fetchModalSignIn);
+        				window.addEventListener('load', fetchModalSignIn);
+
+        				window.addEventListener('load', (event) => {
+        					event.preventDefault();
+
+        					if (redirect) {
+        						Liferay.Util.navigate(signInURL);
+
+        						return;
+        					}
+
+        					Liferay.Util.openModal({
+        						bodyHTML: html ? html : '<span class="loading-animation">',
+        						containerProps: {
+        							className: '',
+        						},
+        						height: '400px',
+        						onClose: function () {
+        							loading = false;
+        							redirect = false;
+        							html = '';
+        							modalOpen = false;
+        						},
+        						onOpen: function () {
+        							modalOpen = true;
+
+        							if (html && document.querySelector('.loading-animation')) {
+        								setModalContent(html);
+        							}
+        						},
+        						size: 'md',
+        						title: '<liferay-ui:message key="sign-in" />',
+        					});
+        				});
+        			}
+        		</aui:script>
+        	</c:when>
+		</c:choose>

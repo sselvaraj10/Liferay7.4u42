@@ -1,0 +1,4 @@
+Bundle-Name: CalendarRenderOverride
+Bundle-SymbolicName: calendarrenderoverride
+Bundle-Version: 1.0.0
+Export-Package: calendarrenderoverride.constants

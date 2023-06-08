@@ -525,6 +525,172 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
       if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1ui_search$1container_0);
       _jspx_th_liferay$1ui_search$1container_0.release();
+      out.write("\n");
+      out.write("\n");
+      out.write("asasasasa");
+      out.print( themeDisplay.getURLSignIn() );
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t\t");
+      out.write("\n");
+      out.write("\t\t");
+if (
+ themeDisplay.isShowSignInIcon() ) {
+      out.write("\n");
+      out.write("        \t\t<span class=\"sign-in text-default\" role=\"presentation\">\n");
+      out.write("        \t\tBrijesh\n");
+      out.write("        \t\t\t<a href=\"");
+      out.print( themeDisplay.getURLSignIn() );
+      out.write("\" class=\"sign-in text-default\"><button>Sign-in</button> </a>\n");
+      out.write("        \t\t</span>\n");
+      out.write("\n");
+      out.write("        \t\t");
+      //  aui:script
+      com.liferay.taglib.aui.ScriptTag _jspx_th_aui_script_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.aui.ScriptTag.class) : new com.liferay.taglib.aui.ScriptTag();
+      _jspx_th_aui_script_0.setPageContext(_jspx_page_context);
+      _jspx_th_aui_script_0.setParent(null);
+      _jspx_th_aui_script_0.setSandbox( true );
+      int _jspx_eval_aui_script_0 = _jspx_th_aui_script_0.doStartTag();
+      if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+          out = _jspx_page_context.pushBody();
+          _jspx_th_aui_script_0.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+          _jspx_th_aui_script_0.doInitBody();
+        }
+        do {
+          out.write("\n");
+          out.write("        \t\t\tvar signInLink = document.querySelector('.sign-in > a');\n");
+          out.write("console.log(\"link: \"+signInLink);\n");
+          out.write("        \t\t\tif (signInLink) {\n");
+          out.write("        \t\t\t\tvar signInURL = '");
+          out.print( themeDisplay.getURLSignIn() );
+          out.write("';\n");
+          out.write("\n");
+          out.write("        \t\t\t\tvar modalSignInURL = Liferay.Util.addParams(\n");
+          out.write("        \t\t\t\t\t'windowState=exclusive',\n");
+          out.write("        \t\t\t\t\tsignInURL\n");
+          out.write("        \t\t\t\t);\n");
+          out.write("\n");
+          out.write("        \t\t\t\tvar setModalContent = function (html) {\n");
+          out.write("        \t\t\t\t\tvar modalBody = document.querySelector('.liferay-modal-body');\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\tif (modalBody) {\n");
+          out.write("        \t\t\t\t\t\tvar fragment = document\n");
+          out.write("        \t\t\t\t\t\t\t.createRange()\n");
+          out.write("        \t\t\t\t\t\t\t.createContextualFragment(html);\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\tmodalBody.innerHTML = '';\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\tmodalBody.appendChild(fragment);\n");
+          out.write("        \t\t\t\t\t}\n");
+          out.write("        \t\t\t\t};\n");
+          out.write("\n");
+          out.write("        \t\t\t\tvar loading = false;\n");
+          out.write("        \t\t\t\tvar redirect = false;\n");
+          out.write("        \t\t\t\tvar html = '';\n");
+          out.write("        \t\t\t\tvar modalOpen = false;\n");
+          out.write("console.log(\"html :\"+html);\n");
+          out.write("\n");
+          out.write("        \t\t\t\tvar fetchModalSignIn = function () {\n");
+          out.write("        \t\t\t\t\tif (loading || html) {\n");
+          out.write("        \t\t\t\t\t\treturn;\n");
+          out.write("        \t\t\t\t\t}\n");
+          out.write("console.log(\"infetch modal\");\n");
+          out.write("        \t\t\t\t\tloading = true;\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\tLiferay.Util.fetch(modalSignInURL)\n");
+          out.write("        \t\t\t\t\t\t.then((response) => {\n");
+          out.write("        \t\t\t\t\t\t\treturn response.text();\n");
+          out.write("        \t\t\t\t\t\t})\n");
+          out.write("        \t\t\t\t\t\t.then((response) => {\n");
+          out.write("        \t\t\t\t\t\t\tif (!loading) {\n");
+          out.write("        \t\t\t\t\t\t\t\treturn;\n");
+          out.write("        \t\t\t\t\t\t\t}\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\t\tloading = false;\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\t\tif (!response) {\n");
+          out.write("        \t\t\t\t\t\t\t\tredirect = true;\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\t\t\treturn;\n");
+          out.write("        \t\t\t\t\t\t\t}\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\t\thtml = response;\n");
+          out.write("console.log(\"html2 :\"+html);\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\t\tif (modalOpen) {\n");
+          out.write("        \t\t\t\t\t\t\t\tsetModalContent(response);\n");
+          out.write("        \t\t\t\t\t\t\t}\n");
+          out.write("        \t\t\t\t\t\t})\n");
+          out.write("        \t\t\t\t\t\t.catch(() => {\n");
+          out.write("        \t\t\t\t\t\t\tredirect = true;\n");
+          out.write("        \t\t\t\t\t\t});\n");
+          out.write("        \t\t\t\t};\n");
+          out.write("\n");
+          out.write("        \t\t\t\twindow.addEventListener('load', fetchModalSignIn);\n");
+          out.write("        \t\t\t\twindow.addEventListener('load', fetchModalSignIn);\n");
+          out.write("\n");
+          out.write("        \t\t\t\twindow.addEventListener('load', (event) => {\n");
+          out.write("        \t\t\t\t\tevent.preventDefault();\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\tif (redirect) {\n");
+          out.write("        \t\t\t\t\t\tLiferay.Util.navigate(signInURL);\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\treturn;\n");
+          out.write("        \t\t\t\t\t}\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\tLiferay.Util.openModal({\n");
+          out.write("        \t\t\t\t\t\tbodyHTML: html ? html : '<span class=\"loading-animation\">',\n");
+          out.write("        \t\t\t\t\t\tcontainerProps: {\n");
+          out.write("        \t\t\t\t\t\t\tclassName: '',\n");
+          out.write("        \t\t\t\t\t\t},\n");
+          out.write("        \t\t\t\t\t\theight: '400px',\n");
+          out.write("        \t\t\t\t\t\tonClose: function () {\n");
+          out.write("        \t\t\t\t\t\t\tloading = false;\n");
+          out.write("        \t\t\t\t\t\t\tredirect = false;\n");
+          out.write("        \t\t\t\t\t\t\thtml = '';\n");
+          out.write("        \t\t\t\t\t\t\tmodalOpen = false;\n");
+          out.write("        \t\t\t\t\t\t},\n");
+          out.write("        \t\t\t\t\t\tonOpen: function () {\n");
+          out.write("        \t\t\t\t\t\t\tmodalOpen = true;\n");
+          out.write("\n");
+          out.write("        \t\t\t\t\t\t\tif (html && document.querySelector('.loading-animation')) {\n");
+          out.write("        \t\t\t\t\t\t\t\tsetModalContent(html);\n");
+          out.write("        \t\t\t\t\t\t\t}\n");
+          out.write("        \t\t\t\t\t\t},\n");
+          out.write("        \t\t\t\t\t\tsize: 'md',\n");
+          out.write("        \t\t\t\t\t\ttitle: '");
+          if (_jspx_meth_liferay$1ui_message_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_aui_script_0, _jspx_page_context))
+            return;
+          out.write("',\n");
+          out.write("        \t\t\t\t\t});\n");
+          out.write("        \t\t\t\t});\n");
+          out.write("        \t\t\t}\n");
+          out.write("        \t\t");
+          int evalDoAfterBody = _jspx_th_aui_script_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+        if (_jspx_eval_aui_script_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
+          out = _jspx_page_context.popBody();
+      }
+      if (_jspx_th_aui_script_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_0);
+        _jspx_th_aui_script_0.release();
+        return;
+      }
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_aui_script_0);
+      _jspx_th_aui_script_0.release();
+      out.write("\n");
+      out.write("        \t");
+      out.write("\n");
+      out.write("\t\t");
+}
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -847,6 +1013,26 @@ public final class view_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1ui_search$1iterator_0);
     _jspx_th_liferay$1ui_search$1iterator_0.release();
+    return false;
+  }
+
+  private boolean _jspx_meth_liferay$1ui_message_0(javax.servlet.jsp.tagext.JspTag _jspx_th_aui_script_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  liferay-ui:message
+    com.liferay.taglib.ui.MessageTag _jspx_th_liferay$1ui_message_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(com.liferay.taglib.ui.MessageTag.class) : new com.liferay.taglib.ui.MessageTag();
+    _jspx_th_liferay$1ui_message_0.setPageContext(_jspx_page_context);
+    _jspx_th_liferay$1ui_message_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_aui_script_0);
+    _jspx_th_liferay$1ui_message_0.setKey("sign-in");
+    int _jspx_eval_liferay$1ui_message_0 = _jspx_th_liferay$1ui_message_0.doStartTag();
+    if (_jspx_th_liferay$1ui_message_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1ui_message_0);
+      _jspx_th_liferay$1ui_message_0.release();
+      return true;
+    }
+    if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_liferay$1ui_message_0);
+    _jspx_th_liferay$1ui_message_0.release();
     return false;
   }
 }

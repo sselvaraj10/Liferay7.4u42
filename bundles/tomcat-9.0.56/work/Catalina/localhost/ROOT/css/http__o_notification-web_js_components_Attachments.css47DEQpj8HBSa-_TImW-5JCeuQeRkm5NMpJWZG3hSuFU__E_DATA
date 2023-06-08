@@ -1,0 +1,3 @@
+.lfr__notification-template-attachments{display:flex}.lfr__notification-template-attachments-fields{width:50%}.lfr__notification-template-attachments-fields:not(:last-child){margin-right:16px}
+
+/*# sourceMappingURL=Attachments.css.map */

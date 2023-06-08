@@ -1063,3 +1063,15 @@ com.liferay.portal.kernel.exception.OldServiceComponentException: Build namespac
 	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
 	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
 2023-03-09 12:27:11.850 INFO  [Refresh Thread: Equinox Container: 8ac86d79-1e02-4e1d-9477-367050737b2a][BundleStartStopLogger:77] STARTED com.liferay.docs.guestbook.service_1.0.0 [1852]
+2023-03-09 13:44:43.814 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for module-based-theme was unregistered
+2023-03-09 13:44:43.841 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for cstheme2-theme was unregistered
+2023-03-09 13:44:43.870 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for my-liferay-theme was unregistered
+2023-03-09 13:44:43.895 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for demotheme-theme was unregistered
+2023-03-09 13:44:43.914 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for democlassictheme-theme was unregistered
+2023-03-09 13:44:43.937 INFO  [Thread-7][LayoutTemplateHotDeployListener:156] 1 layout template for LayoutTemplateDemo was unregistered
+2023-03-09 13:44:43.970 INFO  [Thread-7][HookHotDeployListener:544] Hook for LangHook was unregistered
+2023-03-09 13:44:43.990 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for admin-theme was unregistered
+2023-03-09 13:44:44.012 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for minium-theme was unregistered
+2023-03-09 13:44:44.045 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for speedwell-theme was unregistered
+2023-03-09 13:44:44.073 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for dialect-theme was unregistered
+2023-03-09 13:44:44.101 INFO  [Thread-7][ThemeHotDeployListener:171] 1 theme for classic-theme was unregistered

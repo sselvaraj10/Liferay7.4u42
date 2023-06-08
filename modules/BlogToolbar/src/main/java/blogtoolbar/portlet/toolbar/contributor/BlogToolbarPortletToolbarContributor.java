@@ -25,7 +25,7 @@ import org.osgi.service.component.annotations.Component;
 @Component(
 	immediate = true,
 	property = {
-		"javax.portlet.name=" + "com_liferay_hello_world_web_portlet_HelloWorldPortlet",
+		"javax.portlet.name=" + "com_liferay_blogs_web_portlet_BlogsPortlet",
 		"mvc.path=-"
 	},
 	service = PortletToolbarContributor.class

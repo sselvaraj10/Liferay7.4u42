@@ -94,7 +94,7 @@ public class GuestbookLocalServiceImpl extends GuestbookLocalServiceBaseImpl imp
 		assetLinkLocalService.updateLinks(userId, assetEntry.getEntryId(),
 				serviceContext.getAssetLinkEntryIds(),
 				AssetLinkConstants.TYPE_RELATED);
-
+3
 		return guestbook;
 
 	}

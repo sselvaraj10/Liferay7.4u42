@@ -4,7 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
@@ -14,6 +13,10 @@
             <option value="$PROJECT_DIR$/modules/BlogMvcContent" />
             <option value="$PROJECT_DIR$/modules/BlogToolbar" />
             <option value="$PROJECT_DIR$/modules/CKEditordemo" />
+            <option value="$PROJECT_DIR$/modules/CalendarRenderOverride" />
+            <option value="$PROJECT_DIR$/modules/CalendarResourcesServiceOverride" />
+            <option value="$PROJECT_DIR$/modules/CalendarServiceOverride" />
+            <option value="$PROJECT_DIR$/modules/CalendarServiceWrapper" />
             <option value="$PROJECT_DIR$/modules/ControlMenuEntryModule" />
             <option value="$PROJECT_DIR$/modules/CustomRestApi" />
             <option value="$PROJECT_DIR$/modules/CustomizeLoginPage" />
@@ -54,6 +57,7 @@
             <option value="$PROJECT_DIR$/modules/UserOneMany" />
             <option value="$PROJECT_DIR$/modules/UserOneMany/UserOneMany-api" />
             <option value="$PROJECT_DIR$/modules/UserOneMany/UserOneMany-service" />
+            <option value="$PROJECT_DIR$/modules/UserPersonalBar" />
             <option value="$PROJECT_DIR$/modules/UserServiceWrapper" />
             <option value="$PROJECT_DIR$/modules/admin-notification-master" />
             <option value="$PROJECT_DIR$/modules/background-task" />

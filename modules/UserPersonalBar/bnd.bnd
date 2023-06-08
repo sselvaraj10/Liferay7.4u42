@@ -1,0 +1,5 @@
+Bundle-Name: UserPersonalBar
+Bundle-SymbolicName: userpersonalbar
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.product.navigation.user.personal.bar.web;bundle-version="6.0.11"
+Portal-Bundle-Version: 7.4.3.45

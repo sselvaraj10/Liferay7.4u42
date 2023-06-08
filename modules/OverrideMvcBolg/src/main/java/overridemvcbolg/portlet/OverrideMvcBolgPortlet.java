@@ -44,7 +44,7 @@ public class OverrideMvcBolgPortlet implements MVCRenderCommand {
 
 
 	@Reference(
-			target = "(component.name=com.liferay.blogs.web.internal.portlet.action.EditEntryMVCRenderCommand)")
+			target = "(com.liferay.portal.search.web.internal.sort.portlet.SortPortlet)")
 	protected MVCRenderCommand mvcRenderCommand;
 
 

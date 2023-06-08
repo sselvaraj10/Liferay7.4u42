@@ -1,0 +1,326 @@
+.survey-editor-portlet .portlet-body {
+  margin: 20px;
+}
+.survey-editor-portlet .portlet-body h4 {
+  margin: 30px 0 20px 0;
+}
+.survey-editor-portlet .portlet-body span.ui-icon {
+  cursor: pointer;
+}
+.survey-editor-portlet .portlet-body span.ui-icon a.taglib-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.survey-editor-portlet .portlet-body .inline {
+  display: inline;
+}
+.survey-editor-portlet .portlet-body .survey-form .translation-container .lfr-token img {
+  margin-right: 2px;
+}
+.survey-editor-portlet .portlet-body .survey-form .translation-container .current-locale {
+  margin-bottom: 10px;
+}
+.survey-editor-portlet .portlet-body .survey-form .editor-accordion {
+  margin-bottom: 20px;
+}
+.survey-editor-portlet .portlet-body .survey-form .input-Date-wrapper .lfr-input-date {
+  margin-left: 35px;
+}
+.survey-editor-portlet .portlet-body .survey-form .save-deactivated {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.survey-editor-portlet .portlet-body .survey-form .button-holder {
+  margin-bottom: 15px;
+}
+.survey-editor-portlet .portlet-body .survey-form div.survey-type-display {
+  margin: 15px 0 10px;
+}
+.survey-editor-portlet .portlet-body .survey-form div.required-validation,
+.survey-editor-portlet .portlet-body .survey-form div.paginated-survey,
+.survey-editor-portlet .portlet-body .survey-form div.show-result,
+.survey-editor-portlet .portlet-body .survey-form div.multiple-submissions {
+  margin-bottom: 20px;
+}
+.survey-editor-portlet .portlet-body .question-form {
+  border-top: 1px solid #000;
+  position: relative;
+  overflow: visible;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container {
+  min-width: 550px;
+  min-height: 300px;
+  display: inline-block;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header {
+  min-height: 32px;
+  padding: 0 5px;
+  margin: 2px;
+  cursor: move;
+  position: relative;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-actions {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-actions .ui-icon {
+  display: inline-block;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-actions span.delete-question {
+  margin-right: 5px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-title-container {
+  display: inline-block;
+  width: 100%;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-title-container .question-text {
+  margin: 5px 2px;
+  width: calc(100% - 65px);
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-title-container div.required {
+  font-weight: normal;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-title-container .inline-editing .form-group {
+  margin-top: 3px;
+  width: calc(100% - 50px);
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header .question-title-container .inline-editing .form-group input.question-title {
+  width: 100%;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content {
+  padding: 10px 5px;
+  clear: both;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-label {
+  font-style: italic;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-description-inputs {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-description-inputs input[type=file] {
+  display: inline-block;
+  width: auto;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-description-inputs textarea {
+  border: 1px solid #29353d;
+  min-width: 300px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-scale-values input,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-rating-max-value input {
+  width: 20px;
+  display: inline;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-rating-max-container {
+  margin: 10px 0;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-type-container .input-select-wrapper .question-type {
+  margin-bottom: 15px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .linked-question-container .question-edit {
+  margin-top: -22px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .linked-question-container .question-edit .taglib-icon-help {
+  float: right;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.answer,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.matrix-question,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.answer,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.matrix-question {
+  overflow: auto;
+  padding: 0 5px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.answer input,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.matrix-question input,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.answer input,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.matrix-question input {
+  margin: 3px 0 !important;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.answer.deleted-answer, .survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.answer.deleted-matrix-question,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.matrix-question.deleted-answer,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.matrix-question.deleted-matrix-question,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.answer.deleted-answer,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.answer.deleted-matrix-question,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.matrix-question.deleted-answer,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.matrix-question.deleted-matrix-question {
+  display: none;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.answer .ui-icon,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container li.matrix-question .ui-icon,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.answer .ui-icon,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container li.matrix-question .ui-icon {
+  background-image: url(/o/rtg-survey-portlet/css/images/ui-icons_1e1b1d_256x240.png);
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container .add-answer button,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .answer-container .add-matrix-question button,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container .add-answer button,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .matrix-question-container .add-matrix-question button {
+  margin: 5px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-edit {
+  display: none;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-edit input[type=checkbox] {
+  margin: 0;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .form-group {
+  display: inline;
+  margin-bottom: 10px !important;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .form-group.success .checkbox,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .form-group.success .radio,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .form-group.success input,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .form-group.success select,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .form-group.success textarea {
+  color: #8d8d8d;
+  border-color: #ddd;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .form-group input {
+  padding: 2px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-edit.inline-editing .form-group {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px !important;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .inline-edit {
+  height: 16px;
+  margin: 8px 0;
+  display: inline-block;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .inline-edit span.ui-icon {
+  display: inline-block;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question ul.child-questions {
+  min-height: 65px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header input.question-title,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.answer-text,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.matrix-question-text,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-scale-values input,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-rating-max-value input {
+  height: 25px;
+  background-color: #fff;
+  padding: 0 2px;
+  border: 1px solid #29353d;
+  color: #29353d;
+  font-size: 17px;
+  line-height: 20px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header input.question-title.error-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.answer-text.error-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.matrix-question-text.error-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-scale-values input.error-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-rating-max-value input.error-field {
+  border-color: #cc6677;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header input.question-title.success-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.answer-text.success-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.matrix-question-text.success-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-scale-values input.success-field,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-rating-max-value input.success-field {
+  border-color: #76bd4a;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-header input.question-title:focus,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.answer-text:focus,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content input.matrix-question-text:focus,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-scale-values input:focus,
+.survey-editor-portlet .portlet-body .question-form #question-container .question .question-content .question-rating-max-value input:focus {
+  color: #65b6f0;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .question-placeholder {
+  height: 30px;
+  border: 1px dotted #000;
+  padding: 5px;
+}
+.survey-editor-portlet .portlet-body .question-form #question-container .add-question-menu-item {
+  display: none;
+}
+
+#delete-question-dialog {
+  display: none;
+}
+
+/* Add Question Menu */
+@media (min-width: 980px) {
+  #add-question-menu-container-sticky-wrapper {
+    float: left;
+    min-width: 134px;
+  }
+
+  #add-question-menu-container {
+    margin-top: 70px;
+  }
+
+  #add-question-menu {
+    padding: 5px;
+  }
+
+  #add-question-menu .add-question-menu-item {
+    margin-top: 6px;
+  }
+
+  #add-question-menu .add-question-menu-item:first-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 979px) {
+  #add-question-menu-container-sticky-wrapper {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  #add-question-menu {
+    max-width: 650px;
+    padding: 5px 5px 1px 5px;
+  }
+
+  #add-question-menu .add-question-menu-item {
+    display: inline-block !important;
+    margin-right: 3px;
+  }
+}
+#add-question-menu-container-sticky-wrapper {
+  min-height: 61px;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container {
+  overflow: hidden;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container .ui-widget-header {
+  padding: 2px 3px;
+  text-align: center;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container #add-question-menu {
+  margin: 0;
+  display: inline-block;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container #add-question-menu .question-placeholder {
+  display: none;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container #add-question-menu .add-question-menu-item {
+  list-style: none;
+  width: 130px;
+  height: 24px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: move;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container #add-question-menu .add-question-menu-item .question-type-icon {
+  float: left;
+  line-height: 18px;
+  padding: 0;
+  margin: 3px 3px 0 2px;
+  width: 18px;
+  height: 18px;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container #add-question-menu .add-question-menu-item .question-type-icon img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 4px;
+}
+#add-question-menu-container-sticky-wrapper #add-question-menu-container #add-question-menu .add-question-menu-item .question-type-name {
+  font-size: 14px;
+}
