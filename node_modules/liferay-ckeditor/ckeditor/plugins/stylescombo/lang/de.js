@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("stylescombo","de",{label:"Stil",panelTitle:"Formatierungsstile",panelTitle1:"Blockstile",panelTitle2:"Inline Stilart",panelTitle3:"Objektstile"});

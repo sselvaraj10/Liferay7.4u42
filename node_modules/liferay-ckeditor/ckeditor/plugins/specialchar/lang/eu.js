@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("specialchar","eu",{options:"Karaktere berezien aukerak",title:"Hautatu karaktere berezia",toolbar:"Txertatu karaktere berezia"});

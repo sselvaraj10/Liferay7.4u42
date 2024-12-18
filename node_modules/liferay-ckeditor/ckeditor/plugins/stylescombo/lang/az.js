@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("stylescombo","az",{label:"Üslub",panelTitle:"Format üslubları",panelTitle1:"Blokların üslubları",panelTitle2:"Sözlərin üslubları",panelTitle3:"Obyektlərin üslubları"});

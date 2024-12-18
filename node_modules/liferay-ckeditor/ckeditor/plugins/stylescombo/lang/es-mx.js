@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("stylescombo","es-mx",{label:"Estilos",panelTitle:"Estilos de formatos",panelTitle1:"Estilos de bloques",panelTitle2:"Estilos de líneas",panelTitle3:"Estilo de objetos"});
