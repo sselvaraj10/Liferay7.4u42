@@ -1,5 +1,0 @@
-com\netcracker\cabinet\background\executor\MigrationDataHandlerStatusMessageSenderUtil.class
-com\netcracker\cabinet\background\vo\BackgroundTaskVO.class
-com\netcracker\cabinet\background\executor\MigrationBackgroundTaskStatusMessageTranslator.class
-com\netcracker\cabinet\background\executor\MigrationBackgroundTaskExecutor.class
-com\netcracker\cabinet\background\task\BackgroundTaskPortlet.class
