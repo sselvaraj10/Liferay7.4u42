@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("sourcearea","oc",{toolbar:"Font"});

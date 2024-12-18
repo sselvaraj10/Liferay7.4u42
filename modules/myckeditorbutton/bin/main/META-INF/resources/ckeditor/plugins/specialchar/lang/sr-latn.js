@@ -1,1 +1,0 @@
-﻿CKEDITOR.plugins.setLang("specialchar","sr-latn",{options:"Opcije specijalnog karaktera",title:"Odaberite specijalni karakter",toolbar:"Unesi specijalni karakter"});
