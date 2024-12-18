@@ -1,3 +1,0 @@
-.lfr__notification-template-container{background-color:#f1f2f5}.lfr__notification-template-cards{margin-left:15rem;margin-right:15rem}.lfr__notification-template-card{display:grid;margin-top:5rem}.lfr__notification-template-management-tollbar{box-shadow:0 .125rem .75rem rgba(0,0,0,.08);position:fixed;width:100%;z-index:1}
-
-/*# sourceMappingURL=EditNotificationTemplate.css.map */

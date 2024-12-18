@@ -1,5 +1,0 @@
-.portlet-language .portlet-body .current-language,
-.portlet-language .portlet-body .taglib-icon,
-.portlet-language .portlet-body .taglib-language-list-text {
-  border-radius: 10px;
-}

@@ -1,3 +1,0 @@
-.dm-field-repeatable-delete-button,.dm-field-repeatable-add-button{border-radius:10px;height:18px;padding:2px;position:absolute;top:0;width:18px}.dm-field-repeatable-delete-button .lexicon-icon,.dm-field-repeatable-add-button .lexicon-icon{height:10px;margin-bottom:7px;margin-top:0;width:10px}.dm-field-repeatable-delete-button{right:38px}.dm-field-repeatable-add-button{right:16px}.size-limit-row{margin-top:2rem}.size-limit-row .form-feedback-group{position:absolute}
-
-/*# sourceMappingURL=file_size_mimetypes.css.map */

@@ -1,3 +1,0 @@
-.side-panel-iframe .dialog-footer{position:fixed;z-index:999 !important}.side-panel-iframe .page-header{position:sticky;top:65px;z-index:10}.side-panel-iframe .side-panel-iframe-content{padding:1.5rem 1rem calc(1.5rem + 70px)}.side-panel-iframe .side-panel-iframe-header{align-items:center;background:#f7f7f7;border-bottom:1px solid #e7e7ed;display:flex;height:65px;justify-content:space-between;padding:.25rem 1rem;position:sticky;top:0;z-index:10}.side-panel-iframe .side-panel-iframe-title{font-weight:600}.side-panel-iframe .side-panel-iframe-menu-wrapper{border-bottom:1px solid #e7e7ed;position:sticky;top:0}.side-panel-iframe .side-panel-iframe-wrapper{padding:1.5rem 1rem}
-
-/*# sourceMappingURL=main.css.map */

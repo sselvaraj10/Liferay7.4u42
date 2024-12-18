@@ -1,3 +1,0 @@
-.portlet-redirect .destination-url .has-error .form-feedback-item{font-weight:400}.portlet-redirect-modal-title{font-weight:600}.portlet-redirect-modal-description{color:#6b6c7e;font-size:.875rem}.portlet-redirect .taglib-search-iterator-page-iterator-bottom{margin-top:20px}.portlet-redirect .taglib-empty-result-message{margin-top:5rem}.redirect-entries .sidebar-dd{margin-bottom:1.5rem}.redirect-entries .sidebar-dt{font-size:.875rem;margin-bottom:.5rem;text-transform:capitalize}.redirect-entries .component-title{text-transform:uppercase}.redirect-entries .table-cell-text-truncate-reverse{direction:rtl;overflow:hidden;text-align:left;text-overflow:ellipsis;white-space:nowrap}
-
-/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,0 @@
-.lfr-object__object-builder-screen-first-column{padding-left:60px !important}.lfr-object__object-builder-screen-first-column--not-draggable{padding-left:10px !important}.lfr-object__object-builder-screen-second-column{left:330px;position:absolute}.lfr-object__object-builder-screen-second-column--not-draggable{left:325px}.lfr-object__object-builder-screen-third-column--not-draggable{left:620px;position:absolute}.lfr-object__object-builder-screen-sort-order{left:336px;position:absolute;top:23px}.lfr-object__object-builder-screen-empty-state{align-items:center;display:flex;justify-content:center;text-align:center}
-
-/*# sourceMappingURL=BuilderScreen.css.map */
